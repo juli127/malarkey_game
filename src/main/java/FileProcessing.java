@@ -7,13 +7,12 @@ public class FileProcessing {
     public FileProcessing(String filePath) {
         this.filePath = filePath;
 
-        // for testing only /////
+        // for testing /////
         try (FileWriter writer = new FileWriter(filePath, false)) {
             writer.write("");
         } catch (IOException e) {
             e.printStackTrace();
         }
-        ////////////////////////
     }
 
     private boolean wordIsPresentInFile(String searchWord) {
