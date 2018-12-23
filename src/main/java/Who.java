@@ -1,12 +1,14 @@
 import java.io.*;
 
-public class FileProcessing {
+public class Who {
 
-    String filePath;
+    static String filePath;
 
-    public FileProcessing(String filePath) {
+    public Who(String filePath) {
         this.filePath = filePath;
+    }
 
+    public void clearFile(){
         // for testing /////
         try (FileWriter writer = new FileWriter(filePath, false)) {
             writer.write("");
@@ -36,7 +38,7 @@ public class FileProcessing {
         return false;
     }
 
-    public String getRandomWordFromFile() {
+    public static String getRandomWordFromFile() {
         String[] lines = null;
         try (FileInputStream fis = new FileInputStream(filePath)){
             byte[] content = new byte[fis.available()];
