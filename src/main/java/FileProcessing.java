@@ -38,7 +38,7 @@ public class FileProcessing {
 
     public String getRandomWordFromFile() {
         String[] lines = null;
-        try (FileInputStream fis = new FileInputStream(new File(filePath))){
+        try (FileInputStream fis = new FileInputStream(filePath)){
             byte[] content = new byte[fis.available()];
             fis.read(content);
             lines = new String(content, "UTF-8").split("\n");
