@@ -31,7 +31,7 @@ public class RunApp {
         who.addNoun("Загадочный мужчина в кепке");
         who.addNoun("Флегматичный олень Бенедикт");
         who.addNoun("Дама в норковом манто");
-        System.out.println("RANDOM name: "+ Who.getRandomWordFromFile());
+        System.out.println("RANDOM who: "+ Who.getRandomWordFromFile());
 
         //////////////
 
@@ -46,7 +46,7 @@ public class RunApp {
         where.addObject("под деревом по имени липа");
         where.addObject("на курсах кройки и шитья");
         where.addObject("на заседании больших боссов");
-        where.addObject("в кустах в засаде");
+        where.addObject("в кустах с пистолетом в засаде");
         where.addObject("в шикарном ресторане");
         where.addObject("в собственном пентхаузе");
         where.addObject("в бигудях на кухне");
@@ -57,7 +57,7 @@ public class RunApp {
         where.addObject("на развалинах часовни");
         where.addObject("на полярной станции 'Академик Вернадский'");
         where.addObject("у барной стойки в ресторане 'Арагви'");
-        System.out.println("RANDOM where: "+ Where.getRandomStaff());
+        System.out.println("RANDOM where: "+ Where.getRandomWhere());
 
     }
 }
