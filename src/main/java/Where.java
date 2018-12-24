@@ -21,7 +21,7 @@ public class Where {
         listWhere.add(where);
     }
 
-    public static String getRandomStaff(){
+    public static String getRandomWhere(){
         int pos = (int)(Math.random() * listWhere.size());
         return listWhere.get(pos);
     }
