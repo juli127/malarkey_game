@@ -18,22 +18,19 @@ public class RunApp {
         String NOUNS_FILE_PATH = Paths.get(".").toAbsolutePath().normalize().toString() + "/src/main/resources/nouns.txt";
         Who who = new Who(NOUNS_FILE_PATH);
         who.clearFile();
-        who.addNoun("девочка Маша");
-        who.addNoun("программист Сергей");
+        who.addNoun("Шумный сосед сверху");
+        who.addNoun("Программист Сергей");
         who.addNoun("МарьИванна");
-        who.addNoun("депутат Иван Петрович Видпочивайло");
-        who.addNoun("сантехник Василий");
-        who.addNoun("кот Эдуард");
-        who.addNoun("сантехник Василий");
-        who.addNoun("диктор телевидения Евгений");
-        who.addNoun("мой начальник");
-        who.addNoun("девочка Маша");
-        who.addNoun("сосед-дебошир Гоша");
-        who.addNoun("слон в зоопарке");
-        who.addNoun("загадочный мужчина в кепке");
-        who.addNoun("флегматичный олень Бенедикт");
-        who.addNoun("дама с Мерседесом");
-        who.addNoun("космический корабль Непобедимый");
+        who.addNoun("Депутат Иван Петрович Видпочивайло");
+        who.addNoun("Сантехник Василий");
+        who.addNoun("Кот Эдуард");
+        who.addNoun("Диктор телевидения Евгений");
+        who.addNoun("Девочка Маша");
+        who.addNoun("Сосед-дебошир Гоша");
+        who.addNoun("Слон в зоопарке");
+        who.addNoun("Загадочный мужчина в кепке");
+        who.addNoun("Флегматичный олень Бенедикт");
+        who.addNoun("Дама в норковом манто");
         System.out.println("RANDOM name: "+ Who.getRandomWordFromFile());
 
         //////////////

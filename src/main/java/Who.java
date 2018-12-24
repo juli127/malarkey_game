@@ -1,4 +1,6 @@
 import java.io.*;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class Who {
 
@@ -18,18 +20,17 @@ public class Who {
     }
 
     private boolean wordIsPresentInFile(String searchWord) {
-        String[] lines = null;
-        try (FileInputStream fis = new FileInputStream(new File(filePath))){
-            byte[] content = new byte[fis.available()];
-            fis.read(content);
-            lines = new String(content, "UTF-8").split("\n");
+        List<String>  linesList = null;
+        try (FileReader fr = new FileReader(filePath)){
+            BufferedReader br = new BufferedReader(fr);
+            linesList = br.lines().collect(Collectors.toList());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        for (String noun : lines) {
+        for (String noun : linesList) {
             if (noun.equalsIgnoreCase(searchWord)) {
                 //System.out.println("Already present: " + searchWord);
                 return true;
@@ -39,18 +40,17 @@ public class Who {
     }
 
     public static String getRandomWordFromFile() {
-        String[] lines = null;
-        try (FileInputStream fis = new FileInputStream(filePath)){
-            byte[] content = new byte[fis.available()];
-            fis.read(content);
-            lines = new String(content, "UTF-8").split("\n");
+        List<String>  linesList = null;
+        try (FileReader fr = new FileReader(filePath)){
+            BufferedReader br = new BufferedReader(fr);
+            linesList = br.lines().collect(Collectors.toList());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        int pos = (int) (Math.random() * lines.length);
-        return lines[pos];
+        int pos = (int) (Math.random() * linesList.size());
+        return linesList.get(pos);
     }
 
     public void addNoun(String noun) {
