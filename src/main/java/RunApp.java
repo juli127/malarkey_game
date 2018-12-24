@@ -27,7 +27,7 @@ public class RunApp {
         who.addNoun("Диктор телевидения Евгений");
         who.addNoun("Девочка Маша");
         who.addNoun("Сосед-дебошир Гоша");
-        who.addNoun("Слон в зоопарке");
+        who.addNoun("Слон из зоопарка");
         who.addNoun("Загадочный мужчина в кепке");
         who.addNoun("Флегматичный олень Бенедикт");
         who.addNoun("Дама в норковом манто");

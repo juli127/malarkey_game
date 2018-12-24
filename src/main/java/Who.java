@@ -10,7 +10,7 @@ public class Who {
         this.filePath = filePath;
     }
 
-    public void clearFile(){
+    public void clearFile() {
         // for testing /////
         try (FileWriter writer = new FileWriter(filePath, false)) {
             writer.write("");
@@ -20,16 +20,14 @@ public class Who {
     }
 
     private boolean wordIsPresentInFile(String searchWord) {
-        List<String>  linesList = null;
-        try (FileReader fr = new FileReader(filePath)){
-            BufferedReader br = new BufferedReader(fr);
+        List<String> linesList = null;
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             linesList = br.lines().collect(Collectors.toList());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         for (String noun : linesList) {
             if (noun.equalsIgnoreCase(searchWord)) {
                 //System.out.println("Already present: " + searchWord);
@@ -40,9 +38,8 @@ public class Who {
     }
 
     public static String getRandomWordFromFile() {
-        List<String>  linesList = null;
-        try (FileReader fr = new FileReader(filePath)){
-            BufferedReader br = new BufferedReader(fr);
+        List<String> linesList = null;
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             linesList = br.lines().collect(Collectors.toList());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -55,7 +52,7 @@ public class Who {
 
     public void addNoun(String noun) {
         if (!wordIsPresentInFile(noun)) {
-            try (FileWriter writer = new FileWriter(filePath, true)) {
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {
                 writer.write(new StringBuilder(noun).append("\n").toString());
                 writer.flush();
             } catch (IOException e1) {
