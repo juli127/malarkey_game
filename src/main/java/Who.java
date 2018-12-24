@@ -20,19 +20,18 @@ public class Who {
     }
 
     private boolean wordIsPresentInFile(String searchWord) {
-        List<String> linesList = null;
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
-            linesList = br.lines().collect(Collectors.toList());
+            String line = null;
+            while((line = br.readLine()) != null){
+                if(line.equalsIgnoreCase(searchWord)){
+                    //System.out.println("Already present: " + searchWord);
+                    return true;
+                }
+            }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        }
-        for (String noun : linesList) {
-            if (noun.equalsIgnoreCase(searchWord)) {
-                //System.out.println("Already present: " + searchWord);
-                return true;
-            }
         }
         return false;
     }

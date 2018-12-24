@@ -15,7 +15,7 @@ public class RunApp {
 
         // first resource for sentence' words: file with nouns
         // fill out local file with nouns ///////////////////////////////////////////
-        String NOUNS_FILE_PATH = Paths.get(".").toAbsolutePath().normalize().toString() + "/src/main/resources/nouns.txt";
+        String NOUNS_FILE_PATH = Paths.get(".", "/src/main/resources/nouns.txt").toAbsolutePath().normalize().toString();
         Who who = new Who(NOUNS_FILE_PATH);
         who.clearFile();
         who.addNoun("Шумный сосед сверху");
