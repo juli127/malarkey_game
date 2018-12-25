@@ -1,9 +1,14 @@
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import java.nio.file.Paths;
 
 public class RunApp {
 
+    private static final Logger logger = LoggerFactory.getLogger(RunApp.class);
+
     public static void main(String[] args) {
 
+        logger.debug("Hello...........");
         // expected result:
         // sentence like this one: "Who?Сантехник Василий -- how?задумчиво --
         // what does?сидит -- where? в бигудях на кухне -- ?why потому что пришла весна"
@@ -31,7 +36,7 @@ public class RunApp {
         who.addNoun("Загадочный мужчина в кепке");
         who.addNoun("Флегматичный олень Бенедикт");
         who.addNoun("Дама в норковом манто");
-        System.out.println("RANDOM who: "+ Who.getRandomWordFromFile());
+        logger.debug("RANDOM who: "+ Who.getRandomWordFromFile());
 
         //////////////
 
@@ -57,7 +62,7 @@ public class RunApp {
         where.addObject("на развалинах часовни");
         where.addObject("на полярной станции 'Академик Вернадский'");
         where.addObject("у барной стойки в ресторане 'Арагви'");
-        System.out.println("RANDOM where: "+ Where.getRandomWhere());
+        logger.debug("RANDOM where: "+ Where.getRandomWhere());
 
     }
 }

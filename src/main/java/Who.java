@@ -1,3 +1,6 @@
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.*;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -5,6 +8,7 @@ import java.util.stream.Collectors;
 public class Who {
 
     static String filePath;
+    private static final Logger logger = LoggerFactory.getLogger(Who.class);
 
     public Who(String filePath) {
         this.filePath = filePath;
@@ -24,7 +28,7 @@ public class Who {
             String line = null;
             while((line = br.readLine()) != null){
                 if(line.equalsIgnoreCase(searchWord)){
-                    //System.out.println("Already present: " + searchWord);
+                    logger.debug("Already present: " + searchWord);
                     return true;
                 }
             }
