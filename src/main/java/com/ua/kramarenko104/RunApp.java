@@ -21,7 +21,7 @@ private static Logger logger = Logger.getLogger(RunApp.class);
         StringBuilder sentence = new StringBuilder();
 
         // 'WHO'
-        // first resource for sentence' words: file nouns.txt
+        // first resource for sentence' words: local file nouns.txt
         String NOUNS_FILE_PATH = Paths.get(".", "/src/main/resources/nouns.txt").toAbsolutePath().normalize().toString();
         Who who = new Who(NOUNS_FILE_PATH);
         who.clearFile();
