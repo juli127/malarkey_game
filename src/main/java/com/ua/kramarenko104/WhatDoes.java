@@ -17,16 +17,31 @@ public class WhatDoes {
             e.printStackTrace();
         }
         try {
-            //logger.debug("Obtaining connection....");
             conn = DriverManager.getConnection("jdbc:mysql://localhost/malarkey_game?" +  "user=root&password=");
-            //logger.debug("Connected");
             st = conn.createStatement();
-            initWithValues();
         } catch (SQLException e) {
             e.printStackTrace();}
     }
 
-    public void init(){
+    public void init() {
+        //CREATE DATABASE malarkey_game;
+        //USE malarkey_game;
+        String sqlCreate = "CREATE TABLE IF NOT EXISTS actions (id INT PRIMARY KEY AUTO_INCREMENT, action VARCHAR(30));";
+        try {
+            st.execute(sqlCreate);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        String sqlTrancate = "TRUNCATE TABLE actions;";
+        try {
+            st.execute(sqlTrancate);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        initWithValues();
+    }
+
+    private void initWithValues(){
         addAction("торгует апельсинами");
         addAction("покупает лотерейный билет");
         addAction("сажает картошку и помидоры");
@@ -50,22 +65,6 @@ public class WhatDoes {
         addAction("сдает бутылки");
     }
 
-    private void initWithValues() throws SQLException {
-        //CREATE DATABASE malarkey_game;
-        //USE malarkey_game;
-        String sqlCreate = "CREATE TABLE IF NOT EXISTS actions (id INT PRIMARY KEY AUTO_INCREMENT, action VARCHAR(30));";
-        try {
-            st.execute(sqlCreate);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        String sqlTrancate = "TRUNCATE TABLE actions;";
-        try {
-            st.execute(sqlTrancate);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
 
     public void addAction(String verb) {
         String sqlAdd = "INSERT INTO Actions (action) VALUES(?);";
@@ -79,7 +78,7 @@ public class WhatDoes {
         }
     }
 
-    public String getAction() {
+    public String getRandomWord() {
         String sqlCountRecords = "SELECT COUNT(*) AS count FROM Actions;";
         String sqlSelectAction = "SELECT action FROM Actions WHERE id = ";
         String action = "";

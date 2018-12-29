@@ -21,7 +21,7 @@ private static Logger logger = Logger.getLogger(RunApp.class);
         StringBuilder sentence = new StringBuilder();
 
         // 'WHO'
-        // first resource for sentence' words: local file nouns.txt
+        // first resource for sentence' words: local file 'nouns.txt's
         String NOUNS_FILE_PATH = Paths.get(".", "/src/main/resources/nouns.txt").toAbsolutePath().normalize().toString();
         Who who = new Who(NOUNS_FILE_PATH);
         who.clearFile();
@@ -32,15 +32,14 @@ private static Logger logger = Logger.getLogger(RunApp.class);
         // next resource for sentence' words: local MySQL database
         WhatDoes actions = new WhatDoes();
         actions.init();
-        String action = actions.getAction();
+        sentence.append(" ").append(actions.getRandomWord());
         actions.close();
-        sentence.append(" ").append(action);
 
         // 'WHERE'
         // next resource for sentence' words: local strings' list
         Where where = new Where();
         where.init();
-        sentence.append(" ").append(Where.getRandomWhere());
+        sentence.append(" ").append(Where.getRandomWord());
 
         logger.debug(sentence.toString());
 

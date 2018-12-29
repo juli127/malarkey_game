@@ -42,7 +42,7 @@ public class Where {
         listWhere.add(where);
     }
 
-    public static String getRandomWhere(){
+    public static String getRandomWord(){
         int pos = (int)(Math.random() * listWhere.size());
         return listWhere.get(pos);
     }
