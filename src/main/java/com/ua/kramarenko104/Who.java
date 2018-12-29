@@ -23,6 +23,22 @@ public class Who {
         }
     }
 
+    public void init(){
+        addNoun("Шумный сосед сверху");
+        addNoun("Программист Сергей");
+        addNoun("МарьИванна");
+        addNoun("Депутат Иван Петрович Видпочивайло");
+        addNoun("Сантехник Василий");
+        addNoun("Кот Эдуард");
+        addNoun("Диктор телевидения Евгений");
+        addNoun("Девочка Маша");
+        addNoun("Сосед-дебошир Гоша");
+        addNoun("Слон из зоопарка");
+        addNoun("Загадочный мужчина в кепке");
+        addNoun("Флегматичный олень Бенедикт");
+        addNoun("Дама в норковом манто");
+    }
+
     private boolean wordIsPresentInFile(String searchWord) {
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             String line = null;

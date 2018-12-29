@@ -26,6 +26,30 @@ public class WhatDoes {
             e.printStackTrace();}
     }
 
+    public void init(){
+        addAction("торгует апельсинами");
+        addAction("покупает лотерейный билет");
+        addAction("сажает картошку и помидоры");
+        addAction("красит губы в алый цвет");
+        addAction("стрижется налысо");
+        addAction("отжимается 100 раз");
+        addAction("поднимает штангу");
+        addAction("грызет семечки");
+        addAction("рожает пятого ребенка");
+        addAction("сутками сидит в позе лотоса");
+        addAction("ест ложками красную икру");
+        addAction("медитирует");
+        addAction("слоняется без дела");
+        addAction("не спит по ночам");
+        addAction("третирует соседей");
+        addAction("заводит трех питбулей");
+        addAction("красит волосы в синий цвет");
+        addAction("сочиняет стихи");
+        addAction("громко и фальшиво поет");
+        addAction("ест торт перед сном");
+        addAction("сдает бутылки");
+    }
+
     private void initWithValues() throws SQLException {
         //CREATE DATABASE malarkey_game;
         //USE malarkey_game;
@@ -65,16 +89,16 @@ public class WhatDoes {
             rs = st.executeQuery(sqlCountRecords);
             while (rs.next()) {
                 countRecord = rs.getInt("count");
-                logger.debug("There are " + countRecord + " actions saved in database");
+                //logger.debug("There are " + countRecord + " actions saved in database");
             }
 
             int randomRecordNumber = (int)(Math.random()* countRecord + 1);
-            logger.debug("random action number: " + randomRecordNumber);
+            //logger.debug("random action number: " + randomRecordNumber);
             rs = st.executeQuery(sqlSelectAction + randomRecordNumber);
             while (rs.next()) {
                 action = rs.getString("action");
             }
-            logger.debug("random action: " + action);
+            //logger.debug("random action: " + action);
         } catch (SQLException e) {
             e.printStackTrace();
         }finally{
