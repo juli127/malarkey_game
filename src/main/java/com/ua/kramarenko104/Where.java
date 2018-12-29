@@ -38,16 +38,9 @@ public class Where {
         listWhere.clear();
     }
 
-    public void addObject(String where){
-        listWhere.add(where);
-    }
-
     public static String getRandomWord(){
         int pos = (int)(Math.random() * listWhere.size());
         return listWhere.get(pos);
     }
 
-    public List<String> getList(){
-        return listWhere;
-    }
 }

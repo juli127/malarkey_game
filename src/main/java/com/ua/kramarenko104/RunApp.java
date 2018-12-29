@@ -13,7 +13,6 @@ private static Logger logger = Logger.getLogger(RunApp.class);
         // sentence like this one: "Who?Сантехник Василий -- how?задумчиво --
         // what does?сидит -- where? в бигудях на кухне -- ?why потому что пришла весна"
         initSources();
-
     }
 
     private static void initSources() {
@@ -26,7 +25,7 @@ private static Logger logger = Logger.getLogger(RunApp.class);
         Who who = new Who(NOUNS_FILE_PATH);
         who.clearFile();
         who.init();
-        sentence.append(Who.getRandomWordFromFile());
+        sentence.append(Who.getRandomWord());
 
         // 'WHAT DOES'
         // next resource for sentence' words: local MySQL database

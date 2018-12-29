@@ -56,7 +56,7 @@ public class Who {
         return false;
     }
 
-    public static String getRandomWordFromFile() {
+    public static String getRandomWord() {
         List<String> linesList = null;
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             linesList = br.lines().collect(Collectors.toList());
