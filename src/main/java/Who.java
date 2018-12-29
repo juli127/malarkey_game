@@ -1,14 +1,12 @@
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
+import org.apache.log4j.Logger;
 import java.io.*;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class Who {
 
-    static String filePath;
-    private static final Logger logger = LoggerFactory.getLogger(Who.class);
+    private static String filePath;
+    private static Logger logger = Logger.getLogger(Who.class);
 
     public Who(String filePath) {
         this.filePath = filePath;

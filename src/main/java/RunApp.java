@@ -1,14 +1,12 @@
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import java.nio.file.Paths;
+import org.apache.log4j.Logger;
 
 public class RunApp {
 
-    private static final Logger logger = LoggerFactory.getLogger(RunApp.class);
+private static Logger logger = Logger.getLogger(RunApp.class);
 
     public static void main(String[] args) {
 
-        logger.debug("Hello...........");
         // expected result:
         // sentence like this one: "Who?Сантехник Василий -- how?задумчиво --
         // what does?сидит -- where? в бигудях на кухне -- ?why потому что пришла весна"
