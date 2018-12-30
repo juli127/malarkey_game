@@ -114,7 +114,7 @@ public class DAO {
             statement.setString(1, word);
             statement.executeUpdate();
         } catch (SQLException e) {
-            logger.debug("SQLException with addWord: " + word);
+            //logger.debug("SQLException with addWord: " + word);
             e.printStackTrace();
         }
     }

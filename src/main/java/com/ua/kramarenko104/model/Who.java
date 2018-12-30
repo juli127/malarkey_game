@@ -12,33 +12,17 @@ public class Who implements WordResource {
 
     public Who(String filePath) {
         this.filePath = filePath;
-        clearFile();
+        //clearFile();
     }
 
+    // for testing
+    // + possibility to clear file from GUI
     private void clearFile() {
-        // for testing /////
         try (FileWriter writer = new FileWriter(filePath, false)) {
             writer.write("");
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
-
-    @Override
-    public void fillWithValues(){
-        addNoun("Шумный сосед сверху");
-        addNoun("Программист Сергей");
-        addNoun("МарьИванна");
-        addNoun("Депутат Иван Петрович Видпочивайло");
-        addNoun("Сантехник Василий");
-        addNoun("Кот Эдуард");
-        addNoun("Диктор телевидения Евгений");
-        addNoun("Девочка Маша");
-        addNoun("Сосед-дебошир Гоша");
-        addNoun("Слон из зоопарка");
-        addNoun("Загадочный мужчина в кепке");
-        addNoun("Флегматичный олень Бенедикт");
-        addNoun("Дама в норковом манто");
     }
 
     @Override
@@ -55,11 +39,8 @@ public class Who implements WordResource {
         return linesList.get(pos);
     }
 
-    @Override
-    public void close() {
-    }
-
-    private void addNoun(String noun) {
+    // possibility to add noun from GUI
+    public void addNoun(String noun) {
         if (!wordIsPresentInFile(noun)) {
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {
                 writer.write(new StringBuilder(noun).append("\n").toString());
@@ -68,6 +49,15 @@ public class Who implements WordResource {
                 e1.printStackTrace();
             }
         }
+    }
+
+    @Override
+    public void close() {
+    }
+
+    // file already is filled out, do nothing here
+    @Override
+    public void fillWithValues(){
     }
 
     private boolean wordIsPresentInFile(String searchWord) {
