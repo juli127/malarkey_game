@@ -9,8 +9,8 @@ Result logs are located here: logs/debug.log
 
 - Source files (resources/nouns.txt, verbs.txt, where.txt, why.txt) can be edited manually.
 
-To run game you need:
-- run mySQL server
-- create database:
-   - 'CREATE DATABASE malarkey_game;'
-   - 'USE malarkey_game;'
+- To run game you need:
+   - run mySQL server
+   - create database:
+      - 'CREATE DATABASE malarkey_game;'
+      - 'USE malarkey_game;'
