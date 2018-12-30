@@ -11,6 +11,4 @@ Result logs are located here: logs/debug.log
 
 - To run game you need:
    - run mySQL server
-   - create database:
-      - 'CREATE DATABASE malarkey_game;'
-      - 'USE malarkey_game;'
+   - create and use database: 'CREATE DATABASE malarkey_game;'    'USE malarkey_game;'
