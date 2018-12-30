@@ -3,7 +3,11 @@
 
 - Result sentence is built with this schema: who? + what does? + where? + why?
 
-For example, 'Сосед-дебошир Гоша /громко и фальшиво поет / под деревом по имени липа / потому что жизнь - борьба'.
+For example, 
+
+'Сосед-дебошир Гоша/громко и фальшиво поет/под деревом по имени липа/потому что жизнь - борьба'
+'МарьИванна/слоняется без дела/на курсах кройки и шитья/потому что может себе это позволить'
+
 Logs with result sentences are located here: logs/debug.log
 
 - Source files (resources/nouns.txt, verbs.txt, where.txt, why.txt) can be edited manually.
