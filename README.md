@@ -5,7 +5,7 @@ Result sentence is built with this schema: who?(subject) + what does?(verb) + wh
 
 For example, 'Сосед-дебошир Гоша /громко и фальшиво поет / под деревом по имени липа / потому что жизнь - борьба'.
 
-Result logs is located here: logs/debug.log
+Result logs are located here: logs/debug.log
 
 To run game you need:
 - run mySQL server
