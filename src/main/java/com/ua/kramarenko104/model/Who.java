@@ -1,20 +1,21 @@
-package com.ua.kramarenko104;
+package com.ua.kramarenko104.model;
 
 import org.apache.log4j.Logger;
 import java.io.*;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Who {
+public class Who implements WordResource {
 
     private static String filePath;
     private static Logger logger = Logger.getLogger(Who.class);
 
     public Who(String filePath) {
         this.filePath = filePath;
+        clearFile();
     }
 
-    public void clearFile() {
+    private void clearFile() {
         // for testing /////
         try (FileWriter writer = new FileWriter(filePath, false)) {
             writer.write("");
@@ -23,7 +24,8 @@ public class Who {
         }
     }
 
-    public void init(){
+    @Override
+    public void fillWithValues(){
         addNoun("Шумный сосед сверху");
         addNoun("Программист Сергей");
         addNoun("МарьИванна");
@@ -37,6 +39,35 @@ public class Who {
         addNoun("Загадочный мужчина в кепке");
         addNoun("Флегматичный олень Бенедикт");
         addNoun("Дама в норковом манто");
+    }
+
+    @Override
+    public String getRandomWord() {
+        List<String> linesList = null;
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+            linesList = br.lines().collect(Collectors.toList());
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        int pos = (int) (Math.random() * linesList.size());
+        return linesList.get(pos);
+    }
+
+    @Override
+    public void close() {
+    }
+
+    private void addNoun(String noun) {
+        if (!wordIsPresentInFile(noun)) {
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {
+                writer.write(new StringBuilder(noun).append("\n").toString());
+                writer.flush();
+            } catch (IOException e1) {
+                e1.printStackTrace();
+            }
+        }
     }
 
     private boolean wordIsPresentInFile(String searchWord) {
@@ -54,30 +85,6 @@ public class Who {
             e.printStackTrace();
         }
         return false;
-    }
-
-    public static String getRandomWord() {
-        List<String> linesList = null;
-        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
-            linesList = br.lines().collect(Collectors.toList());
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        int pos = (int) (Math.random() * linesList.size());
-        return linesList.get(pos);
-    }
-
-    public void addNoun(String noun) {
-        if (!wordIsPresentInFile(noun)) {
-            try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {
-                writer.write(new StringBuilder(noun).append("\n").toString());
-                writer.flush();
-            } catch (IOException e1) {
-                e1.printStackTrace();
-            }
-        }
     }
 }
 

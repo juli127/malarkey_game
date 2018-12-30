@@ -1,17 +1,26 @@
 package com.ua.kramarenko104;
 
 import java.nio.file.Paths;
+import com.ua.kramarenko104.model.WordResource;
+import com.ua.kramarenko104.model.WhatDoes;
+import com.ua.kramarenko104.model.Where;
+import com.ua.kramarenko104.model.Who;
+import com.ua.kramarenko104.model.Why;
 import org.apache.log4j.Logger;
 
 public class RunApp {
 
 private static Logger logger = Logger.getLogger(RunApp.class);
+private static final String WHO_FILE_PATH = Paths.get(".", "/src/main/resources/nouns.txt").toAbsolutePath().normalize().toString();
+private static final String VERB_FILE_PATH = Paths.get(".", "/src/main/resources/verbs.txt").toAbsolutePath().normalize().toString();
+private static final String WHERE_FILE_PATH = Paths.get(".", "/src/main/resources/where.txt").toAbsolutePath().normalize().toString();
+private static final String WHY_FILE_PATH = Paths.get(".", "/src/main/resources/why.txt").toAbsolutePath().normalize().toString();
 
     public static void main(String[] args) {
 
         // expected result:
-        // sentence like this one: "Who?Сантехник Василий -- how?задумчиво --
-        // what does?сидит -- where? в бигудях на кухне -- ?why потому что пришла весна"
+        // sentence like this one: "Who?Сантехник Василий
+        // what does?задумчиво сидит  where?в бигудях на кухне ?why потому что пришла весна"
         initSources();
     }
 
@@ -21,24 +30,28 @@ private static Logger logger = Logger.getLogger(RunApp.class);
 
         // 'WHO'
         // first resource for sentence' words: local file 'nouns.txt's
-        String NOUNS_FILE_PATH = Paths.get(".", "/src/main/resources/nouns.txt").toAbsolutePath().normalize().toString();
-        Who who = new Who(NOUNS_FILE_PATH);
-        who.clearFile();
-        who.init();
-        sentence.append(Who.getRandomWord());
+        WordResource who = new Who(WHO_FILE_PATH);
+        who.fillWithValues();
+        sentence.append(who.getRandomWord());
 
         // 'WHAT DOES'
-        // next resource for sentence' words: local MySQL database
-        WhatDoes actions = new WhatDoes();
-        actions.init();
+        // next resource for sentence' words: local MySQL database, table 'actions'
+        WordResource actions = new WhatDoes(VERB_FILE_PATH);
+        actions.fillWithValues();
         sentence.append(" ").append(actions.getRandomWord());
         actions.close();
 
         // 'WHERE'
         // next resource for sentence' words: local strings' list
-        Where where = new Where();
-        where.init();
-        sentence.append(" ").append(Where.getRandomWord());
+        WordResource where = new Where(WHERE_FILE_PATH);
+        where.fillWithValues();
+        sentence.append(" ").append(where.getRandomWord());
+
+        // 'WHY'
+        // next resource for sentence' words: local MySQL database, table 'reasons'
+        WordResource why = new Why(WHY_FILE_PATH);
+        why.fillWithValues();
+        sentence.append(" ").append(why.getRandomWord());
 
         logger.debug(sentence.toString());
 
