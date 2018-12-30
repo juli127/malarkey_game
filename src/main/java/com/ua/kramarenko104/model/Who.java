@@ -65,7 +65,7 @@ public class Who implements WordResource {
             String line = null;
             while((line = br.readLine()) != null){
                 if(line.equalsIgnoreCase(searchWord)){
-                    logger.debug("Already present: " + searchWord);
+                    //logger.debug("Already present: " + searchWord);
                     return true;
                 }
             }
