@@ -17,10 +17,7 @@ private static final String WHERE_FILE_PATH = Paths.get(".", "/src/main/resource
 private static final String WHY_FILE_PATH = Paths.get(".", "/src/main/resources/why.txt").toAbsolutePath().normalize().toString();
 
     public static void main(String[] args) {
-
-        // expected result:
-        // sentence like this one: "Who?Сантехник Василий
-        // what does?задумчиво сидит  where?в бигудях на кухне ?why потому что пришла весна"
+        
         initSources();
     }
 
