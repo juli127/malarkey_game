@@ -8,5 +8,5 @@ For example, 'Сосед-дебошир Гоша /громко и фальшив
 To run game you need:
 - run mySQL server
 - create database:
-   -- 'CREATE DATABASE malarkey_game;'
-   -- 'USE malarkey_game;'
+   - 'CREATE DATABASE malarkey_game;'
+   - 'USE malarkey_game;'
