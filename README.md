@@ -5,7 +5,7 @@
 
 For example, 'Сосед-дебошир Гоша /громко и фальшиво поет / под деревом по имени липа / потому что жизнь - борьба'.
 
-Result logs are located here: logs/debug.log
+Logs with result sentences are located here: logs/debug.log
 
 - Source files (resources/nouns.txt, verbs.txt, where.txt, why.txt) can be edited manually.
 
