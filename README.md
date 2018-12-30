@@ -1,4 +1,4 @@
-# malarkey_game
+# malarkey_game  (IO/NIO, mySQL, multithreding)
 - It's words' game when players create sentence from diffrent sources (database, file, list) with random words. 
 
 - Result sentence is built with this schema: who? + what does? + where? + why?
