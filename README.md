@@ -1,5 +1,5 @@
 # malarkey_game
-- Words' game when players create random sentence from diffrent sources (database, file, list). 
+- Words' game when players create sentence from diffrent sources (database, file, list) with random words. 
 
 - Result sentence is built with this schema: who? + what does? + where? + why?
 
