@@ -9,8 +9,8 @@ import java.util.List;
 
 public class Where implements WordResource {
 
-    static List<String> listWhere;
-    String sourceFilePath;
+    private static List<String> listWhere;
+    private String sourceFilePath;
 
     public Where(String sourceFilePath) {
         listWhere = new ArrayList<>();
@@ -36,10 +36,6 @@ public class Where implements WordResource {
     public String getRandomWord(){
         int pos = (int)(Math.random() * listWhere.size());
         return listWhere.get(pos);
-    }
-
-    @Override
-    public void close() {
     }
 
 }

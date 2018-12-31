@@ -1,7 +1,6 @@
 package com.ua.kramarenko104;
 
 import java.nio.file.Paths;
-import com.ua.kramarenko104.model.WordResource;
 import com.ua.kramarenko104.model.WhatDoes;
 import com.ua.kramarenko104.model.Where;
 import com.ua.kramarenko104.model.Who;
@@ -27,26 +26,26 @@ private static final String WHY_FILE_PATH = Paths.get(".", "/src/main/resources/
 
         // 'WHO'
         // first resource for sentence' words: local file 'nouns.txt's
-        WordResource who = new Who(WHO_FILE_PATH);
+        Who who = new Who(WHO_FILE_PATH);
         who.fillWithValues();
         sentence.append(who.getRandomWord());
 
         // 'WHAT DOES'
         // next resource for sentence' words: local MySQL database, table 'actions'
-        WordResource actions = new WhatDoes(VERB_FILE_PATH);
+        WhatDoes actions = new WhatDoes(VERB_FILE_PATH);
         actions.fillWithValues();
         sentence.append(" ").append(actions.getRandomWord());
         actions.close();
 
         // 'WHERE'
         // next resource for sentence' words: local strings' list
-        WordResource where = new Where(WHERE_FILE_PATH);
+        Where where = new Where(WHERE_FILE_PATH);
         where.fillWithValues();
         sentence.append(" ").append(where.getRandomWord());
 
         // 'WHY'
         // next resource for sentence' words: local MySQL database, table 'reasons'
-        WordResource why = new Why(WHY_FILE_PATH);
+        Why why = new Why(WHY_FILE_PATH);
         why.fillWithValues();
         sentence.append(" ").append(why.getRandomWord());
         why.close();

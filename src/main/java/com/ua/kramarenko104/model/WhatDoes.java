@@ -4,8 +4,8 @@ import com.ua.kramarenko104.dao.DAO;
 
 public class WhatDoes implements WordResource {
 
-    DAO dao;
-    String sourceFilePath;
+    private DAO dao;
+    private String sourceFilePath;
 
     public WhatDoes(String sourceFilePath) {
         dao = new DAO("actions", "action");
@@ -23,7 +23,6 @@ public class WhatDoes implements WordResource {
         return dao.getRandomWord();
     }
 
-    @Override
     public void close() {
         dao.close();
     }

@@ -2,6 +2,7 @@ package com.ua.kramarenko104.model;
 
 import org.apache.log4j.Logger;
 import java.io.*;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -27,7 +28,7 @@ public class Who implements WordResource {
 
     @Override
     public String getRandomWord() {
-        List<String> linesList = null;
+        List<String> linesList = Collections.emptyList();
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             linesList = br.lines().collect(Collectors.toList());
         } catch (FileNotFoundException e) {
@@ -43,16 +44,12 @@ public class Who implements WordResource {
     public void addNoun(String noun) {
         if (!wordIsPresentInFile(noun)) {
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {
-                writer.write(new StringBuilder(noun).append("\n").toString());
+                writer.write(noun + "\n");
                 writer.flush();
             } catch (IOException e1) {
                 e1.printStackTrace();
             }
         }
-    }
-
-    @Override
-    public void close() {
     }
 
     // file already is filled out, do nothing here
@@ -64,7 +61,7 @@ public class Who implements WordResource {
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             String line = null;
             while((line = br.readLine()) != null){
-                if(line.equalsIgnoreCase(searchWord)){
+                if(line.trim().equalsIgnoreCase(searchWord)){
                     //logger.debug("Already present: " + searchWord);
                     return true;
                 }

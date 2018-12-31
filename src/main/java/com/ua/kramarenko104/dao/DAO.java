@@ -1,34 +1,35 @@
 package com.ua.kramarenko104.dao;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.sql.*;
+
 import org.apache.log4j.Logger;
 
-public class DAO {
+public class DAO implements Closeable {
 
-    Connection conn;
-    Statement st;
-    String tableName;
-    String fieldName;
+    private Connection conn;
+    private Statement st;
+    private String tableName;
+    private String fieldName;
     private static Logger logger = Logger.getLogger(DAO.class);
+    private static String mySQLdriver = "com.mysql.cj.jdbc.Driver";
+    private static String myDatabase = "jdbc:mysql://localhost/malarkey_game?";
 
     public DAO(String tableName, String fieldName) {
         this.tableName = tableName;
         this.fieldName = fieldName;
 
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
+            Class.forName(mySQLdriver).newInstance();
         } catch (Exception e) {
             e.printStackTrace();
         }
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost/malarkey_game?" +  "user=root&password=");
+            conn = DriverManager.getConnection( myDatabase + "user=root&password=");
             st = conn.createStatement();
         } catch (SQLException e) {
-            e.printStackTrace();}
+            e.printStackTrace();
+        }
     }
 
     // prepare database table for filling out with words
@@ -52,10 +53,10 @@ public class DAO {
 
     // read words from the source file
     // and fill the corresponding database table with them
-    public void fillWithValues(String sourceFilePath){
+    public void fillWithValues(String sourceFilePath) {
         try (BufferedReader br = new BufferedReader(new FileReader(sourceFilePath))) {
             String line = "";
-            while((line = br.readLine()) != null){
+            while ((line = br.readLine()) != null) {
                 addWord(line);
             }
         } catch (FileNotFoundException e) {
@@ -78,7 +79,7 @@ public class DAO {
                 //logger.debug("There are " + countRecord + " words saved in database");
             }
 
-            int randomRecordNumber = (int)(Math.random()* countRecord + 1);
+            int randomRecordNumber = (int) (Math.random() * countRecord + 1);
             //logger.debug("random result number: " + randomRecordNumber);
             rs = st.executeQuery(sqlSelectWord + randomRecordNumber);
             while (rs.next()) {
@@ -87,7 +88,7 @@ public class DAO {
             //logger.debug("random result: " + result);
         } catch (SQLException e) {
             e.printStackTrace();
-        }finally{
+        } finally {
             try {
                 rs.close();
             } catch (SQLException e) {
@@ -97,6 +98,7 @@ public class DAO {
         return result;
     }
 
+    @Override
     public void close() {
         try {
             st.close();
@@ -110,7 +112,7 @@ public class DAO {
         String sqlAdd = "INSERT INTO " + tableName + " (" + fieldName + ") VALUES(?);";
         PreparedStatement statement = null;
         try {
-            statement = conn.prepareStatement (sqlAdd );
+            statement = conn.prepareStatement(sqlAdd);
             statement.setString(1, word);
             statement.executeUpdate();
         } catch (SQLException e) {
@@ -118,6 +120,4 @@ public class DAO {
             e.printStackTrace();
         }
     }
-
-
 }

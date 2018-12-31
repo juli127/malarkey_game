@@ -4,8 +4,8 @@ import com.ua.kramarenko104.dao.DAO;
 
 public class Why implements WordResource {
 
-    DAO dao;
-    String sourceFilePath;
+    private DAO dao;
+    private String sourceFilePath;
 
     public Why(String sourceFilePath) {
         dao = new DAO("reasons", "reason");
@@ -23,7 +23,6 @@ public class Why implements WordResource {
         return dao.getRandomWord();
     }
 
-    @Override
     public void close() {
         dao.close();
     }
