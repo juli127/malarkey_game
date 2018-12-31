@@ -7,13 +7,14 @@ import org.apache.log4j.Logger;
 
 public class DAO implements Closeable {
 
+    private static Logger logger = Logger.getLogger(DAO.class);
+    private static String mySQLdriver = "com.mysql.cj.jdbc.Driver";
+    private static String myDatabaseAccess = "jdbc:mysql://localhost/malarkey_game?" + "user=root&password=";
+
     private Connection conn;
     private Statement st;
     private String tableName;
     private String fieldName;
-    private static Logger logger = Logger.getLogger(DAO.class);
-    private static String mySQLdriver = "com.mysql.cj.jdbc.Driver";
-    private static String myDatabase = "jdbc:mysql://localhost/malarkey_game?";
 
     public DAO(String tableName, String fieldName) {
         this.tableName = tableName;
@@ -25,7 +26,7 @@ public class DAO implements Closeable {
             e.printStackTrace();
         }
         try {
-            conn = DriverManager.getConnection( myDatabase + "user=root&password=");
+            conn = DriverManager.getConnection(myDatabaseAccess);
             st = conn.createStatement();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -71,31 +72,40 @@ public class DAO implements Closeable {
         String sqlSelectWord = "SELECT " + fieldName + " FROM " + tableName + " WHERE id = ";
         String result = "";
         int countRecord = 0;
-        ResultSet rs = null;
-        try {
-            rs = st.executeQuery(sqlCountRecords);
+
+        // find out count of records in table
+        try (ResultSet rs = st.executeQuery(sqlCountRecords)) {
             while (rs.next()) {
                 countRecord = rs.getInt("count");
                 //logger.debug("There are " + countRecord + " words saved in database");
             }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        int randomRecordNumber = (int) (Math.random() * countRecord + 1);
+        //logger.debug("random result number: " + randomRecordNumber);
 
-            int randomRecordNumber = (int) (Math.random() * countRecord + 1);
-            //logger.debug("random result number: " + randomRecordNumber);
-            rs = st.executeQuery(sqlSelectWord + randomRecordNumber);
+        // get value from table by random position
+        try (ResultSet rs =st.executeQuery(sqlSelectWord + randomRecordNumber)){
             while (rs.next()) {
                 result = rs.getString(fieldName);
             }
             //logger.debug("random result: " + result);
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                rs.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
         }
         return result;
+    }
+
+    public void addWord(String word) {
+        String sqlAdd = "INSERT INTO " + tableName + " (" + fieldName + ") VALUES(?);";
+        try (PreparedStatement ps = conn.prepareStatement(sqlAdd)) {
+            ps.setString(1, word);
+            ps.executeUpdate();
+        } catch (SQLException e) {
+            //logger.debug("SQLException with addWord: " + word);
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -104,19 +114,6 @@ public class DAO implements Closeable {
             st.close();
             conn.close();
         } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
-
-    private void addWord(String word) {
-        String sqlAdd = "INSERT INTO " + tableName + " (" + fieldName + ") VALUES(?);";
-        PreparedStatement statement = null;
-        try {
-            statement = conn.prepareStatement(sqlAdd);
-            statement.setString(1, word);
-            statement.executeUpdate();
-        } catch (SQLException e) {
-            //logger.debug("SQLException with addWord: " + word);
             e.printStackTrace();
         }
     }
