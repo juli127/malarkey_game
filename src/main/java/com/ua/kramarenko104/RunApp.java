@@ -49,6 +49,7 @@ private static final String WHY_FILE_PATH = Paths.get(".", "/src/main/resources/
         WordResource why = new Why(WHY_FILE_PATH);
         why.fillWithValues();
         sentence.append(" ").append(why.getRandomWord());
+        why.close();
 
         logger.debug(sentence.toString());
 
