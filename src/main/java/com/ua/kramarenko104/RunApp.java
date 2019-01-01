@@ -13,5 +13,4 @@ public class RunApp {
         logger.debug(sentence);
     }
 
-
 }

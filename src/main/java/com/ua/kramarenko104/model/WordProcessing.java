@@ -1,10 +1,10 @@
 package com.ua.kramarenko104.model;
 
-public interface WordResource {
+public interface WordProcessing {
 
     void fillWithValues();
 
-    String getRandomWord();
+    String getWord();
 
     void addWord(String word);
 

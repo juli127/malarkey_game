@@ -5,7 +5,7 @@ import java.sql.*;
 
 import org.apache.log4j.Logger;
 
-public class DBWorker implements Closeable {
+public class DBWorker implements Closeable, SourceWorker {
 
     private static Logger logger = Logger.getLogger(DBWorker.class);
     private static String mySQLdriver = "com.mysql.cj.jdbc.Driver";
@@ -67,6 +67,7 @@ public class DBWorker implements Closeable {
         }
     }
 
+    @Override
     public String getRandomWord() {
         String sqlCountRecords = "SELECT COUNT(*) AS count FROM " + tableName + ";";
         String sqlSelectWord = "SELECT " + fieldName + " FROM " + tableName + " WHERE id = ";
@@ -97,6 +98,7 @@ public class DBWorker implements Closeable {
         return result;
     }
 
+    @Override
     public void addWord(String word) {
         String sqlAdd = "INSERT INTO " + tableName + " (" + fieldName + ") VALUES(?);";
         try (PreparedStatement ps = conn.prepareStatement(sqlAdd)) {

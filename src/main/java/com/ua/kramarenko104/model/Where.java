@@ -1,6 +1,7 @@
 package com.ua.kramarenko104.model;
 
 import com.ua.kramarenko104.dao.FileWorker;
+import org.apache.log4j.Logger;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -8,17 +9,32 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.BrokenBarrierException;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.CyclicBarrier;
 
-public class Where implements WordResource {
+public class Where implements WordProcessing, Runnable  {
 
+    private static Logger logger = Logger.getLogger(Where.class);
     private static List<String> listWhere;
     private String sourceFilePath;
     private FileWorker fileWorker;
+    private String resultWord;
+    private CountDownLatch cdl;
 
-    public Where(String sourceFilePath) {
+    public Where(String sourceFilePath, CountDownLatch cdl) {
         listWhere = new ArrayList<>();
         this.sourceFilePath = sourceFilePath;
         this.fileWorker = new FileWorker(sourceFilePath);
+        this.cdl = cdl;
+    }
+
+    @Override
+    public void run() {
+        int pos = (int)(Math.random() * listWhere.size());
+        resultWord = listWhere.get(pos);
+        logger.debug("[" + Thread.currentThread().getName() + "] " + resultWord);
+        cdl.countDown();
     }
 
     @Override
@@ -37,9 +53,8 @@ public class Where implements WordResource {
     }
 
     @Override
-    public String getRandomWord(){
-        int pos = (int)(Math.random() * listWhere.size());
-        return listWhere.get(pos);
+    public String getWord(){
+        return resultWord;
     }
 
     @Override

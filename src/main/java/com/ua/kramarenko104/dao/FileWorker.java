@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class FileWorker {
+public class FileWorker implements SourceWorker{
 
     private String sourceFilePath;
 
@@ -13,6 +13,7 @@ public class FileWorker {
         this.sourceFilePath = sourceFilePath;
     }
 
+    @Override
     public void addWord(String word) {
         if (!wordIsPresentInFile(word)) {
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(sourceFilePath, true))) {
@@ -24,23 +25,7 @@ public class FileWorker {
         }
     }
 
-    private boolean wordIsPresentInFile(String searchWord) {
-        try (BufferedReader br = new BufferedReader(new FileReader(sourceFilePath))) {
-            String line = null;
-            while((line = br.readLine()) != null){
-                if(line.trim().equalsIgnoreCase(searchWord)){
-                    //logger.debug("Already present: " + searchWord);
-                    return true;
-                }
-            }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return false;
-    }
-
+    @Override
     public String getRandomWord() {
         List<String> linesList = Collections.emptyList();
         try (BufferedReader br = new BufferedReader(new FileReader(sourceFilePath))) {
@@ -61,4 +46,22 @@ public class FileWorker {
             e.printStackTrace();
         }
     }
+
+    private boolean wordIsPresentInFile(String searchWord) {
+        try (BufferedReader br = new BufferedReader(new FileReader(sourceFilePath))) {
+            String line = null;
+            while((line = br.readLine()) != null){
+                if(line.trim().equalsIgnoreCase(searchWord)){
+                    //logger.debug("Already present: " + searchWord);
+                    return true;
+                }
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
 }
