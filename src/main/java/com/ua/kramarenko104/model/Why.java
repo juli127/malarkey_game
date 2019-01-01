@@ -4,7 +4,7 @@ import com.ua.kramarenko104.dao.DBWorker;
 import org.apache.log4j.Logger;
 import java.util.concurrent.CountDownLatch;
 
-public class Why implements WordProcessing, Runnable  {
+public class Why implements RunnableWord {
 
     private static Logger logger = Logger.getLogger(Why.class);
     private DBWorker DBWorker;
@@ -12,10 +12,9 @@ public class Why implements WordProcessing, Runnable  {
     private String resultWord;
     private CountDownLatch cdl;
 
-    public Why(String sourceFilePath, CountDownLatch cdl) {
+    public Why(String sourceFilePath) {
         DBWorker = new DBWorker("reasons", "reason");
         this.sourceFilePath = sourceFilePath;
-        this.cdl = cdl;
     }
 
     @Override
@@ -41,6 +40,12 @@ public class Why implements WordProcessing, Runnable  {
         DBWorker.addWord(word);
     }
 
+    @Override
+    public void setCountDownLatch(CountDownLatch cdl){
+        this.cdl = cdl;
+    }
+
+    @Override
     public void close() {
         DBWorker.close();
     }

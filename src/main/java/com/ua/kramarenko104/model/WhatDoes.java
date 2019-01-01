@@ -2,12 +2,9 @@ package com.ua.kramarenko104.model;
 
 import com.ua.kramarenko104.dao.DBWorker;
 import org.apache.log4j.Logger;
-
-import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.CyclicBarrier;
 
-public class WhatDoes implements WordProcessing, Runnable {
+public class WhatDoes implements RunnableWord {
 
     private static Logger logger = Logger.getLogger(WhatDoes.class);
     private DBWorker DBWorker;
@@ -15,10 +12,9 @@ public class WhatDoes implements WordProcessing, Runnable {
     private String resultWord;
     private CountDownLatch cdl;
 
-    public WhatDoes(String sourceFilePath, CountDownLatch cdl) {
+    public WhatDoes(String sourceFilePath) {
         DBWorker = new DBWorker("actions", "action");
         this.sourceFilePath = sourceFilePath;
-        this.cdl = cdl;
     }
 
     @Override
@@ -44,6 +40,12 @@ public class WhatDoes implements WordProcessing, Runnable {
         DBWorker.addWord(word);
     }
 
+    @Override
+    public void setCountDownLatch(CountDownLatch cdl){
+        this.cdl = cdl;
+    }
+
+    @Override
     public void close() {
         DBWorker.close();
     }

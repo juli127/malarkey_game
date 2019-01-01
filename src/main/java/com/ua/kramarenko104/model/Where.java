@@ -3,17 +3,12 @@ package com.ua.kramarenko104.model;
 import com.ua.kramarenko104.dao.FileWorker;
 import org.apache.log4j.Logger;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.CyclicBarrier;
 
-public class Where implements WordProcessing, Runnable  {
+public class Where implements RunnableWord {
 
     private static Logger logger = Logger.getLogger(Where.class);
     private static List<String> listWhere;
@@ -22,11 +17,10 @@ public class Where implements WordProcessing, Runnable  {
     private String resultWord;
     private CountDownLatch cdl;
 
-    public Where(String sourceFilePath, CountDownLatch cdl) {
+    public Where(String sourceFilePath) {
         listWhere = new ArrayList<>();
         this.sourceFilePath = sourceFilePath;
         this.fileWorker = new FileWorker(sourceFilePath);
-        this.cdl = cdl;
     }
 
     @Override
@@ -64,4 +58,11 @@ public class Where implements WordProcessing, Runnable  {
         fileWorker.addWord(word);
     }
 
+    @Override
+    public void setCountDownLatch(CountDownLatch cdl){
+        this.cdl = cdl;
+    }
+
+    public void close() {
+    }
 }

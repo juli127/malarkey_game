@@ -1,13 +1,11 @@
 package com.ua.kramarenko104.controller;
 
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.CyclicBarrier;
 
-import com.ua.kramarenko104.model.WhatDoes;
-import com.ua.kramarenko104.model.Where;
-import com.ua.kramarenko104.model.Who;
-import com.ua.kramarenko104.model.Why;
+import com.ua.kramarenko104.model.*;
 import org.apache.log4j.Logger;
 
 public class Game {
@@ -18,48 +16,53 @@ public class Game {
     private static final String WHY_FILE_PATH = Paths.get(".", "/src/main/resources/why.txt").toAbsolutePath().normalize().toString();
     private static Logger logger = Logger.getLogger(Game.class);
 
-    private Who who;
-    private WhatDoes whatDoes;
-    private Where where;
-    private Why why;
     private CountDownLatch cdl;
+    private List<RunnableWord> listWords;
 
     public Game() {
         initSources();
     }
 
     private void initSources() {
-        this.cdl = new CountDownLatch(4);
+
+        listWords = new ArrayList<>();
 
         // 'WHO'
         // first resource for sentence' words: local file 'nouns.txt's
-        who = new Who(WHO_FILE_PATH, cdl);
-        who.fillWithValues();
+        RunnableWord who = new Who(WHO_FILE_PATH);
+        listWords.add(who);
 
         // 'WHAT DOES'
         // next resource for sentence' words: local MySQL database, table 'whatDoes'
-        whatDoes = new WhatDoes(VERB_FILE_PATH, cdl);
-        whatDoes.fillWithValues();
+        RunnableWord whatDoes = new WhatDoes(VERB_FILE_PATH);
+        listWords.add(whatDoes);
 
         // 'WHERE'
         // next resource for sentence' words: local strings' list
-        where = new Where(WHERE_FILE_PATH, cdl);
-        where.fillWithValues();
+        RunnableWord where = new Where(WHERE_FILE_PATH);
+        listWords.add(where);
 
         // 'WHY'
         // next resource for sentence' words: local MySQL database, table 'reasons'
-        why = new Why(WHY_FILE_PATH, cdl);
-        why.fillWithValues();
+        RunnableWord why = new Why(WHY_FILE_PATH);
+        listWords.add(why);
+
+        for(RunnableWord w: listWords){
+            w.fillWithValues();
+        }
     }
 
     public String createSentence(){
-        StringBuilder sentence = new StringBuilder();
+
+        this.cdl = new CountDownLatch(4);
+        for(RunnableWord w: listWords){
+            w.setCountDownLatch(cdl);
+        }
 
         // threads for word's parallel creation
-        new Thread(who).start();
-        new Thread(whatDoes).start();
-        new Thread(where).start();
-        new Thread(why).start();
+        for(RunnableWord w: listWords){
+            new Thread(w).start();
+        }
 
         // wait until all thread finish their work
         try {
@@ -70,15 +73,18 @@ public class Game {
         logger.debug("all 4 thread finish their work:");
 
         // collect result of all threads
-        sentence.append(who.getWord()).append(" ")
-                .append(whatDoes.getWord()).append(" ")
-                .append(where.getWord()).append(" ")
-                .append(why.getWord()).append("\n")
-                .append("----------------------------------------------");
+        StringBuilder sentence = new StringBuilder();
+        for(RunnableWord w: listWords){
+            sentence.append(w.getWord()).append(" ");
+        }
+        sentence.append("\n----------------------------------------------");
 
-        // close DBWorker resources
-        whatDoes.close();
-        why.close();
         return sentence.toString();
+    }
+
+    public void exit(){
+        for(RunnableWord w: listWords){
+            w.close();
+        }
     }
 }
