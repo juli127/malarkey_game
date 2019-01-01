@@ -52,7 +52,7 @@ public class Game {
                 .append(actions.getRandomWord()).append(" ")
                 .append(where.getRandomWord()).append(" ")
                 .append(why.getRandomWord());
-        // close DAO resources
+        // close DBWorker resources
         actions.close();
         why.close();
         return sentence.toString();

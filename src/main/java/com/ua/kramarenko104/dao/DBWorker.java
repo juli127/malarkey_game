@@ -5,9 +5,9 @@ import java.sql.*;
 
 import org.apache.log4j.Logger;
 
-public class DAO implements Closeable {
+public class DBWorker implements Closeable {
 
-    private static Logger logger = Logger.getLogger(DAO.class);
+    private static Logger logger = Logger.getLogger(DBWorker.class);
     private static String mySQLdriver = "com.mysql.cj.jdbc.Driver";
     private static String myDatabaseAccess = "jdbc:mysql://localhost/malarkey_game?" + "user=root&password=";
 
@@ -16,7 +16,7 @@ public class DAO implements Closeable {
     private String tableName;
     private String fieldName;
 
-    public DAO(String tableName, String fieldName) {
+    public DBWorker(String tableName, String fieldName) {
         this.tableName = tableName;
         this.fieldName = fieldName;
 

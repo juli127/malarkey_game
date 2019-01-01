@@ -1,29 +1,34 @@
 package com.ua.kramarenko104.model;
 
-import com.ua.kramarenko104.dao.DAO;
+import com.ua.kramarenko104.dao.DBWorker;
 
 public class Why implements WordResource {
 
-    private DAO dao;
+    private DBWorker DBWorker;
     private String sourceFilePath;
 
     public Why(String sourceFilePath) {
-        dao = new DAO("reasons", "reason");
+        DBWorker = new DBWorker("reasons", "reason");
         this.sourceFilePath = sourceFilePath;
     }
 
     @Override
     public void fillWithValues() {
-        dao.init();
-        dao.fillWithValues(sourceFilePath);
+        DBWorker.init();
+        DBWorker.fillWithValues(sourceFilePath);
     }
 
     @Override
     public String getRandomWord() {
-        return dao.getRandomWord();
+        return DBWorker.getRandomWord();
+    }
+
+    @Override
+    public void addWord(String word) {
+        DBWorker.addWord(word);
     }
 
     public void close() {
-        dao.close();
+        DBWorker.close();
     }
 }

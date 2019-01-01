@@ -1,55 +1,26 @@
 package com.ua.kramarenko104.model;
 
+import com.ua.kramarenko104.dao.FileWorker;
 import org.apache.log4j.Logger;
-import java.io.*;
-import java.util.Collections;
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class Who implements WordResource {
 
-    private static String filePath;
     private static Logger logger = Logger.getLogger(Who.class);
+    private FileWorker fileWorker;
 
-    public Who(String filePath) {
-        this.filePath = filePath;
+    public Who(String sourceFilePath) {
+        this.fileWorker = new FileWorker(sourceFilePath);
         //clearFile();
-    }
-
-    // for testing
-    // + possibility to clear file from GUI
-    private void clearFile() {
-        try (FileWriter writer = new FileWriter(filePath, false)) {
-            writer.write("");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 
     @Override
     public String getRandomWord() {
-        List<String> linesList = Collections.emptyList();
-        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
-            linesList = br.lines().collect(Collectors.toList());
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        int pos = (int) (Math.random() * linesList.size());
-        return linesList.get(pos);
+        return fileWorker.getRandomWord();
     }
 
-    // possibility to add noun from GUI
-    public void addNoun(String noun) {
-        if (!wordIsPresentInFile(noun)) {
-            try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {
-                writer.write(noun + "\n");
-                writer.flush();
-            } catch (IOException e1) {
-                e1.printStackTrace();
-            }
-        }
+    @Override
+    public void addWord(String word) {
+        fileWorker.addWord(word);
     }
 
     // file already is filled out, do nothing here
@@ -57,21 +28,10 @@ public class Who implements WordResource {
     public void fillWithValues(){
     }
 
-    private boolean wordIsPresentInFile(String searchWord) {
-        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
-            String line = null;
-            while((line = br.readLine()) != null){
-                if(line.trim().equalsIgnoreCase(searchWord)){
-                    //logger.debug("Already present: " + searchWord);
-                    return true;
-                }
-            }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return false;
+    // for testing
+    // + possibility to clear file from GUI
+    private void clearFile() {
+        fileWorker.clearFile();
     }
 }
 

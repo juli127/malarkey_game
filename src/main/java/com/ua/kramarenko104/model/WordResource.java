@@ -6,4 +6,6 @@ public interface WordResource {
 
     String getRandomWord();
 
+    void addWord(String word);
+
 }
