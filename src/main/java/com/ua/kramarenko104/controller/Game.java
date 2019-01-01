@@ -16,8 +16,7 @@ public class Game {
     private static final String WHY_FILE_PATH = Paths.get(".", "/src/main/resources/why.txt").toAbsolutePath().normalize().toString();
     private static Logger logger = Logger.getLogger(Game.class);
 
-    private CountDownLatch cdl;
-    private List<RunnableWord> listWords;
+    private List<RunnableWord> listRunnableWords;
 
     public Game() {
         initSources();
@@ -25,42 +24,39 @@ public class Game {
 
     private void initSources() {
 
-        listWords = new ArrayList<>();
+        listRunnableWords = new ArrayList<>();
 
         // 'WHO'
         // first resource for sentence' words: local file 'nouns.txt's
         RunnableWord who = new Who(WHO_FILE_PATH);
-        listWords.add(who);
+        listRunnableWords.add(who);
 
         // 'WHAT DOES'
         // next resource for sentence' words: local MySQL database, table 'whatDoes'
         RunnableWord whatDoes = new WhatDoes(VERB_FILE_PATH);
-        listWords.add(whatDoes);
+        listRunnableWords.add(whatDoes);
 
         // 'WHERE'
         // next resource for sentence' words: local strings' list
         RunnableWord where = new Where(WHERE_FILE_PATH);
-        listWords.add(where);
+        listRunnableWords.add(where);
 
         // 'WHY'
         // next resource for sentence' words: local MySQL database, table 'reasons'
         RunnableWord why = new Why(WHY_FILE_PATH);
-        listWords.add(why);
+        listRunnableWords.add(why);
 
-        for(RunnableWord w: listWords){
+        for(RunnableWord w: listRunnableWords){
             w.fillWithValues();
         }
     }
 
     public String createSentence(){
 
-        this.cdl = new CountDownLatch(4);
-        for(RunnableWord w: listWords){
+        CountDownLatch cdl = new CountDownLatch(4);
+        // run threads for word's parallel creation
+        for(RunnableWord w: listRunnableWords){
             w.setCountDownLatch(cdl);
-        }
-
-        // threads for word's parallel creation
-        for(RunnableWord w: listWords){
             new Thread(w).start();
         }
 
@@ -74,16 +70,15 @@ public class Game {
 
         // collect result of all threads
         StringBuilder sentence = new StringBuilder();
-        for(RunnableWord w: listWords){
+        for(RunnableWord w: listRunnableWords){
             sentence.append(w.getWord()).append(" ");
         }
         sentence.append("\n----------------------------------------------");
-
         return sentence.toString();
     }
 
     public void exit(){
-        for(RunnableWord w: listWords){
+        for(RunnableWord w: listRunnableWords){
             w.close();
         }
     }

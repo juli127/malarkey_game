@@ -1,18 +1,31 @@
 package com.ua.kramarenko104.model;
 
-import java.io.Closeable;
 import java.util.concurrent.CountDownLatch;
 
-public interface RunnableWord extends Runnable {
+public abstract class RunnableWord implements Runnable{
 
-    void fillWithValues();
+    protected CountDownLatch cdl;
+    protected String resultWord;
+    protected String sourceFilePath;
 
-    String getWord();
+    public RunnableWord(String sourceFilePath) {
+        this.sourceFilePath = sourceFilePath;
+    }
 
-    void addWord(String word);
+    public abstract void addWord(String word);
 
-    void setCountDownLatch(CountDownLatch cdl);
+    public abstract void run();
 
-    void close();
+    public String getWord() {
+        return resultWord;
+    }
+
+    public void setCountDownLatch(CountDownLatch cdl){
+        this.cdl = cdl;
+    }
+
+    public void close(){}
+
+    public void fillWithValues(){}
 
 }

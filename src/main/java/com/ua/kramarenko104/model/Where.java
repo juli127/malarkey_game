@@ -6,20 +6,16 @@ import org.apache.log4j.Logger;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.CountDownLatch;
 
-public class Where implements RunnableWord {
+public class Where extends RunnableWord implements Runnable {
 
     private static Logger logger = Logger.getLogger(Where.class);
     private static List<String> listWhere;
-    private String sourceFilePath;
     private FileWorker fileWorker;
-    private String resultWord;
-    private CountDownLatch cdl;
 
     public Where(String sourceFilePath) {
+        super(sourceFilePath);
         listWhere = new ArrayList<>();
-        this.sourceFilePath = sourceFilePath;
         this.fileWorker = new FileWorker(sourceFilePath);
     }
 
@@ -47,22 +43,9 @@ public class Where implements RunnableWord {
     }
 
     @Override
-    public String getWord(){
-        return resultWord;
-    }
-
-    @Override
     // add word from GUI to source file and local list
     public void addWord(String word) {
         listWhere.add(word);
         fileWorker.addWord(word);
-    }
-
-    @Override
-    public void setCountDownLatch(CountDownLatch cdl){
-        this.cdl = cdl;
-    }
-
-    public void close() {
     }
 }
