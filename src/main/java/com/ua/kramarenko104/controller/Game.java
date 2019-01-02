@@ -70,9 +70,9 @@ public class Game {
             e.printStackTrace();
         }
         pool.shutdown();
-        logger.debug("all 4 thread finish their work:");
+        logger.debug("all 4 threads finish their work:");
 
-        // collect result of all threads
+        // collect result from all threads
         StringBuilder sentence = new StringBuilder();
         for(RunnableWord word: wordsList){
             sentence.append(word.getWord()).append(" ");
