@@ -48,24 +48,24 @@ public class Game {
         RunnableWord why = new Why(WHY_FILE_PATH);
         wordsList.add(why);
 
-        for(RunnableWord w: wordsList){
-            w.fillWithValues();
+        for(RunnableWord word: wordsList){
+            word.fillWithValues();
         }
     }
 
     public String createSentence(){
 
-        CountDownLatch cdl = new CountDownLatch(4);
+        CountDownLatch startLatch = new CountDownLatch(4);
         ExecutorService pool = Executors.newCachedThreadPool();
         // run threads for word's parallel creation
-        for(RunnableWord w: wordsList){
-            w.setCountDownLatch(cdl);
-            pool.execute(w);
+        for(RunnableWord word: wordsList){
+            word.setCountDownLatch(startLatch);
+            pool.execute(word);
         }
 
         // wait until all thread finish their work
         try {
-            cdl.await();
+            startLatch.await();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -74,8 +74,8 @@ public class Game {
 
         // collect result of all threads
         StringBuilder sentence = new StringBuilder();
-        for(RunnableWord w: wordsList){
-            sentence.append(w.getWord()).append(" ");
+        for(RunnableWord word: wordsList){
+            sentence.append(word.getWord()).append(" ");
         }
         sentence.append("\n----------------------------------------------");
 
@@ -83,8 +83,8 @@ public class Game {
     }
 
     public void exit(){
-        for(RunnableWord w: wordsList){
-            w.close();
+        for(RunnableWord word: wordsList){
+            word.close();
         }
     }
 }
