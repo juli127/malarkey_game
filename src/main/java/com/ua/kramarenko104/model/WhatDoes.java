@@ -2,13 +2,14 @@ package com.ua.kramarenko104.model;
 
 import com.ua.kramarenko104.dao.DBWorker;
 import org.apache.log4j.Logger;
+import java.nio.file.Path;
 
 public class WhatDoes extends RunnableWord implements Runnable {
 
     private static Logger logger = Logger.getLogger(WhatDoes.class);
     private DBWorker DBWorker;
 
-    public WhatDoes(String sourceFilePath) {
+    public WhatDoes(Path sourceFilePath) {
         super(sourceFilePath);
         DBWorker = new DBWorker("actions", "action");
     }

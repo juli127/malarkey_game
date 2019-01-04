@@ -2,8 +2,9 @@ package com.ua.kramarenko104.model;
 
 import com.ua.kramarenko104.dao.FileWorker;
 import org.apache.log4j.Logger;
-
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +14,7 @@ public class Where extends RunnableWord implements Runnable {
     private static List<String> listWhere;
     private FileWorker fileWorker;
 
-    public Where(String sourceFilePath) {
+    public Where(Path sourceFilePath) {
         super(sourceFilePath);
         listWhere = new ArrayList<>();
         this.fileWorker = new FileWorker(sourceFilePath);
@@ -29,14 +30,15 @@ public class Where extends RunnableWord implements Runnable {
 
     @Override
     public void fillWithValues(){
+
         listWhere.clear();
-        try (BufferedReader br = new BufferedReader(new FileReader(sourceFilePath))) {
-            String line = "";
-            while((line = br.readLine()) != null){
-                listWhere.add(line);
+        try {
+            List<String> linesList = Files.readAllLines(sourceFilePath);
+            for(String word : linesList) {
+                if (word != null) {
+                    listWhere.add(word);
+                }
             }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -2,13 +2,14 @@ package com.ua.kramarenko104.model;
 
 import com.ua.kramarenko104.dao.DBWorker;
 import org.apache.log4j.Logger;
+import java.nio.file.Path;
 
 public class Why extends RunnableWord implements Runnable {
 
     private static Logger logger = Logger.getLogger(Why.class);
     private DBWorker DBWorker;
 
-    public Why(String sourceFilePath) {
+    public Why(Path sourceFilePath) {
         super(sourceFilePath);
         DBWorker = new DBWorker("reasons", "reason");
         this.sourceFilePath = sourceFilePath;

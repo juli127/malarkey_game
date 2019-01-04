@@ -1,26 +1,28 @@
 package com.ua.kramarenko104.dao;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import static java.nio.file.StandardOpenOption.*;
 import java.util.Collections;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class FileWorker implements SourceWorker{
 
-    private String sourceFilePath;
+    private Path sourceFilePath;
 
-    public FileWorker(String sourceFilePath) {
+    public FileWorker(Path sourceFilePath) {
         this.sourceFilePath = sourceFilePath;
     }
 
     @Override
     public void addWord(String word) {
         if (!wordIsPresentInFile(word)) {
-            try (BufferedWriter writer = new BufferedWriter(new FileWriter(sourceFilePath, true))) {
+            try (BufferedWriter writer = Files.newBufferedWriter(sourceFilePath, WRITE, APPEND)) {
                 writer.write(word + "\n");
                 writer.flush();
-            } catch (IOException e1) {
-                e1.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         }
     }
@@ -28,10 +30,8 @@ public class FileWorker implements SourceWorker{
     @Override
     public String getRandomWord() {
         List<String> linesList = Collections.emptyList();
-        try (BufferedReader br = new BufferedReader(new FileReader(sourceFilePath))) {
-            linesList = br.lines().collect(Collectors.toList());
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
+        try {
+            linesList = Files.readAllLines(sourceFilePath);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -40,7 +40,7 @@ public class FileWorker implements SourceWorker{
     }
 
     public void clearFile() {
-        try (FileWriter writer = new FileWriter(sourceFilePath, false)) {
+        try (BufferedWriter writer = Files.newBufferedWriter(sourceFilePath, WRITE)) {
             writer.write("");
         } catch (IOException e) {
             e.printStackTrace();
@@ -48,12 +48,14 @@ public class FileWorker implements SourceWorker{
     }
 
     private boolean wordIsPresentInFile(String searchWord) {
-        try (BufferedReader br = new BufferedReader(new FileReader(sourceFilePath))) {
-            String line = null;
-            while((line = br.readLine()) != null){
-                if(line.trim().equalsIgnoreCase(searchWord)){
-                    //logger.debug("Already present: " + searchWord);
-                    return true;
+        try {
+            List<String> linesList = Files.readAllLines(sourceFilePath);
+            for(String word : linesList){
+                if(word != null){
+                    if(word.trim().equalsIgnoreCase(searchWord)){
+                        //logger.debug("Already present: " + searchWord);
+                        return true;
+                    }
                 }
             }
         } catch (FileNotFoundException e) {

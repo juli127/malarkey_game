@@ -1,14 +1,15 @@
 package com.ua.kramarenko104.model;
 
+import java.nio.file.Path;
 import java.util.concurrent.CountDownLatch;
 
 public abstract class RunnableWord implements Runnable{
 
     protected CountDownLatch cdl;
     protected String resultWord;
-    protected String sourceFilePath;
+    protected Path sourceFilePath;
 
-    public RunnableWord(String sourceFilePath) {
+    public RunnableWord(Path sourceFilePath) {
         this.sourceFilePath = sourceFilePath;
     }
 

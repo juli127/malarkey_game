@@ -1,21 +1,21 @@
 package com.ua.kramarenko104.controller;
 
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
 import com.ua.kramarenko104.model.*;
 import org.apache.log4j.Logger;
 
 public class Game {
 
-    private static final String WHO_FILE_PATH = Paths.get(".", "/src/main/resources/nouns.txt").toAbsolutePath().normalize().toString();
-    private static final String VERB_FILE_PATH = Paths.get(".", "/src/main/resources/verbs.txt").toAbsolutePath().normalize().toString();
-    private static final String WHERE_FILE_PATH = Paths.get(".", "/src/main/resources/where.txt").toAbsolutePath().normalize().toString();
-    private static final String WHY_FILE_PATH = Paths.get(".", "/src/main/resources/why.txt").toAbsolutePath().normalize().toString();
+    private static final Path WHO_FILE_PATH = Paths.get(".", "/src/main/resources/nouns.txt").toAbsolutePath().normalize();
+    private static final Path VERB_FILE_PATH = Paths.get(".", "/src/main/resources/verbs.txt").toAbsolutePath().normalize();
+    private static final Path WHERE_FILE_PATH = Paths.get(".", "/src/main/resources/where.txt").toAbsolutePath().normalize();
+    private static final Path WHY_FILE_PATH = Paths.get(".", "/src/main/resources/why.txt").toAbsolutePath().normalize();
     private static Logger logger = Logger.getLogger(Game.class);
 
     private List<RunnableWord> wordsList;
@@ -63,7 +63,7 @@ public class Game {
             pool.execute(word);
         }
 
-        // wait until all thread finish their work
+        // wait until all threads finish their work
         try {
             startLatch.await();
         } catch (InterruptedException e) {
@@ -72,7 +72,7 @@ public class Game {
         pool.shutdown();
         logger.debug("all 4 threads finish their work:");
 
-        // collect result from all threads
+        // collect results from all threads
         StringBuilder sentence = new StringBuilder();
         for(RunnableWord word: wordsList){
             sentence.append(word.getWord()).append(" ");
