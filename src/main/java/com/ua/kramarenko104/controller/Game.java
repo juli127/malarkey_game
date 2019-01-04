@@ -12,10 +12,10 @@ import org.apache.log4j.Logger;
 
 public class Game {
 
-    private static final Path WHO_FILE_PATH = Paths.get(".", "/src/main/resources/nouns.txt").toAbsolutePath().normalize();
-    private static final Path VERB_FILE_PATH = Paths.get(".", "/src/main/resources/verbs.txt").toAbsolutePath().normalize();
-    private static final Path WHERE_FILE_PATH = Paths.get(".", "/src/main/resources/where.txt").toAbsolutePath().normalize();
-    private static final Path WHY_FILE_PATH = Paths.get(".", "/src/main/resources/why.txt").toAbsolutePath().normalize();
+    private static final Path WHO_FILE_PATH = Paths.get(".", "/src/main/resources/nouns.txt").toAbsolutePath();
+    private static final Path VERB_FILE_PATH = Paths.get(".", "/src/main/resources/verbs.txt").toAbsolutePath();
+    private static final Path WHERE_FILE_PATH = Paths.get(".", "/src/main/resources/where.txt").toAbsolutePath();
+    private static final Path WHY_FILE_PATH = Paths.get(".", "/src/main/resources/why.txt").toAbsolutePath();
     private static Logger logger = Logger.getLogger(Game.class);
 
     private List<RunnableWord> wordsList;

@@ -1,11 +1,8 @@
 package com.ua.kramarenko104.dao;
 
 import java.io.*;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.sql.*;
-import java.util.List;
-
 import org.apache.log4j.Logger;
 
 public class DBWorker implements Closeable, SourceWorker {
@@ -58,14 +55,12 @@ public class DBWorker implements Closeable, SourceWorker {
     // read words from the source file
     // and fill the corresponding database table with them
     public void fillWithValues(Path sourceFilePath) {
-        try {
-            List<String> linesList = Files.readAllLines(sourceFilePath);
-            for(String word : linesList) {
-                if (word != null) {
+        try (BufferedReader br = new BufferedReader(new FileReader(sourceFilePath.toFile()))) {
+            String word = "";
+            while ((word = br.readLine()) != null) {
                     addWord(word);
                 }
-            }
-        } catch (FileNotFoundException e) {
+            } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();

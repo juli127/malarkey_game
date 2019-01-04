@@ -3,11 +3,12 @@ package com.ua.kramarenko104.dao;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import static java.nio.file.StandardOpenOption.*;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
+import static java.nio.file.StandardOpenOption.*;
 
-public class FileWorker implements SourceWorker{
+public class FileWorker implements SourceWorker {
 
     private Path sourceFilePath;
 
@@ -18,7 +19,7 @@ public class FileWorker implements SourceWorker{
     @Override
     public void addWord(String word) {
         if (!wordIsPresentInFile(word)) {
-            try (BufferedWriter writer = Files.newBufferedWriter(sourceFilePath, WRITE, APPEND)) {
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter(sourceFilePath.toFile(), true))) {
                 writer.write(word + "\n");
                 writer.flush();
             } catch (IOException e) {
@@ -30,8 +31,10 @@ public class FileWorker implements SourceWorker{
     @Override
     public String getRandomWord() {
         List<String> linesList = Collections.emptyList();
-        try {
-            linesList = Files.readAllLines(sourceFilePath);
+        try (BufferedReader br = new BufferedReader(new FileReader(sourceFilePath.toFile()))) {
+            linesList = br.lines().collect(Collectors.toList());
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -48,14 +51,12 @@ public class FileWorker implements SourceWorker{
     }
 
     private boolean wordIsPresentInFile(String searchWord) {
-        try {
-            List<String> linesList = Files.readAllLines(sourceFilePath);
-            for(String word : linesList){
-                if(word != null){
-                    if(word.trim().equalsIgnoreCase(searchWord)){
+        try (BufferedReader br = new BufferedReader(new FileReader(sourceFilePath.toFile()))) {
+            String word = "";
+            while((word = br.readLine()) != null){
+                if(word.trim().equalsIgnoreCase(searchWord)){
                         //logger.debug("Already present: " + searchWord);
                         return true;
-                    }
                 }
             }
         } catch (FileNotFoundException e) {

@@ -3,7 +3,6 @@ package com.ua.kramarenko104.model;
 import com.ua.kramarenko104.dao.FileWorker;
 import org.apache.log4j.Logger;
 import java.io.*;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,22 +21,19 @@ public class Where extends RunnableWord implements Runnable {
 
     @Override
     public void run() {
-        int pos = (int)(Math.random() * listWhere.size());
+        int pos = (int) (Math.random() * listWhere.size());
         resultWord = listWhere.get(pos);
         logger.debug("[" + Thread.currentThread().getName() + "] " + resultWord);
         cdl.countDown();
     }
 
     @Override
-    public void fillWithValues(){
-
+    public void fillWithValues() {
         listWhere.clear();
-        try {
-            List<String> linesList = Files.readAllLines(sourceFilePath);
-            for(String word : linesList) {
-                if (word != null) {
-                    listWhere.add(word);
-                }
+        try (BufferedReader br = new BufferedReader(new FileReader(sourceFilePath.toFile()))) {
+            String word = "";
+            while ((word = br.readLine()) != null) {
+                listWhere.add(word);
             }
         } catch (IOException e) {
             e.printStackTrace();
