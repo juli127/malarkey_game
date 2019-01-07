@@ -6,6 +6,7 @@ import java.io.*;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class Where extends RunnableWord implements Runnable {
 
@@ -21,7 +22,7 @@ public class Where extends RunnableWord implements Runnable {
 
     @Override
     public void run() {
-        int pos = (int) (Math.random() * listWhere.size());
+        int pos = ThreadLocalRandom.current().nextInt(0, listWhere.size());
         resultWord = listWhere.get(pos);
         logger.debug("[" + Thread.currentThread().getName() + "] " + resultWord);
         cdl.countDown();

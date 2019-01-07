@@ -5,6 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Collections;
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Collectors;
 import static java.nio.file.StandardOpenOption.*;
 
@@ -38,7 +39,7 @@ public class FileWorker implements SourceWorker {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        int pos = (int) (Math.random() * linesList.size());
+        int pos = ThreadLocalRandom.current().nextInt(0, linesList.size());
         return linesList.get(pos);
     }
 
