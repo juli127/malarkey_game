@@ -1,7 +1,7 @@
 # malarkey_game  (IO/NIO, JDBC, multithreding)
 - It's words' game when players (4 threads actually) create sentence from diffrent sources (database, file, list) with random words. 
 
-- Result sentence is built with this schema: who? + what does? + where? + why?
+- Result sentences are built according to the rule: who? + what does? + where? + why?
 
 For example, 
 
