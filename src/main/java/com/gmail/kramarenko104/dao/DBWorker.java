@@ -1,4 +1,4 @@
-package com.ua.kramarenko104.dao;
+package com.gmail.kramarenko104.dao;
 
 import java.io.*;
 import java.nio.file.Path;
@@ -84,7 +84,7 @@ public class DBWorker implements Closeable, SourceWorker {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        int randomRecordNumber = ThreadLocalRandom.current().nextInt(0, countRecord + 1);
+        int randomRecordNumber = (int)(Math.random() * countRecord ) + 1;
         //logger.debug("random result number: " + randomRecordNumber);
 
         // get value from table by random position
@@ -92,7 +92,7 @@ public class DBWorker implements Closeable, SourceWorker {
             while (rs.next()) {
                 result = rs.getString(fieldName);
             }
-            //logger.debug("random result: " + result);
+            //logger.debug("random result for [" + randomRecordNumber + "]: " + result);
         } catch (SQLException e) {
             e.printStackTrace();
         }

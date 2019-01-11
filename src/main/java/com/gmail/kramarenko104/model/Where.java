@@ -1,6 +1,6 @@
-package com.ua.kramarenko104.model;
+package com.gmail.kramarenko104.model;
 
-import com.ua.kramarenko104.dao.FileWorker;
+import com.gmail.kramarenko104.dao.FileWorker;
 import org.apache.log4j.Logger;
 import java.io.*;
 import java.nio.file.Path;
@@ -22,7 +22,7 @@ public class Where extends RunnableWord implements Runnable {
 
     @Override
     public void run() {
-        int pos = ThreadLocalRandom.current().nextInt(0, listWhere.size());
+        int pos = (int)(Math.random() * listWhere.size());
         resultWord = listWhere.get(pos);
         logger.debug("[" + Thread.currentThread().getName() + "] " + resultWord);
         cdl.countDown();
@@ -42,9 +42,10 @@ public class Where extends RunnableWord implements Runnable {
     }
 
     @Override
-    // add word from GUI to source file and local list
+    // add the new word from GUI to source file and local list
     public void addWord(String word) {
+        super.addWord(word);
         listWhere.add(word);
-        fileWorker.addWord(word);
+        logger.debug("Phrase '" + word + "' was added\n" );
     }
 }

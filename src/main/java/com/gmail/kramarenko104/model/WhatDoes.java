@@ -1,18 +1,17 @@
-package com.ua.kramarenko104.model;
+package com.gmail.kramarenko104.model;
 
-import com.ua.kramarenko104.dao.DBWorker;
+import com.gmail.kramarenko104.dao.DBWorker;
 import org.apache.log4j.Logger;
 import java.nio.file.Path;
 
-public class Why extends RunnableWord implements Runnable {
+public class WhatDoes extends RunnableWord implements Runnable {
 
-    private static Logger logger = Logger.getLogger(Why.class);
+    private static Logger logger = Logger.getLogger(WhatDoes.class);
     private DBWorker DBWorker;
 
-    public Why(Path sourceFilePath) {
+    public WhatDoes(Path sourceFilePath) {
         super(sourceFilePath);
-        DBWorker = new DBWorker("reasons", "reason");
-        this.sourceFilePath = sourceFilePath;
+        DBWorker = new DBWorker("actions", "action");
     }
 
     @Override
@@ -29,8 +28,11 @@ public class Why extends RunnableWord implements Runnable {
     }
 
     @Override
+    // add the new word from GUI to source file and DB table
     public void addWord(String word) {
+        super.addWord(word);
         DBWorker.addWord(word);
+        logger.debug("Phrase '" + word + "' was added\n" );
     }
 
     @Override

@@ -1,4 +1,4 @@
-package com.ua.kramarenko104.dao;
+package com.gmail.kramarenko104.dao;
 
 public interface SourceWorker {
 

@@ -1,4 +1,4 @@
-package com.ua.kramarenko104.dao;
+package com.gmail.kramarenko104.dao;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -39,7 +39,7 @@ public class FileWorker implements SourceWorker {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        int pos = ThreadLocalRandom.current().nextInt(0, linesList.size());
+        int pos = (int)(Math.random() * linesList.size());
         return linesList.get(pos);
     }
 
