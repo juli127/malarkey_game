@@ -7,7 +7,7 @@ For example,
 
 'Сосед-дебошир Гоша/громко и фальшиво поет/под деревом по имени липа/потому что жизнь - борьба'
 
-'МарьИванна/слоняется без дела/на курсах кройки и шитья/потому что может себе это позволить'
+'Депутат Иван Петрович Видпочивайло/третирует соседей/в собственном пентхаузе/чтобы расслабиться'
 
 - Logs with result sentences are located here: logs/debug.log
 - Application screenshot with result sentences is located here: resources/App_screenshot.png
