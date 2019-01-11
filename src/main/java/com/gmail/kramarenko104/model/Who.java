@@ -3,7 +3,7 @@ package com.gmail.kramarenko104.model;
 import org.apache.log4j.Logger;
 import java.nio.file.Path;
 
-public class Who extends RunnableWord implements Runnable {
+public class Who extends RunnableWord {
 
     private static Logger logger = Logger.getLogger(Who.class);
 

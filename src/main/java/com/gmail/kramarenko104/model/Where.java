@@ -1,23 +1,19 @@
 package com.gmail.kramarenko104.model;
 
-import com.gmail.kramarenko104.dao.FileWorker;
 import org.apache.log4j.Logger;
 import java.io.*;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ThreadLocalRandom;
 
-public class Where extends RunnableWord implements Runnable {
+public class Where extends RunnableWord {
 
     private static Logger logger = Logger.getLogger(Where.class);
     private static List<String> listWhere;
-    private FileWorker fileWorker;
 
     public Where(Path sourceFilePath) {
         super(sourceFilePath);
         listWhere = new ArrayList<>();
-        this.fileWorker = new FileWorker(sourceFilePath);
     }
 
     @Override

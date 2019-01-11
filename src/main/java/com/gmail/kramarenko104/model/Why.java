@@ -4,10 +4,10 @@ import com.gmail.kramarenko104.dao.DBWorker;
 import org.apache.log4j.Logger;
 import java.nio.file.Path;
 
-public class Why extends RunnableWord implements Runnable {
+public class Why extends RunnableWord {
 
     private static Logger logger = Logger.getLogger(Why.class);
-    private com.gmail.kramarenko104.dao.DBWorker DBWorker;
+    private DBWorker DBWorker;
 
     public Why(Path sourceFilePath) {
         super(sourceFilePath);
