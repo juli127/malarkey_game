@@ -86,8 +86,7 @@ public class Game {
         for (RunnableWord word : wordsList) {
             sentence.append(word.getWord()).append(" ");
         }
-        logger.debug(sentence);
-        logger.debug("----------------------------------------------");
+        logger.debug(sentence + "\n----------------------------------------------");
 
         return sentence.toString();
     }
@@ -112,7 +111,7 @@ public class Game {
         for (RunnableWord word : wordsList) {
             word.close();
         }
-        logger.debug("Close all resources and exit");
+        logger.debug("Close all resources and exit \n----------------------------------------------");
         System.exit(0);
     }
 }
