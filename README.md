@@ -10,7 +10,7 @@ For example,
 'Депутат Иван Петрович Видпочивайло/третирует соседей/в собственном пентхаузе/чтобы расслабиться'
 
 - Logs with result sentences are located here: logs/debug.log
-- Application screenshot with result sentences: App_screenshot.png
+- Application screenshot with result sentences: App_Screenshot.png
 - New words can be added to source files from GUI and will be immediately picked up into game.
 
 - To run game you need:
