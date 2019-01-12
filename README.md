@@ -1,4 +1,4 @@
-# malarkey_game  (IO/NIO, JDBC, multithreding)
+# malarkey_game  (IO/NIO, JDBC, multithreding, JavaFX)
 - It's words' game when players (4 threads actually) create sentence from diffrent sources (database, file, list) with random words. 
 
 - Result sentences are built according to the rule: who? + what does? + where? + why?
