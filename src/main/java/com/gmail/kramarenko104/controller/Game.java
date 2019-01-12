@@ -12,54 +12,58 @@ import org.apache.log4j.Logger;
 
 public class Game {
 
-    private static final Path WHO_FILE_PATH = Paths.get(".", "/src/main/resources/nouns.txt").toAbsolutePath();
-    private static final Path VERB_FILE_PATH = Paths.get(".", "/src/main/resources/verbs.txt").toAbsolutePath();
-    private static final Path WHERE_FILE_PATH = Paths.get(".", "/src/main/resources/where.txt").toAbsolutePath();
-    private static final Path WHY_FILE_PATH = Paths.get(".", "/src/main/resources/why.txt").toAbsolutePath();
+    private static final Path WHO_FILE_PATH = Paths.get(".", "/src/main/resources/nouns.txt").toAbsolutePath().normalize();
+    private static final Path VERB_FILE_PATH = Paths.get(".", "/src/main/resources/verbs.txt").toAbsolutePath().normalize();
+    private static final Path WHERE_FILE_PATH = Paths.get(".", "/src/main/resources/where.txt").toAbsolutePath().normalize();
+    private static final Path WHY_FILE_PATH = Paths.get(".", "/src/main/resources/why.txt").toAbsolutePath().normalize();
+    private static final String MUSIC_FILE = "/lp-lost_on_you_original.mp3";
+    private static String splitLine = "\n----------------------------------------------";
     private static Logger logger = Logger.getLogger(Game.class);
     private RunnableWord who;
     private RunnableWord whatDoes;
     private RunnableWord where;
     private RunnableWord why;
+    private Musician musician;
     private List<RunnableWord> wordsList;
 
     public Game() {
-        initSources();
-    }
+        logger.debug("Start application, run initSources...");
 
-    private void initSources() {
-        logger.debug("Start application, run initSources:");
+        musician = new Musician(true, MUSIC_FILE);
+        new Thread(musician).start();
+
         wordsList = new ArrayList<>();
 
         // 'WHO'
         // first resource for sentence' words: local file 'nouns.txt'
         who = new Who(WHO_FILE_PATH);
+        Path resourceFxml = Paths.get(".").toAbsolutePath().normalize();
+
         wordsList.add(who);
-        logger.debug("'who' source was created from file 'nouns.txt'");
+        //logger.debug("'who' source was created from file 'nouns.txt'");
 
         // 'WHAT DOES'
         // next resource for sentence' words: local MySQL database, table 'whatDoes'
         whatDoes = new WhatDoes(VERB_FILE_PATH);
         wordsList.add(whatDoes);
-        logger.debug("'what' source was created from MySQL database, table 'actions'");
+        //logger.debug("'what' source was created from MySQL database, table 'actions'");
 
         // 'WHERE'
         // next resource for sentence' words: local strings' list
         where = new Where(WHERE_FILE_PATH);
         wordsList.add(where);
-        logger.debug("'where' source was created from local strings' list");
+        //logger.debug("'where' source was created from local strings' list");
 
         // 'WHY'
         // next resource for sentence' words: local MySQL database, table 'reasons'
         why = new Why(WHY_FILE_PATH);
         wordsList.add(why);
-        logger.debug("'why' source was created from MySQL database, table 'reasons'");
+        //logger.debug("'why' source was created from MySQL database, table 'reasons'");
 
         for (RunnableWord word : wordsList) {
             word.fillWithValues();
         }
-        logger.debug("All sources were filled out with data from /resources text files");
-        logger.debug("----------------------------------------------------------------");
+        logger.debug("All sources were filled out with data from /resources text files" + splitLine);
     }
 
     public String createSentence() {
@@ -86,9 +90,13 @@ public class Game {
         for (RunnableWord word : wordsList) {
             sentence.append(word.getWord()).append(" ");
         }
-        logger.debug(sentence + "\n----------------------------------------------");
+        logger.debug(sentence + splitLine);
 
         return sentence.toString();
+    }
+
+    public void playMusic(boolean toPlay) {
+        musician.setPlay(toPlay);
     }
 
     public RunnableWord getWho() {
@@ -111,7 +119,7 @@ public class Game {
         for (RunnableWord word : wordsList) {
             word.close();
         }
-        logger.debug("Close all resources and exit \n----------------------------------------------");
+        logger.debug("Close all resources and exit " + splitLine);
         System.exit(0);
     }
 }

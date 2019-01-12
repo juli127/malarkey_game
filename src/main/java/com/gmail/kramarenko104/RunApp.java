@@ -3,198 +3,129 @@ package com.gmail.kramarenko104;
 import com.gmail.kramarenko104.controller.Game;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.geometry.Insets;
-import javafx.scene.Group;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
-import javafx.scene.shape.Line;
-import javafx.scene.text.Font;
-import javafx.scene.text.Text;
+import javafx.scene.layout.AnchorPane;
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
+
 import java.io.IOException;
 
 public class RunApp extends Application {
 
-    final private int WIDTH = 1050;
-    final private int HEIGHT = 470;
-    final private String descrText = "Add phrase describing";
-    final private Font btnFont = new Font("Verdana Bold", 12 );
-    final private Font titleFont = new Font("Verdana Bold", 16 );
-    final private Font infoFont = new Font("Verdana Bold", 14 );
+    private Stage primaryStage;
+    private AnchorPane gamePane;
+    private TextArea sentencesText;
+    private TextField whoText;
+    private TextField whatDoesText;
+    private TextField whereText;
+    private TextField whyText;
+    private Game game;
 
     public static void main(String[] args) {
         launch(args);
     }
 
     @Override
-    public void start(Stage primaryStage) throws IOException {
+    public void start(Stage primaryStage) {
+        this.primaryStage = primaryStage;
+        this.primaryStage.setTitle("Malarkey game v1.1      by Kramarenko Iuliia");
+        game = new Game();
 
-        Game game = new Game();
-
-        primaryStage.setTitle("Malarkey game v1.1      by Kramarenko Iuliia");
-        Group group = new Group();
-        Scene scene = new Scene(group, WIDTH, HEIGHT);
-
-        VBox strings = new VBox();
-        HBox createSentenceBox = new HBox();
-        HBox addWhoBox = new HBox();
-        HBox addWhatDoesBox = new HBox();
-        HBox addWhereBox = new HBox();
-        HBox addWhyBox = new HBox();
-
-        group.getChildren().add(strings);
-        strings.setPadding(new Insets(10, 10, 10, 10));
-        strings.setSpacing(10);
-
-        //--------- CREATE NEW SENTENCE -----------------------
-        Text title = new Text("Let's write great masterpiece!");
-        title.setFont(titleFont);
-        strings.getChildren().add(title);
-        strings.getChildren().add(createSentenceBox);
-        createSentenceBox.setSpacing(10);
-
-        TextArea sentencesText = new TextArea();
-        sentencesText.setMinWidth(900);
-        sentencesText.setMinHeight(200);
-        Button btnWrite = new Button();
-        btnWrite.setFont(btnFont);
-        btnWrite.setText("Start writing!");
-        btnWrite.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                String newSentence = game.createSentence();
-                sentencesText.appendText(newSentence + "\n");
-                sentencesText.setFocusTraversable(true);
-            }
-        });
-        createSentenceBox.getChildren().add(btnWrite);
-        createSentenceBox.getChildren().add(sentencesText);
-
-        Line splitLine = new Line();
-        splitLine.setStartX(30);
-        splitLine.setEndX(1010);
-        strings.getChildren().add(splitLine);
-
-        Text infoText = new Text("You can add some new words to the dictionary:");
-        infoText.setFont(infoFont);
-        strings.getChildren().add(infoText);
-
-        //--------- WHO --------------------
-        strings.getChildren().add(addWhoBox);
-        addWhoBox.setSpacing(10);
-        addWhoBox.getChildren().add(new Text(descrText));
-        addWhoBox.getChildren().add(new Text("           'WHO':"));
-        TextField whoText = new TextField();
-        whoText.setEditable(true);
-        whoText.setMinWidth(500);
-        addWhoBox.getChildren().add(whoText);
-        whoText.clear();
-
-        Button btnWho = new Button();
-        btnWho.setText("Add WHO");
-        btnWho.setFont(btnFont);
-        btnWho.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                game.getWho().addWord(whoText.getText());
-                whoText.clear();
-            }
-        });
-        addWhoBox.getChildren().add(btnWho);
-
-        //--------- WHAT DOES --------------------
-        strings.getChildren().add(addWhatDoesBox);
-        addWhatDoesBox.setSpacing(10);
-        addWhatDoesBox.getChildren().add(new Text(descrText));
-        addWhatDoesBox.getChildren().add(new Text("'WHAT DOES':"));
-        TextField whatDoesText = new TextField();
-        whatDoesText.setEditable(true);
-        whatDoesText.setMinWidth(500);
-        addWhatDoesBox.getChildren().add(whatDoesText);
-        whatDoesText.clear();
-
-        Button btnWhatDoes = new Button();
-        btnWhatDoes.setText("Add WHAT DOES");
-        btnWhatDoes.setFont(btnFont);
-        btnWhatDoes.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                game.getWhatDoes().addWord(whatDoesText.getText());
-                whatDoesText.clear();
-            }
-        });
-        addWhatDoesBox.getChildren().add(btnWhatDoes);
-
-        //--------- WHERE --------------------
-        strings.getChildren().add(addWhereBox);
-        addWhereBox.setSpacing(10);
-        addWhereBox.getChildren().add(new Text(descrText));
-        addWhereBox.getChildren().add(new Text("        'WHERE':"));
-        TextField whereText = new TextField();
-        whereText.setEditable(true);
-        whereText.setMinWidth(500);
-        addWhereBox.getChildren().add(whereText);
-        whereText.clear();
-
-        Button btnWhere = new Button();
-        btnWhere.setText("Add WHERE");
-        btnWhere.setFont(btnFont);
-        btnWhere.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                game.getWhere().addWord(whereText.getText());
-                whereText.clear();
-            }
-        });
-        addWhereBox.getChildren().add(btnWhere);
-
-        //--------- WHY --------------------
-        strings.getChildren().add(addWhyBox);
-        addWhyBox.setSpacing(10);
-        addWhyBox.getChildren().add(new Text(descrText));
-        addWhyBox.getChildren().add(new Text("           'WHY':"));
-        TextField whyText = new TextField();
-        whyText.setEditable(true);
-        whyText.setMinWidth(500);
-        addWhyBox.getChildren().add(whyText);
-        whyText.clear();
-
-        Button btnWhy = new Button();
-        btnWhy.setText("Add WHY");
-        btnWhy.setFont(btnFont);
-        btnWhy.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                game.getWhy().addWord(whyText.getText());
-                whyText.clear();
-            }
-        });
-        addWhyBox.getChildren().add(btnWhy);
-
-        //--------- EXIT btn --------------------
-        Line splitLine2 = new Line();
-        splitLine2.setStartX(30);
-        splitLine2.setEndX(1010);
-        strings.getChildren().add(splitLine2);
-
-        Button btnExit = new Button();
-        btnExit.setText("EXIT");
-        btnExit.setFont(btnFont);
-        btnExit.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                game.exit();
-            }
-        });
-        strings.getChildren().add(btnExit);
-
-        /////////////////////////////////////////////
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(RunApp.class.getResource("/GameField.fxml"));
+            gamePane = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Scene scene = new Scene(gamePane);
         primaryStage.setScene(scene);
         primaryStage.show();
+        showGameFields();
+    }
+
+    private void showGameFields() {
+        // text fields
+        for (Node node : gamePane.getChildren()) {
+            if (node.getId() != null) {
+                switch (node.getId()) {
+                    case "sentencesText":
+                        sentencesText = (TextArea) node;
+                        break;
+                    case "whoText":
+                        whoText = (TextField) node;
+                        break;
+                    case "whatDoesText":
+                        whatDoesText = (TextField) node;
+                        break;
+                    case "whereText":
+                        whereText = (TextField) node;
+                        break;
+                    case "whyText":
+                        whyText = (TextField) node;
+                        break;
+                }
+            }
+        }
+
+        // buttons' actions
+        for (Node node : gamePane.getChildren()) {
+            if (node.getStyleClass().toString().equals("button") && node.getId() != null) {
+                String btnName = node.getId();
+
+                if (btnName.equals("btnStartGame") || btnName.equals("btnWho") ||
+                        btnName.equals("btnWhatDoes") || btnName.equals("btnWhere") ||
+                        btnName.equals("btnWhy") || btnName.equals("btnExit") ||
+                        btnName.equals("btnMusic")) {
+                    ((Button) node).setOnAction(new EventHandler<ActionEvent>() {
+                        @Override
+                        public void handle(ActionEvent event) {
+                            switch (node.getId()) {
+                                case "btnStartGame":
+                                    String newSentence = game.createSentence();
+                                    sentencesText.appendText(newSentence + "\n");
+                                    break;
+                                case "btnWho":
+                                    game.getWho().addWord(whoText.getText());
+                                    whoText.clear();
+                                    break;
+                                case "btnWhatDoes":
+                                    game.getWhatDoes().addWord(whatDoesText.getText());
+                                    whatDoesText.clear();
+                                    break;
+                                case "btnWhere":
+                                    game.getWhere().addWord(whereText.getText());
+                                    whereText.clear();
+                                    break;
+                                case "btnWhy":
+                                    game.getWhy().addWord(whyText.getText());
+                                    whyText.clear();
+                                    break;
+                                case "btnExit":
+                                    game.exit();
+                                    break;
+                                case "btnMusic":
+                                    Button btnMus = (Button) node;
+                                    String btnMusText = btnMus.getText();
+                                    if (btnMusText.equals("Play music")) {
+                                        game.playMusic(true);
+                                        btnMus.setText("Stop music");
+                                    } else if (btnMusText.equals("Stop music")) {
+                                        game.playMusic(false);
+                                        btnMus.setText("Play music");
+                                    }
+                                    break;
+                            }
+                        }
+                    });
+                }
+            }
+        }
     }
 }
+

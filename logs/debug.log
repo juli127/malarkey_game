@@ -1999,3 +1999,1795 @@
 2019-01-11 18:59:41 - Шумный сосед сверху нервно курит на горе Фудзияма чтобы похудеть 
 ----------------------------------------------
 2019-01-11 18:59:44 - Close all resources and exit
+2019-01-11 19:06:35 - Start application, run initSources:
+2019-01-11 19:06:35 - 'who' source was created from file 'nouns.txt'
+2019-01-11 19:06:36 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 19:06:36 - 'where' source was created from local strings' list
+2019-01-11 19:06:36 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 19:06:36 - All sources were filled out with data from /resources text files
+2019-01-11 19:06:36 - ----------------------------------------------------------------
+2019-01-11 20:07:18 - Start application, run initSources:
+2019-01-11 20:07:18 - 'who' source was created from file 'nouns.txt'
+2019-01-11 20:07:19 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 20:07:19 - 'where' source was created from local strings' list
+2019-01-11 20:07:19 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 20:07:19 - All sources were filled out with data from /resources text files
+2019-01-11 20:07:19 - ----------------------------------------------------------------
+2019-01-11 20:23:16 - Start application, run initSources:
+2019-01-11 20:23:16 - 'who' source was created from file 'nouns.txt'
+2019-01-11 20:23:16 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 20:23:16 - 'where' source was created from local strings' list
+2019-01-11 20:23:16 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 20:23:16 - All sources were filled out with data from /resources text files
+2019-01-11 20:23:16 - ----------------------------------------------------------------
+2019-01-11 20:23:20 - [pool-2-thread-2] 
+2019-01-11 20:23:20 - [pool-2-thread-4] 
+2019-01-11 20:24:28 - Start application, run initSources:
+2019-01-11 20:24:28 - 'who' source was created from file 'nouns.txt'
+2019-01-11 20:24:29 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 20:24:29 - 'where' source was created from local strings' list
+2019-01-11 20:24:29 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 20:24:29 - All sources were filled out with data from /resources text files
+2019-01-11 20:24:29 - ----------------------------------------------------------------
+2019-01-11 20:36:25 - Start application, run initSources:
+2019-01-11 20:36:25 - 'who' source was created from file 'nouns.txt'
+2019-01-11 20:36:26 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 20:36:26 - 'where' source was created from local strings' list
+2019-01-11 20:36:26 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 20:36:27 - All sources were filled out with data from /resources text files
+2019-01-11 20:36:27 - ----------------------------------------------------------------
+2019-01-11 20:37:14 - Start application, run initSources:
+2019-01-11 20:37:14 - 'who' source was created from file 'nouns.txt'
+2019-01-11 20:37:15 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 20:37:15 - 'where' source was created from local strings' list
+2019-01-11 20:37:15 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 20:37:16 - All sources were filled out with data from /resources text files
+2019-01-11 20:37:16 - ----------------------------------------------------------------
+2019-01-11 20:37:47 - Start application, run initSources:
+2019-01-11 20:37:47 - 'who' source was created from file 'nouns.txt'
+2019-01-11 20:37:47 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 20:37:47 - 'where' source was created from local strings' list
+2019-01-11 20:37:47 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 20:37:47 - All sources were filled out with data from /resources text files
+2019-01-11 20:37:47 - ----------------------------------------------------------------
+2019-01-11 20:40:32 - Start application, run initSources:
+2019-01-11 20:40:32 - 'who' source was created from file 'nouns.txt'
+2019-01-11 20:40:33 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 20:40:33 - 'where' source was created from local strings' list
+2019-01-11 20:40:33 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 20:40:33 - All sources were filled out with data from /resources text files
+2019-01-11 20:40:33 - ----------------------------------------------------------------
+2019-01-11 20:40:47 - [pool-2-thread-3] у синего-синего моря
+2019-01-11 20:40:47 - [pool-2-thread-1] Дворник с метлой
+2019-01-11 20:40:48 - [pool-2-thread-4] потому что очень кушать хочется
+2019-01-11 20:40:48 - [pool-2-thread-2] громко и фальшиво поет
+2019-01-11 20:40:48 - all 4 threads finish their work:
+2019-01-11 20:40:48 - Дворник с метлой громко и фальшиво поет у синего-синего моря потому что очень кушать хочется 
+----------------------------------------------
+2019-01-11 20:40:49 - [pool-3-thread-1] Кандидат в президенты от партии любителей пива
+2019-01-11 20:40:49 - [pool-3-thread-3] в раю
+2019-01-11 20:40:49 - [pool-3-thread-2] сажает картошку и помидоры
+2019-01-11 20:40:49 - [pool-3-thread-4] потому что очень кушать хочется
+2019-01-11 20:40:49 - all 4 threads finish their work:
+2019-01-11 20:40:49 - Кандидат в президенты от партии любителей пива сажает картошку и помидоры в раю потому что очень кушать хочется 
+----------------------------------------------
+2019-01-11 20:57:05 - Start application, run initSources:
+2019-01-11 20:57:05 - 'who' source was created from file 'nouns.txt'
+2019-01-11 20:57:05 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 20:57:05 - 'where' source was created from local strings' list
+2019-01-11 20:57:05 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 20:57:06 - All sources were filled out with data from /resources text files
+2019-01-11 20:57:06 - ----------------------------------------------------------------
+2019-01-11 20:57:09 - [pool-2-thread-3] на космической станции 'Апполон'
+2019-01-11 20:57:09 - [pool-2-thread-4] чтобы получить удовольствие
+2019-01-11 20:57:09 - [pool-2-thread-2] громко и фальшиво поет
+2019-01-11 20:57:09 - [pool-2-thread-1] Депутат Иван Петрович Видпочивайло
+2019-01-11 20:57:09 - all 4 threads finish their work:
+2019-01-11 20:57:09 - Депутат Иван Петрович Видпочивайло громко и фальшиво поет на космической станции 'Апполон' чтобы получить удовольствие 
+----------------------------------------------
+2019-01-11 20:57:10 - [pool-3-thread-3] с бутылкой водки в кармане пальто
+2019-01-11 20:57:10 - [pool-3-thread-1] Кандидат в президенты от партии любителей пива
+2019-01-11 20:57:10 - [pool-3-thread-4] на радость маме
+2019-01-11 20:57:10 - [pool-3-thread-2] пьет вино
+2019-01-11 20:57:10 - all 4 threads finish their work:
+2019-01-11 20:57:10 - Кандидат в президенты от партии любителей пива пьет вино с бутылкой водки в кармане пальто на радость маме 
+----------------------------------------------
+2019-01-11 20:57:10 - [pool-4-thread-3] в собственном пентхаузе
+2019-01-11 20:57:10 - [pool-4-thread-1] Дворник с метлой
+2019-01-11 20:57:10 - [pool-4-thread-2] говорит загадками
+2019-01-11 20:57:10 - [pool-4-thread-4] потому что жизнь - борьба
+2019-01-11 20:57:10 - all 4 threads finish their work:
+2019-01-11 20:57:10 - Дворник с метлой говорит загадками в собственном пентхаузе потому что жизнь - борьба 
+----------------------------------------------
+2019-01-11 20:57:11 - [pool-5-thread-3] в собственном пентхаузе
+2019-01-11 20:57:11 - [pool-5-thread-1] Кот Эдуард
+2019-01-11 20:57:11 - [pool-5-thread-2] стучит молотком по батарее
+2019-01-11 20:57:11 - [pool-5-thread-4] потому что всю жизнь хотелось это сделать
+2019-01-11 20:57:11 - all 4 threads finish their work:
+2019-01-11 20:57:11 - Кот Эдуард стучит молотком по батарее в собственном пентхаузе потому что всю жизнь хотелось это сделать 
+----------------------------------------------
+2019-01-11 20:58:00 - Phrase 'Английский ученый' was added
+
+2019-01-11 20:58:03 - Close all resources and exit 
+----------------------------------------------
+2019-01-11 21:00:36 - Start application, run initSources:
+2019-01-11 21:00:36 - 'who' source was created from file 'nouns.txt'
+2019-01-11 21:00:37 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 21:00:37 - 'where' source was created from local strings' list
+2019-01-11 21:00:37 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 21:00:37 - All sources were filled out with data from /resources text files
+2019-01-11 21:00:37 - ----------------------------------------------------------------
+2019-01-11 21:07:02 - Start application, run initSources:
+2019-01-11 21:07:02 - 'who' source was created from file 'nouns.txt'
+2019-01-11 21:07:02 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 21:07:02 - 'where' source was created from local strings' list
+2019-01-11 21:07:03 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 21:07:03 - All sources were filled out with data from /resources text files
+2019-01-11 21:07:03 - ----------------------------------------------------------------
+2019-01-11 21:24:12 - Start application, run initSources:
+2019-01-11 21:24:12 - 'who' source was created from file 'nouns.txt'
+2019-01-11 21:24:12 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 21:24:12 - 'where' source was created from local strings' list
+2019-01-11 21:24:12 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 21:24:14 - All sources were filled out with data from /resources text files
+2019-01-11 21:24:14 - ----------------------------------------------------------------
+2019-01-11 21:24:17 - [pool-2-thread-3] на космической станции 'Апполон'
+2019-01-11 21:24:17 - [pool-2-thread-1] Кот Эдуард
+2019-01-11 21:24:17 - [pool-2-thread-4] чтоб продвинуться по карьерной лестнице
+2019-01-11 21:24:17 - [pool-2-thread-2] жарит отбивные
+2019-01-11 21:24:17 - all 4 threads finish their work:
+2019-01-11 21:24:17 - Кот Эдуард жарит отбивные на космической станции 'Апполон' чтоб продвинуться по карьерной лестнице 
+----------------------------------------------
+2019-01-11 21:42:35 - Start application, run initSources:
+2019-01-11 21:42:35 - 'who' source was created from file 'nouns.txt'
+2019-01-11 21:42:35 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 21:42:35 - 'where' source was created from local strings' list
+2019-01-11 21:42:35 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 21:42:35 - All sources were filled out with data from /resources text files
+2019-01-11 21:42:35 - ----------------------------------------------------------------
+2019-01-11 21:44:20 - Start application, run initSources:
+2019-01-11 21:44:20 - 'who' source was created from file 'nouns.txt'
+2019-01-11 21:44:21 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 21:44:21 - 'where' source was created from local strings' list
+2019-01-11 21:44:21 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 21:44:21 - All sources were filled out with data from /resources text files
+2019-01-11 21:44:21 - ----------------------------------------------------------------
+2019-01-11 23:40:11 - Start application, run initSources:
+2019-01-11 23:40:11 - 'who' source was created from file 'nouns.txt'
+2019-01-11 23:40:12 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 23:40:12 - 'where' source was created from local strings' list
+2019-01-11 23:40:12 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 23:40:12 - All sources were filled out with data from /resources text files
+2019-01-11 23:40:12 - ----------------------------------------------------------------
+2019-01-11 23:43:32 - Start application, run initSources:
+2019-01-11 23:43:32 - 'who' source was created from file 'nouns.txt'
+2019-01-11 23:43:33 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 23:43:33 - 'where' source was created from local strings' list
+2019-01-11 23:43:33 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 23:43:33 - All sources were filled out with data from /resources text files
+2019-01-11 23:43:33 - ----------------------------------------------------------------
+2019-01-11 23:45:48 - Start application, run initSources:
+2019-01-11 23:45:48 - 'who' source was created from file 'nouns.txt'
+2019-01-11 23:45:48 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 23:45:48 - 'where' source was created from local strings' list
+2019-01-11 23:45:48 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 23:45:49 - All sources were filled out with data from /resources text files
+2019-01-11 23:45:49 - ----------------------------------------------------------------
+2019-01-11 23:46:07 - Start application, run initSources:
+2019-01-11 23:46:07 - 'who' source was created from file 'nouns.txt'
+2019-01-11 23:46:08 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 23:46:08 - 'where' source was created from local strings' list
+2019-01-11 23:46:08 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 23:46:08 - All sources were filled out with data from /resources text files
+2019-01-11 23:46:08 - ----------------------------------------------------------------
+2019-01-11 23:47:43 - Start application, run initSources:
+2019-01-11 23:47:43 - 'who' source was created from file 'nouns.txt'
+2019-01-11 23:47:43 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 23:47:43 - 'where' source was created from local strings' list
+2019-01-11 23:47:43 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 23:47:44 - All sources were filled out with data from /resources text files
+2019-01-11 23:47:44 - ----------------------------------------------------------------
+2019-01-11 23:48:47 - Start application, run initSources:
+2019-01-11 23:48:47 - 'who' source was created from file 'nouns.txt'
+2019-01-11 23:48:47 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 23:48:47 - 'where' source was created from local strings' list
+2019-01-11 23:48:47 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 23:48:48 - All sources were filled out with data from /resources text files
+2019-01-11 23:48:48 - ----------------------------------------------------------------
+2019-01-11 23:49:21 - Start application, run initSources:
+2019-01-11 23:49:21 - 'who' source was created from file 'nouns.txt'
+2019-01-11 23:49:21 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 23:49:21 - 'where' source was created from local strings' list
+2019-01-11 23:49:21 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 23:49:22 - All sources were filled out with data from /resources text files
+2019-01-11 23:49:22 - ----------------------------------------------------------------
+2019-01-11 23:49:42 - Start application, run initSources:
+2019-01-11 23:49:42 - 'who' source was created from file 'nouns.txt'
+2019-01-11 23:49:43 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 23:49:43 - 'where' source was created from local strings' list
+2019-01-11 23:49:43 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 23:49:43 - All sources were filled out with data from /resources text files
+2019-01-11 23:49:43 - ----------------------------------------------------------------
+2019-01-11 23:49:59 - Start application, run initSources:
+2019-01-11 23:49:59 - 'who' source was created from file 'nouns.txt'
+2019-01-11 23:50:00 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 23:50:00 - 'where' source was created from local strings' list
+2019-01-11 23:50:00 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 23:50:00 - All sources were filled out with data from /resources text files
+2019-01-11 23:50:00 - ----------------------------------------------------------------
+2019-01-11 23:50:41 - Start application, run initSources:
+2019-01-11 23:50:41 - 'who' source was created from file 'nouns.txt'
+2019-01-11 23:50:41 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 23:50:41 - 'where' source was created from local strings' list
+2019-01-11 23:50:41 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 23:50:41 - All sources were filled out with data from /resources text files
+2019-01-11 23:50:41 - ----------------------------------------------------------------
+2019-01-11 23:51:23 - Start application, run initSources:
+2019-01-11 23:51:23 - 'who' source was created from file 'nouns.txt'
+2019-01-11 23:51:23 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 23:51:23 - 'where' source was created from local strings' list
+2019-01-11 23:51:23 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 23:51:23 - All sources were filled out with data from /resources text files
+2019-01-11 23:51:23 - ----------------------------------------------------------------
+2019-01-11 23:52:01 - Start application, run initSources:
+2019-01-11 23:52:01 - 'who' source was created from file 'nouns.txt'
+2019-01-11 23:52:01 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 23:52:01 - 'where' source was created from local strings' list
+2019-01-11 23:52:01 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 23:52:02 - All sources were filled out with data from /resources text files
+2019-01-11 23:52:02 - ----------------------------------------------------------------
+2019-01-11 23:52:44 - Start application, run initSources:
+2019-01-11 23:52:44 - 'who' source was created from file 'nouns.txt'
+2019-01-11 23:52:45 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 23:52:45 - 'where' source was created from local strings' list
+2019-01-11 23:52:45 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 23:52:45 - All sources were filled out with data from /resources text files
+2019-01-11 23:52:45 - ----------------------------------------------------------------
+2019-01-11 23:53:53 - Start application, run initSources:
+2019-01-11 23:53:53 - 'who' source was created from file 'nouns.txt'
+2019-01-11 23:53:54 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 23:53:54 - 'where' source was created from local strings' list
+2019-01-11 23:53:54 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 23:53:54 - All sources were filled out with data from /resources text files
+2019-01-11 23:53:54 - ----------------------------------------------------------------
+2019-01-11 23:57:37 - Start application, run initSources:
+2019-01-11 23:57:37 - 'who' source was created from file 'nouns.txt'
+2019-01-11 23:57:39 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 23:57:39 - 'where' source was created from local strings' list
+2019-01-11 23:57:39 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 23:57:40 - All sources were filled out with data from /resources text files
+2019-01-11 23:57:40 - ----------------------------------------------------------------
+2019-01-11 23:58:50 - Start application, run initSources:
+2019-01-11 23:58:50 - 'who' source was created from file 'nouns.txt'
+2019-01-11 23:58:50 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 23:58:50 - 'where' source was created from local strings' list
+2019-01-11 23:58:50 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 23:58:51 - All sources were filled out with data from /resources text files
+2019-01-11 23:58:51 - ----------------------------------------------------------------
+2019-01-11 23:59:40 - Start application, run initSources:
+2019-01-11 23:59:40 - 'who' source was created from file 'nouns.txt'
+2019-01-11 23:59:41 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 23:59:41 - 'where' source was created from local strings' list
+2019-01-11 23:59:41 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 23:59:41 - All sources were filled out with data from /resources text files
+2019-01-11 23:59:41 - ----------------------------------------------------------------
+2019-01-11 23:59:56 - Start application, run initSources:
+2019-01-11 23:59:56 - 'who' source was created from file 'nouns.txt'
+2019-01-11 23:59:56 - 'what' source was created from MySQL database, table 'actions'
+2019-01-11 23:59:56 - 'where' source was created from local strings' list
+2019-01-11 23:59:56 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-11 23:59:56 - All sources were filled out with data from /resources text files
+2019-01-11 23:59:56 - ----------------------------------------------------------------
+2019-01-12 00:03:47 - Start application, run initSources:
+2019-01-12 00:03:47 - 'who' source was created from file 'nouns.txt'
+2019-01-12 00:03:48 - 'what' source was created from MySQL database, table 'actions'
+2019-01-12 00:03:48 - 'where' source was created from local strings' list
+2019-01-12 00:03:48 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-12 00:03:48 - All sources were filled out with data from /resources text files
+2019-01-12 00:03:48 - ----------------------------------------------------------------
+2019-01-12 00:06:27 - Start application, run initSources:
+2019-01-12 00:06:27 - 'who' source was created from file 'nouns.txt'
+2019-01-12 00:06:27 - 'what' source was created from MySQL database, table 'actions'
+2019-01-12 00:06:27 - 'where' source was created from local strings' list
+2019-01-12 00:06:27 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-12 00:06:28 - All sources were filled out with data from /resources text files
+2019-01-12 00:06:28 - ----------------------------------------------------------------
+2019-01-12 00:08:03 - Start application, run initSources:
+2019-01-12 00:08:03 - 'who' source was created from file 'nouns.txt'
+2019-01-12 00:08:03 - 'what' source was created from MySQL database, table 'actions'
+2019-01-12 00:08:03 - 'where' source was created from local strings' list
+2019-01-12 00:08:03 - 'why' source was created from MySQL database, table 'reasons'
+2019-01-12 00:08:04 - All sources were filled out with data from /resources text files
+2019-01-12 00:08:04 - ----------------------------------------------------------------
+2019-01-12 16:02:22 - Close all resources and exit 
+----------------------------------------------
+2019-01-12 16:06:28 - pool.execute for word:com.gmail.kramarenko104.model.Who
+2019-01-12 16:06:28 - pool.execute for word:com.gmail.kramarenko104.model.WhatDoes
+2019-01-12 16:06:28 - pool.execute for word:com.gmail.kramarenko104.model.Where
+2019-01-12 16:06:28 - pool.execute for word:com.gmail.kramarenko104.model.Why
+2019-01-12 16:06:28 - [pool-2-thread-3] в фойе театра оперетты
+2019-01-12 16:06:28 - [pool-2-thread-1] Диктор телевидения Евгений
+2019-01-12 16:06:28 - [pool-2-thread-4] потому что хочется
+2019-01-12 16:06:28 - [pool-2-thread-2] поднимает штангу
+2019-01-12 16:06:28 - all 4 threads finish their work:
+2019-01-12 16:06:28 - Диктор телевидения Евгений поднимает штангу в фойе театра оперетты потому что хочется 
+----------------------------------------------
+2019-01-12 16:06:31 - Close all resources and exit 
+----------------------------------------------
+2019-01-12 16:18:29 - [pool-2-thread-3] в приемной своего шефа
+2019-01-12 16:18:29 - [pool-2-thread-2] сочиняет стихи
+2019-01-12 16:18:29 - [pool-2-thread-4] потому что может себе это позволить
+2019-01-12 16:18:29 - [pool-2-thread-1] Кот Эдуард
+2019-01-12 16:18:29 - all 4 threads finish their work:
+2019-01-12 16:18:29 - Кот Эдуард сочиняет стихи в приемной своего шефа потому что может себе это позволить 
+----------------------------------------------
+2019-01-12 16:18:31 - [pool-3-thread-3] в фойе театра оперетты
+2019-01-12 16:18:31 - [pool-3-thread-1] Депутат Иван Петрович Видпочивайло
+2019-01-12 16:18:31 - [pool-3-thread-4] потому что об этом мечталось
+2019-01-12 16:18:31 - [pool-3-thread-2] красит губы в алый цвет
+2019-01-12 16:18:31 - all 4 threads finish their work:
+2019-01-12 16:18:31 - Депутат Иван Петрович Видпочивайло красит губы в алый цвет в фойе театра оперетты потому что об этом мечталось 
+----------------------------------------------
+2019-01-12 16:18:33 - [pool-4-thread-3] в раю
+2019-01-12 16:18:33 - [pool-4-thread-1] Любитель пива Николай
+2019-01-12 16:18:33 - [pool-4-thread-2] сдает бутылки
+2019-01-12 16:18:33 - [pool-4-thread-4] для того, чтоб быть счастливым
+2019-01-12 16:18:33 - all 4 threads finish their work:
+2019-01-12 16:18:33 - Любитель пива Николай сдает бутылки в раю для того, чтоб быть счастливым 
+----------------------------------------------
+2019-01-12 16:18:38 - [pool-5-thread-1] Дама в норковом манто
+2019-01-12 16:18:38 - [pool-5-thread-3] на даче у мангала
+2019-01-12 16:18:38 - [pool-5-thread-4] потому что всю жизнь хотелось это сделать
+2019-01-12 16:18:38 - [pool-5-thread-2] сдает бутылки
+2019-01-12 16:18:38 - all 4 threads finish their work:
+2019-01-12 16:18:38 - Дама в норковом манто сдает бутылки на даче у мангала потому что всю жизнь хотелось это сделать 
+----------------------------------------------
+2019-01-12 16:18:44 - [pool-6-thread-3] на заседании больших боссов
+2019-01-12 16:18:44 - [pool-6-thread-1] Дворник с метлой
+2019-01-12 16:18:44 - [pool-6-thread-2] грызет семечки
+2019-01-12 16:18:44 - [pool-6-thread-4] потому что об этом мечталось
+2019-01-12 16:18:44 - all 4 threads finish their work:
+2019-01-12 16:18:44 - Дворник с метлой грызет семечки на заседании больших боссов потому что об этом мечталось 
+----------------------------------------------
+2019-01-12 16:18:47 - [pool-7-thread-3] на заседании больших боссов
+2019-01-12 16:18:47 - [pool-7-thread-1] Кот Эдуард
+2019-01-12 16:18:47 - [pool-7-thread-2] готовит ужин на 100 человек
+2019-01-12 16:18:47 - [pool-7-thread-4] на радость маме
+2019-01-12 16:18:47 - all 4 threads finish their work:
+2019-01-12 16:18:47 - Кот Эдуард готовит ужин на 100 человек на заседании больших боссов на радость маме 
+----------------------------------------------
+2019-01-12 16:18:49 - [pool-8-thread-3] у синего-синего моря
+2019-01-12 16:18:49 - [pool-8-thread-1] Девочка Маша
+2019-01-12 16:18:49 - [pool-8-thread-2] сажает картошку и помидоры
+2019-01-12 16:18:49 - [pool-8-thread-4] потому что так надо
+2019-01-12 16:18:49 - all 4 threads finish their work:
+2019-01-12 16:18:49 - Девочка Маша сажает картошку и помидоры у синего-синего моря потому что так надо 
+----------------------------------------------
+2019-01-12 16:18:52 - [pool-9-thread-3] на Бродвее
+2019-01-12 16:18:52 - [pool-9-thread-1] Кот Эдуард
+2019-01-12 16:18:52 - [pool-9-thread-2] задумчиво сидит
+2019-01-12 16:18:52 - [pool-9-thread-4] чтобы победить свою лень
+2019-01-12 16:18:52 - all 4 threads finish their work:
+2019-01-12 16:18:52 - Кот Эдуард задумчиво сидит на Бродвее чтобы победить свою лень 
+----------------------------------------------
+2019-01-12 16:18:54 - [pool-10-thread-3] на территории завода Укрпромбытсбытгазвнас
+2019-01-12 16:18:54 - [pool-10-thread-1] Дама в норковом манто
+2019-01-12 16:18:54 - [pool-10-thread-4] потому что может
+2019-01-12 16:18:54 - [pool-10-thread-2] стрижется налысо
+2019-01-12 16:18:54 - all 4 threads finish their work:
+2019-01-12 16:18:54 - Дама в норковом манто стрижется налысо на территории завода Укрпромбытсбытгазвнас потому что может 
+----------------------------------------------
+2019-01-12 16:18:59 - [pool-11-thread-3] на космической станции 'Апполон'
+2019-01-12 16:18:59 - [pool-11-thread-1] Диктор телевидения Евгений
+2019-01-12 16:18:59 - [pool-11-thread-2] готовит ужин на 100 человек
+2019-01-12 16:18:59 - [pool-11-thread-4] чтобы взглянуть на ситуацию с другой стороны
+2019-01-12 16:18:59 - all 4 threads finish their work:
+2019-01-12 16:18:59 - Диктор телевидения Евгений готовит ужин на 100 человек на космической станции 'Апполон' чтобы взглянуть на ситуацию с другой стороны 
+----------------------------------------------
+2019-01-12 16:34:05 - [pool-2-thread-3] с бутылкой водки в кармане пальто
+2019-01-12 16:34:05 - [pool-2-thread-1] Дама в норковом манто
+2019-01-12 16:34:05 - [pool-2-thread-2] крадется в темноте
+2019-01-12 16:34:05 - [pool-2-thread-4] чтобы достигнуть дзена
+2019-01-12 16:34:05 - all 4 threads finish their work:
+2019-01-12 16:34:05 - Дама в норковом манто крадется в темноте с бутылкой водки в кармане пальто чтобы достигнуть дзена 
+----------------------------------------------
+2019-01-12 16:34:07 - [pool-3-thread-3] на пляже Рио-де-Жанейро
+2019-01-12 16:34:07 - [pool-3-thread-1] Дама в норковом манто
+2019-01-12 16:34:07 - [pool-3-thread-4] потому что это жизнь
+2019-01-12 16:34:07 - [pool-3-thread-2] говорит загадками
+2019-01-12 16:34:07 - all 4 threads finish their work:
+2019-01-12 16:34:07 - Дама в норковом манто говорит загадками на пляже Рио-де-Жанейро потому что это жизнь 
+----------------------------------------------
+2019-01-12 16:34:10 - [pool-4-thread-3] в пункте приема стеклотары
+2019-01-12 16:34:10 - [pool-4-thread-1] Загадочный мужчина в кепке
+2019-01-12 16:34:10 - [pool-4-thread-4] чтобы победить свою лень
+2019-01-12 16:34:10 - [pool-4-thread-2] медитирует
+2019-01-12 16:34:10 - all 4 threads finish their work:
+2019-01-12 16:34:10 - Загадочный мужчина в кепке медитирует в пункте приема стеклотары чтобы победить свою лень 
+----------------------------------------------
+2019-01-12 16:59:28 - Close all resources and exit 
+----------------------------------------------
+2019-01-12 16:59:40 - [pool-2-thread-3] на заседании больших боссов
+2019-01-12 16:59:40 - [pool-2-thread-4] потому что очень кушать хочется
+2019-01-12 16:59:40 - [pool-2-thread-2] поднимает штангу
+2019-01-12 16:59:40 - [pool-2-thread-1] Девочка Маша
+2019-01-12 16:59:40 - all 4 threads finish their work:
+2019-01-12 16:59:40 - Девочка Маша поднимает штангу на заседании больших боссов потому что очень кушать хочется 
+----------------------------------------------
+2019-01-12 16:59:41 - [pool-3-thread-3] на даче у мангала
+2019-01-12 16:59:41 - [pool-3-thread-1] Флегматичный олень Бенедикт
+2019-01-12 16:59:41 - [pool-3-thread-4] , а почему бы и нет
+2019-01-12 16:59:41 - [pool-3-thread-2] таинственно смотрит вдаль
+2019-01-12 16:59:41 - all 4 threads finish their work:
+2019-01-12 16:59:41 - Флегматичный олень Бенедикт таинственно смотрит вдаль на даче у мангала , а почему бы и нет 
+----------------------------------------------
+2019-01-12 16:59:43 - [pool-4-thread-3] на даче у мангала
+2019-01-12 16:59:43 - [pool-4-thread-1] Директор зоопарка
+2019-01-12 16:59:43 - [pool-4-thread-2] торгует апельсинами
+2019-01-12 16:59:43 - [pool-4-thread-4] чтобы расслабиться
+2019-01-12 16:59:43 - all 4 threads finish their work:
+2019-01-12 16:59:43 - Директор зоопарка торгует апельсинами на даче у мангала чтобы расслабиться 
+----------------------------------------------
+2019-01-12 16:59:45 - Close all resources and exit 
+----------------------------------------------
+2019-01-12 17:10:21 - Close all resources and exit 
+----------------------------------------------
+2019-01-12 17:33:14 - Phrase '' was added
+
+2019-01-12 17:38:32 - Phrase '' was added
+
+2019-01-12 17:40:14 - Phrase '' was added
+
+2019-01-12 17:40:17 - Close all resources and exit 
+----------------------------------------------
+2019-01-12 18:03:05 - [pool-2-thread-3] у барной стойки в ресторане 'Арагви'
+2019-01-12 18:03:05 - [pool-2-thread-1] Сантехник Василий
+2019-01-12 18:03:05 - [pool-2-thread-2] третирует соседей
+2019-01-12 18:03:05 - [pool-2-thread-4] назло соседу
+2019-01-12 18:03:05 - all 4 threads finish their work:
+2019-01-12 18:03:05 - Сантехник Василий третирует соседей у барной стойки в ресторане 'Арагви' назло соседу 
+----------------------------------------------
+2019-01-12 18:04:12 - Close all resources and exit 
+----------------------------------------------
+2019-01-12 18:05:12 - Start application, run initSources...
+2019-01-12 18:05:13 - All sources were filled out with data from /resources text files
+2019-01-12 18:05:13 - ----------------------------------------------------------------
+2019-01-12 18:05:28 - Close all resources and exit 
+----------------------------------------------
+2019-01-12 18:07:04 - Start application, run initSources...
+2019-01-12 18:07:05 - All sources were filled out with data from /resources text files
+2019-01-12 18:07:05 - ----------------------------------------------------------------
+2019-01-12 18:09:41 - Start application, run initSources...
+2019-01-12 18:09:42 - All sources were filled out with data from /resources text files
+2019-01-12 18:09:42 - ----------------------------------------------------------------
+2019-01-12 18:13:31 - Start application, run initSources...
+2019-01-12 18:13:32 - All sources were filled out with data from /resources text files
+2019-01-12 18:13:32 - ----------------------------------------------------------------
+2019-01-12 18:13:40 - Phrase '' was added
+
+2019-01-12 18:15:24 - Start application, run initSources...
+2019-01-12 18:15:25 - All sources were filled out with data from /resources text files
+2019-01-12 18:15:25 - ----------------------------------------------------------------
+2019-01-12 18:15:42 - Phrase '' was added
+
+2019-01-12 18:15:45 - Close all resources and exit 
+----------------------------------------------
+2019-01-12 18:18:30 - Start application, run initSources...
+2019-01-12 18:18:31 - All sources were filled out with data from /resources text files
+2019-01-12 18:18:31 - ----------------------------------------------------------------
+2019-01-12 18:21:38 - Start application, run initSources...
+2019-01-12 18:21:39 - All sources were filled out with data from /resources text files
+2019-01-12 18:21:39 - ----------------------------------------------------------------
+2019-01-12 18:21:47 - Phrase '' was added
+
+2019-01-12 18:21:50 - Close all resources and exit 
+----------------------------------------------
+2019-01-12 18:26:09 - Start application, run initSources...
+2019-01-12 18:26:09 - All sources were filled out with data from /resources text files
+2019-01-12 18:26:09 - ----------------------------------------------------------------
+2019-01-12 18:26:57 - Start application, run initSources...
+2019-01-12 18:26:58 - All sources were filled out with data from /resources text files
+2019-01-12 18:26:58 - ----------------------------------------------------------------
+2019-01-12 18:27:23 - Phrase '' was added
+
+2019-01-12 18:27:26 - Close all resources and exit 
+----------------------------------------------
+2019-01-12 18:28:20 - Start application, run initSources...
+2019-01-12 18:28:20 - All sources were filled out with data from /resources text files
+2019-01-12 18:28:20 - ----------------------------------------------------------------
+2019-01-12 18:29:20 - Start application, run initSources...
+2019-01-12 18:29:21 - All sources were filled out with data from /resources text files
+2019-01-12 18:29:21 - ----------------------------------------------------------------
+2019-01-12 18:31:17 - Start application, run initSources...
+2019-01-12 18:31:17 - All sources were filled out with data from /resources text files
+2019-01-12 18:31:17 - ----------------------------------------------------------------
+2019-01-12 18:31:24 - Close all resources and exit 
+----------------------------------------------
+2019-01-12 18:31:46 - Start application, run initSources...
+2019-01-12 18:31:46 - All sources were filled out with data from /resources text files
+2019-01-12 18:31:46 - ----------------------------------------------------------------
+2019-01-12 18:31:51 - Phrase '' was added
+
+2019-01-12 18:31:53 - Close all resources and exit 
+----------------------------------------------
+2019-01-12 18:32:43 - Start application, run initSources...
+2019-01-12 18:32:43 - All sources were filled out with data from /resources text files
+2019-01-12 18:32:43 - ----------------------------------------------------------------
+2019-01-12 18:32:50 - Close all resources and exit 
+----------------------------------------------
+2019-01-12 18:33:41 - Start application, run initSources...
+2019-01-12 18:33:42 - All sources were filled out with data from /resources text files
+2019-01-12 18:33:42 - ----------------------------------------------------------------
+2019-01-12 18:34:28 - Close all resources and exit 
+----------------------------------------------
+2019-01-12 18:35:27 - Start application, run initSources...
+2019-01-12 18:35:29 - All sources were filled out with data from /resources text files
+2019-01-12 18:35:29 - ----------------------------------------------------------------
+2019-01-12 18:36:30 - Start application, run initSources...
+2019-01-12 18:36:30 - All sources were filled out with data from /resources text files
+2019-01-12 18:36:30 - ----------------------------------------------------------------
+2019-01-12 18:36:45 - Phrase 'whoText' was added
+
+2019-01-12 18:36:48 - Close all resources and exit 
+----------------------------------------------
+2019-01-12 18:38:38 - Start application, run initSources...
+2019-01-12 18:38:38 - All sources were filled out with data from /resources text files
+2019-01-12 18:38:38 - ----------------------------------------------------------------
+2019-01-12 18:38:46 - Phrase 'test' was added
+
+2019-01-12 18:38:53 - Phrase 'test' was added
+
+2019-01-12 18:39:01 - Phrase 'test' was added
+
+2019-01-12 18:39:08 - Phrase 'test' was added
+
+2019-01-12 18:40:39 - [pool-2-thread-3] на горе Фудзияма
+2019-01-12 18:40:39 - [pool-2-thread-1] Директор зоопарка
+2019-01-12 18:40:39 - [pool-2-thread-4] чтобы расслабиться
+2019-01-12 18:40:39 - [pool-2-thread-2] заряжает двухстволку
+2019-01-12 18:40:39 - all 4 threads finish their work:
+2019-01-12 18:40:39 - Директор зоопарка заряжает двухстволку на горе Фудзияма чтобы расслабиться 
+----------------------------------------------
+2019-01-12 18:40:41 - [pool-3-thread-3] на диване с рюмкой чая
+2019-01-12 18:40:41 - [pool-3-thread-1] Дама в норковом манто
+2019-01-12 18:40:41 - [pool-3-thread-2] третирует соседей
+2019-01-12 18:40:41 - [pool-3-thread-4] потому что хочется
+2019-01-12 18:40:41 - all 4 threads finish their work:
+2019-01-12 18:40:41 - Дама в норковом манто третирует соседей на диване с рюмкой чая потому что хочется 
+----------------------------------------------
+2019-01-12 18:40:42 - [pool-4-thread-3] в раю
+2019-01-12 18:40:42 - [pool-4-thread-1] Загадочный мужчина в кепке
+2019-01-12 18:40:42 - [pool-4-thread-4] чтобы расслабиться
+2019-01-12 18:40:42 - [pool-4-thread-2] сутками сидит в позе лотоса
+2019-01-12 18:40:42 - all 4 threads finish their work:
+2019-01-12 18:40:42 - Загадочный мужчина в кепке сутками сидит в позе лотоса в раю чтобы расслабиться 
+----------------------------------------------
+2019-01-12 18:41:18 - Phrase 'Снегурочка после Новогоднего утренника' was added
+
+2019-01-12 18:43:14 - Phrase 'Уфолог-любитель Кирилл' was added
+
+2019-01-12 18:43:39 - Phrase 'наблюдает за падающими звездами' was added
+
+2019-01-12 18:44:18 - Phrase 'в обсерватории академии наук' was added
+
+2019-01-12 18:44:43 - Phrase 'потому что это так увлекательно' was added
+
+2019-01-12 18:44:50 - [pool-5-thread-3] у барной стойки в ресторане 'Арагви'
+2019-01-12 18:44:50 - [pool-5-thread-1] Кот Эдуард
+2019-01-12 18:44:50 - [pool-5-thread-4] чтобы расслабиться
+2019-01-12 18:44:50 - [pool-5-thread-2] не спит по ночам
+2019-01-12 18:44:50 - all 4 threads finish their work:
+2019-01-12 18:44:50 - Кот Эдуард не спит по ночам у барной стойки в ресторане 'Арагви' чтобы расслабиться 
+----------------------------------------------
+2019-01-12 18:44:53 - [pool-6-thread-3] на территории завода Укрпромбытсбытгазвнас
+2019-01-12 18:44:53 - [pool-6-thread-1] МарьИванна
+2019-01-12 18:44:53 - [pool-6-thread-4] чтобы потом плюнуть на все и улететь в Париж
+2019-01-12 18:44:53 - [pool-6-thread-2] грызет семечки
+2019-01-12 18:44:53 - all 4 threads finish their work:
+2019-01-12 18:44:53 - МарьИванна грызет семечки на территории завода Укрпромбытсбытгазвнас чтобы потом плюнуть на все и улететь в Париж 
+----------------------------------------------
+2019-01-12 18:44:56 - [pool-7-thread-3] на краю вселенной
+2019-01-12 18:44:56 - [pool-7-thread-1] Сантехник Василий
+2019-01-12 18:44:56 - [pool-7-thread-2] разглядывает витрины
+2019-01-12 18:44:56 - [pool-7-thread-4] чтобы найти смысл жизни
+2019-01-12 18:44:56 - all 4 threads finish their work:
+2019-01-12 18:44:56 - Сантехник Василий разглядывает витрины на краю вселенной чтобы найти смысл жизни 
+----------------------------------------------
+2019-01-12 18:45:01 - [pool-8-thread-3] на Бродвее
+2019-01-12 18:45:01 - [pool-8-thread-1] Сантехник Василий
+2019-01-12 18:45:01 - [pool-8-thread-2] покупает 20 кг мандарин
+2019-01-12 18:45:01 - [pool-8-thread-4] чтобы похудеть
+2019-01-12 18:45:01 - all 4 threads finish their work:
+2019-01-12 18:45:01 - Сантехник Василий покупает 20 кг мандарин на Бродвее чтобы похудеть 
+----------------------------------------------
+2019-01-12 18:45:03 - [pool-9-thread-3] на пляже Рио-де-Жанейро
+2019-01-12 18:45:03 - [pool-9-thread-1] Диктор телевидения Евгений
+2019-01-12 18:45:03 - [pool-9-thread-2] красит волосы в безумный цвет
+2019-01-12 18:45:03 - [pool-9-thread-4] потому что это жизнь
+2019-01-12 18:45:03 - all 4 threads finish their work:
+2019-01-12 18:45:03 - Диктор телевидения Евгений красит волосы в безумный цвет на пляже Рио-де-Жанейро потому что это жизнь 
+----------------------------------------------
+2019-01-12 18:45:06 - [pool-10-thread-3] на демонстрации феминисток
+2019-01-12 18:45:06 - [pool-10-thread-1] Сосед-дебошир Гоша
+2019-01-12 18:45:06 - [pool-10-thread-2] нервно курит
+2019-01-12 18:45:06 - [pool-10-thread-4] потому что молодец
+2019-01-12 18:45:06 - all 4 threads finish their work:
+2019-01-12 18:45:06 - Сосед-дебошир Гоша нервно курит на демонстрации феминисток потому что молодец 
+----------------------------------------------
+2019-01-12 18:45:08 - [pool-11-thread-3] у барной стойки в ресторане 'Арагви'
+2019-01-12 18:45:08 - [pool-11-thread-1] Дама в норковом манто
+2019-01-12 18:45:08 - [pool-11-thread-2] ест торт перед сном
+2019-01-12 18:45:08 - [pool-11-thread-4] на радость маме
+2019-01-12 18:45:08 - all 4 threads finish their work:
+2019-01-12 18:45:08 - Дама в норковом манто ест торт перед сном у барной стойки в ресторане 'Арагви' на радость маме 
+----------------------------------------------
+2019-01-12 18:45:12 - [pool-12-thread-3] у синего-синего моря
+2019-01-12 18:45:12 - [pool-12-thread-1] Любитель пива Николай
+2019-01-12 18:45:12 - [pool-12-thread-2] наблюдает за падающими звездами
+2019-01-12 18:45:12 - [pool-12-thread-4] чтобы похудеть
+2019-01-12 18:45:12 - all 4 threads finish their work:
+2019-01-12 18:45:12 - Любитель пива Николай наблюдает за падающими звездами у синего-синего моря чтобы похудеть 
+----------------------------------------------
+2019-01-12 18:45:13 - [pool-13-thread-3] под деревом по имени липа
+2019-01-12 18:45:13 - [pool-13-thread-1] Кот Эдуард
+2019-01-12 18:45:13 - [pool-13-thread-2] сутками сидит в позе лотоса
+2019-01-12 18:45:13 - [pool-13-thread-4] потому что всю жизнь хотелось это сделать
+2019-01-12 18:45:13 - all 4 threads finish their work:
+2019-01-12 18:45:13 - Кот Эдуард сутками сидит в позе лотоса под деревом по имени липа потому что всю жизнь хотелось это сделать 
+----------------------------------------------
+2019-01-12 18:45:14 - [pool-14-thread-3] с бутылкой водки в кармане пальто
+2019-01-12 18:45:14 - [pool-14-thread-1] Дворник с метлой
+2019-01-12 18:45:14 - [pool-14-thread-4] потому что жизнь - борьба
+2019-01-12 18:45:14 - [pool-14-thread-2] стучит молотком по батарее
+2019-01-12 18:45:14 - all 4 threads finish their work:
+2019-01-12 18:45:14 - Дворник с метлой стучит молотком по батарее с бутылкой водки в кармане пальто потому что жизнь - борьба 
+----------------------------------------------
+2019-01-12 18:45:14 - [pool-15-thread-1] Шумный сосед сверху
+2019-01-12 18:45:14 - [pool-15-thread-3] на горе Фудзияма
+2019-01-12 18:45:14 - [pool-15-thread-2] красит волосы в безумный цвет
+2019-01-12 18:45:14 - [pool-15-thread-4] потому что об этом мечталось
+2019-01-12 18:45:14 - all 4 threads finish their work:
+2019-01-12 18:45:14 - Шумный сосед сверху красит волосы в безумный цвет на горе Фудзияма потому что об этом мечталось 
+----------------------------------------------
+2019-01-12 18:45:14 - [pool-16-thread-3] в собственном пентхаузе
+2019-01-12 18:45:14 - [pool-16-thread-1] Сантехник Василий
+2019-01-12 18:45:14 - [pool-16-thread-4] чтобы взглянуть на ситуацию с другой стороны
+2019-01-12 18:45:14 - [pool-16-thread-2] стучит молотком по батарее
+2019-01-12 18:45:14 - all 4 threads finish their work:
+2019-01-12 18:45:14 - Сантехник Василий стучит молотком по батарее в собственном пентхаузе чтобы взглянуть на ситуацию с другой стороны 
+----------------------------------------------
+2019-01-12 18:45:16 - [pool-17-thread-3] в собственном пентхаузе
+2019-01-12 18:45:16 - [pool-17-thread-1] МарьИванна
+2019-01-12 18:45:16 - [pool-17-thread-4] чтобы взглянуть на ситуацию с другой стороны
+2019-01-12 18:45:16 - [pool-17-thread-2] готовит ужин на 100 человек
+2019-01-12 18:45:16 - all 4 threads finish their work:
+2019-01-12 18:45:16 - МарьИванна готовит ужин на 100 человек в собственном пентхаузе чтобы взглянуть на ситуацию с другой стороны 
+----------------------------------------------
+2019-01-12 18:45:23 - [pool-18-thread-3] на Елисейских полях
+2019-01-12 18:45:23 - [pool-18-thread-1] Загадочный мужчина в кепке
+2019-01-12 18:45:23 - [pool-18-thread-2] выбрасывает мусор
+2019-01-12 18:45:23 - [pool-18-thread-4] чтобы найти смысл жизни
+2019-01-12 18:45:23 - all 4 threads finish their work:
+2019-01-12 18:45:23 - Загадочный мужчина в кепке выбрасывает мусор на Елисейских полях чтобы найти смысл жизни 
+----------------------------------------------
+2019-01-12 18:45:26 - [pool-19-thread-3] в фойе театра оперетты
+2019-01-12 18:45:26 - [pool-19-thread-1] Сосед-дебошир Гоша
+2019-01-12 18:45:26 - [pool-19-thread-4] для красоты
+2019-01-12 18:45:26 - [pool-19-thread-2] стучит молотком по батарее
+2019-01-12 18:45:26 - all 4 threads finish their work:
+2019-01-12 18:45:26 - Сосед-дебошир Гоша стучит молотком по батарее в фойе театра оперетты для красоты 
+----------------------------------------------
+2019-01-12 18:45:44 - Close all resources and exit 
+----------------------------------------------
+2019-01-12 18:46:16 - Start application, run initSources...
+2019-01-12 18:46:17 - All sources were filled out with data from /resources text files
+2019-01-12 18:46:17 - ----------------------------------------------------------------
+2019-01-12 18:46:20 - Phrase 'Бьюти-блогерша-губы-уточкой' was added
+
+2019-01-12 18:46:22 - [pool-2-thread-3] на развалинах часовни
+2019-01-12 18:46:22 - [pool-2-thread-1] Диктор телевидения Евгений
+2019-01-12 18:46:22 - [pool-2-thread-2] наблюдает за падающими звездами
+2019-01-12 18:46:22 - [pool-2-thread-4] потому что так надо
+2019-01-12 18:46:22 - all 4 threads finish their work:
+2019-01-12 18:46:22 - Диктор телевидения Евгений наблюдает за падающими звездами на развалинах часовни потому что так надо 
+----------------------------------------------
+2019-01-12 18:46:26 - [pool-3-thread-3] в приемной своего шефа
+2019-01-12 18:46:26 - [pool-3-thread-1] Депутат Иван Петрович Видпочивайло
+2019-01-12 18:46:26 - [pool-3-thread-4] потому что очень кушать хочется
+2019-01-12 18:46:26 - [pool-3-thread-2] читает умную толстую книгу
+2019-01-12 18:46:26 - all 4 threads finish their work:
+2019-01-12 18:46:26 - Депутат Иван Петрович Видпочивайло читает умную толстую книгу в приемной своего шефа потому что очень кушать хочется 
+----------------------------------------------
+2019-01-12 18:46:29 - [pool-4-thread-3] в фойе театра оперетты
+2019-01-12 18:46:29 - [pool-4-thread-1] Слон из зоопарка
+2019-01-12 18:46:29 - [pool-4-thread-4] потому что жизнь - борьба
+2019-01-12 18:46:29 - [pool-4-thread-2] читает умную толстую книгу
+2019-01-12 18:46:29 - all 4 threads finish their work:
+2019-01-12 18:46:29 - Слон из зоопарка читает умную толстую книгу в фойе театра оперетты потому что жизнь - борьба 
+----------------------------------------------
+2019-01-12 18:46:32 - [pool-5-thread-3] в пункте приема стеклотары
+2019-01-12 18:46:32 - [pool-5-thread-1] Директор зоопарка
+2019-01-12 18:46:32 - [pool-5-thread-2] сдает бутылки
+2019-01-12 18:46:32 - [pool-5-thread-4] потому что может
+2019-01-12 18:46:32 - all 4 threads finish their work:
+2019-01-12 18:46:32 - Директор зоопарка сдает бутылки в пункте приема стеклотары потому что может 
+----------------------------------------------
+2019-01-12 18:46:35 - [pool-6-thread-3] на пляже Рио-де-Жанейро
+2019-01-12 18:46:35 - [pool-6-thread-1] Девочка Маша
+2019-01-12 18:46:35 - [pool-6-thread-2] сутками сидит в позе лотоса
+2019-01-12 18:46:35 - [pool-6-thread-4] чтобы расслабиться
+2019-01-12 18:46:35 - all 4 threads finish their work:
+2019-01-12 18:46:35 - Девочка Маша сутками сидит в позе лотоса на пляже Рио-де-Жанейро чтобы расслабиться 
+----------------------------------------------
+2019-01-12 18:46:38 - [pool-7-thread-3] на полярной станции 'Академик Вернадский'
+2019-01-12 18:46:38 - [pool-7-thread-1] Любитель пива Николай
+2019-01-12 18:46:38 - [pool-7-thread-2] не спит по ночам
+2019-01-12 18:46:38 - [pool-7-thread-4] на радость маме
+2019-01-12 18:46:38 - all 4 threads finish their work:
+2019-01-12 18:46:38 - Любитель пива Николай не спит по ночам на полярной станции 'Академик Вернадский' на радость маме 
+----------------------------------------------
+2019-01-12 18:46:40 - [pool-8-thread-3] под деревом по имени липа
+2019-01-12 18:46:40 - [pool-8-thread-1] Снегурочка после Новогоднего утренника
+2019-01-12 18:46:40 - [pool-8-thread-2] отжимается 100 раз
+2019-01-12 18:46:40 - [pool-8-thread-4] во-первых, это красиво
+2019-01-12 18:46:40 - all 4 threads finish their work:
+2019-01-12 18:46:40 - Снегурочка после Новогоднего утренника отжимается 100 раз под деревом по имени липа во-первых, это красиво 
+----------------------------------------------
+2019-01-12 18:47:11 - [pool-9-thread-3] на межгалактической станции
+2019-01-12 18:47:11 - [pool-9-thread-1] Диктор телевидения Евгений
+2019-01-12 18:47:11 - [pool-9-thread-4] чтобы забыться
+2019-01-12 18:47:11 - [pool-9-thread-2] поднимает штангу
+2019-01-12 18:47:11 - all 4 threads finish their work:
+2019-01-12 18:47:11 - Диктор телевидения Евгений поднимает штангу на межгалактической станции чтобы забыться 
+----------------------------------------------
+2019-01-12 18:47:22 - Close all resources and exit 
+----------------------------------------------
+2019-01-12 18:47:58 - Start application, run initSources...
+2019-01-12 18:47:59 - All sources were filled out with data from /resources text files
+2019-01-12 18:47:59 - ----------------------------------------------------------------
+2019-01-12 18:48:03 - [pool-2-thread-3] на космической станции 'Апполон'
+2019-01-12 18:48:03 - [pool-2-thread-1] Сантехник Василий
+2019-01-12 18:48:03 - [pool-2-thread-2] покупает 20 кг мандарин
+2019-01-12 18:48:03 - [pool-2-thread-4] чтобы похудеть
+2019-01-12 18:48:03 - all 4 threads finish their work:
+2019-01-12 18:48:03 - Сантехник Василий покупает 20 кг мандарин на космической станции 'Апполон' чтобы похудеть 
+----------------------------------------------
+2019-01-12 18:48:07 - [pool-3-thread-3] на пляже Рио-де-Жанейро
+2019-01-12 18:48:07 - [pool-3-thread-1] Дама в норковом манто
+2019-01-12 18:48:07 - [pool-3-thread-2] ест торт перед сном
+2019-01-12 18:48:07 - [pool-3-thread-4] чтобы получить удовольствие
+2019-01-12 18:48:07 - all 4 threads finish their work:
+2019-01-12 18:48:07 - Дама в норковом манто ест торт перед сном на пляже Рио-де-Жанейро чтобы получить удовольствие 
+----------------------------------------------
+2019-01-12 18:48:11 - [pool-4-thread-3] на Бродвее
+2019-01-12 18:48:11 - [pool-4-thread-1] Флегматичный олень Бенедикт
+2019-01-12 18:48:11 - [pool-4-thread-4] чтобы не думать о прошлом
+2019-01-12 18:48:11 - [pool-4-thread-2] съедает тазик оливье
+2019-01-12 18:48:11 - all 4 threads finish their work:
+2019-01-12 18:48:11 - Флегматичный олень Бенедикт съедает тазик оливье на Бродвее чтобы не думать о прошлом 
+----------------------------------------------
+2019-01-12 18:48:13 - [pool-5-thread-3] на развалинах часовни
+2019-01-12 18:48:13 - [pool-5-thread-1] Флегматичный олень Бенедикт
+2019-01-12 18:48:13 - [pool-5-thread-2] стучит молотком по батарее
+2019-01-12 18:48:13 - [pool-5-thread-4] потому что хочется
+2019-01-12 18:48:13 - all 4 threads finish their work:
+2019-01-12 18:48:13 - Флегматичный олень Бенедикт стучит молотком по батарее на развалинах часовни потому что хочется 
+----------------------------------------------
+2019-01-12 18:48:17 - [pool-6-thread-3] на полярной станции 'Академик Вернадский'
+2019-01-12 18:48:17 - [pool-6-thread-1] Диктор телевидения Евгений
+2019-01-12 18:48:17 - [pool-6-thread-2] громко и фальшиво поет
+2019-01-12 18:48:17 - [pool-6-thread-4] потому что хочется
+2019-01-12 18:48:17 - all 4 threads finish their work:
+2019-01-12 18:48:17 - Диктор телевидения Евгений громко и фальшиво поет на полярной станции 'Академик Вернадский' потому что хочется 
+----------------------------------------------
+2019-01-12 18:48:20 - [pool-7-thread-3] у барной стойки в ресторане 'Арагви'
+2019-01-12 18:48:20 - [pool-7-thread-1] Дворник с метлой
+2019-01-12 18:48:20 - [pool-7-thread-2] сочиняет стихи
+2019-01-12 18:48:20 - [pool-7-thread-4] чтобы забыться
+2019-01-12 18:48:20 - all 4 threads finish their work:
+2019-01-12 18:48:20 - Дворник с метлой сочиняет стихи у барной стойки в ресторане 'Арагви' чтобы забыться 
+----------------------------------------------
+2019-01-12 18:48:22 - [pool-8-thread-3] в фойе театра оперетты
+2019-01-12 18:48:22 - [pool-8-thread-1] Программист Сергей
+2019-01-12 18:48:22 - [pool-8-thread-4] чтобы взглянуть на ситуацию с другой стороны
+2019-01-12 18:48:22 - [pool-8-thread-2] много думает
+2019-01-12 18:48:22 - all 4 threads finish their work:
+2019-01-12 18:48:22 - Программист Сергей много думает в фойе театра оперетты чтобы взглянуть на ситуацию с другой стороны 
+----------------------------------------------
+2019-01-12 18:48:25 - [pool-9-thread-3] в обсерватории академии наук
+2019-01-12 18:48:25 - [pool-9-thread-1] Сантехник Василий
+2019-01-12 18:48:25 - [pool-9-thread-2] стрижется налысо
+2019-01-12 18:48:25 - [pool-9-thread-4] чтобы взглянуть на ситуацию с другой стороны
+2019-01-12 18:48:25 - all 4 threads finish their work:
+2019-01-12 18:48:25 - Сантехник Василий стрижется налысо в обсерватории академии наук чтобы взглянуть на ситуацию с другой стороны 
+----------------------------------------------
+2019-01-12 18:48:27 - [pool-10-thread-3] в фойе театра оперетты
+2019-01-12 18:48:27 - [pool-10-thread-1] Снегурочка после Новогоднего утренника
+2019-01-12 18:48:27 - [pool-10-thread-2] сажает картошку и помидоры
+2019-01-12 18:48:27 - [pool-10-thread-4] потому что хочется
+2019-01-12 18:48:27 - all 4 threads finish their work:
+2019-01-12 18:48:27 - Снегурочка после Новогоднего утренника сажает картошку и помидоры в фойе театра оперетты потому что хочется 
+----------------------------------------------
+2019-01-12 18:48:31 - [pool-11-thread-3] в раю
+2019-01-12 18:48:31 - [pool-11-thread-1] Загадочный мужчина в кепке
+2019-01-12 18:48:31 - [pool-11-thread-2] съедает тазик оливье
+2019-01-12 18:48:31 - [pool-11-thread-4] для красоты
+2019-01-12 18:48:31 - all 4 threads finish their work:
+2019-01-12 18:48:31 - Загадочный мужчина в кепке съедает тазик оливье в раю для красоты 
+----------------------------------------------
+2019-01-12 18:48:47 - [pool-12-thread-3] на демонстрации феминисток
+2019-01-12 18:48:47 - [pool-12-thread-1] Загадочный мужчина в кепке
+2019-01-12 18:48:47 - [pool-12-thread-2] стрижется налысо
+2019-01-12 18:48:47 - [pool-12-thread-4] чтобы получить удовольствие
+2019-01-12 18:48:47 - all 4 threads finish their work:
+2019-01-12 18:48:47 - Загадочный мужчина в кепке стрижется налысо на демонстрации феминисток чтобы получить удовольствие 
+----------------------------------------------
+2019-01-12 18:48:50 - [pool-13-thread-3] на развалинах часовни
+2019-01-12 18:48:50 - [pool-13-thread-1] Сосед-дебошир Гоша
+2019-01-12 18:48:50 - [pool-13-thread-4] потому что это красиво
+2019-01-12 18:48:50 - [pool-13-thread-2] поднимает штангу
+2019-01-12 18:48:50 - all 4 threads finish their work:
+2019-01-12 18:48:50 - Сосед-дебошир Гоша поднимает штангу на развалинах часовни потому что это красиво 
+----------------------------------------------
+2019-01-12 18:48:54 - [pool-14-thread-3] на станции техобслуживания
+2019-01-12 18:48:54 - [pool-14-thread-1] Диктор телевидения Евгений
+2019-01-12 18:48:54 - [pool-14-thread-4] потому что может себе это позволить
+2019-01-12 18:48:54 - [pool-14-thread-2] грызет семечки
+2019-01-12 18:48:54 - all 4 threads finish their work:
+2019-01-12 18:48:54 - Диктор телевидения Евгений грызет семечки на станции техобслуживания потому что может себе это позволить 
+----------------------------------------------
+2019-01-12 18:48:56 - [pool-15-thread-1] Кот Эдуард
+2019-01-12 18:48:56 - [pool-15-thread-3] в приемной своего шефа
+2019-01-12 18:48:56 - [pool-15-thread-2] вглядывается в горизонт
+2019-01-12 18:48:56 - [pool-15-thread-4] потому что хочется
+2019-01-12 18:48:56 - all 4 threads finish their work:
+2019-01-12 18:48:56 - Кот Эдуард вглядывается в горизонт в приемной своего шефа потому что хочется 
+----------------------------------------------
+2019-01-12 18:48:58 - [pool-16-thread-3] на диване с рюмкой чая
+2019-01-12 18:48:58 - [pool-16-thread-1] Бьюти-блогерша-губы-уточкой
+2019-01-12 18:48:58 - [pool-16-thread-2] таинственно смотрит вдаль
+2019-01-12 18:48:58 - [pool-16-thread-4] , а почему бы и нет
+2019-01-12 18:48:58 - all 4 threads finish their work:
+2019-01-12 18:48:58 - Бьюти-блогерша-губы-уточкой таинственно смотрит вдаль на диване с рюмкой чая , а почему бы и нет 
+----------------------------------------------
+2019-01-12 18:48:59 - [pool-17-thread-3] на 205 этаже небескреба в Дубаи
+2019-01-12 18:48:59 - [pool-17-thread-1] Бьюти-блогерша-губы-уточкой
+2019-01-12 18:48:59 - [pool-17-thread-2] пьет вино
+2019-01-12 18:48:59 - [pool-17-thread-4] потому что так надо
+2019-01-12 18:48:59 - all 4 threads finish their work:
+2019-01-12 18:48:59 - Бьюти-блогерша-губы-уточкой пьет вино на 205 этаже небескреба в Дубаи потому что так надо 
+----------------------------------------------
+2019-01-12 18:49:00 - [pool-18-thread-3] на пляже Рио-де-Жанейро
+2019-01-12 18:49:00 - [pool-18-thread-1] Флегматичный олень Бенедикт
+2019-01-12 18:49:00 - [pool-18-thread-2] громко и фальшиво поет
+2019-01-12 18:49:00 - [pool-18-thread-4] чтобы победить свою лень
+2019-01-12 18:49:00 - all 4 threads finish their work:
+2019-01-12 18:49:00 - Флегматичный олень Бенедикт громко и фальшиво поет на пляже Рио-де-Жанейро чтобы победить свою лень 
+----------------------------------------------
+2019-01-12 18:49:00 - [pool-19-thread-3] в собственном пентхаузе
+2019-01-12 18:49:00 - [pool-19-thread-1] МарьИванна
+2019-01-12 18:49:00 - [pool-19-thread-2] наблюдает за падающими звездами
+2019-01-12 18:49:00 - [pool-19-thread-4] потому что это жизнь
+2019-01-12 18:49:00 - all 4 threads finish their work:
+2019-01-12 18:49:00 - МарьИванна наблюдает за падающими звездами в собственном пентхаузе потому что это жизнь 
+----------------------------------------------
+2019-01-12 18:49:01 - [pool-20-thread-3] с бутылкой водки в кармане пальто
+2019-01-12 18:49:01 - [pool-20-thread-1] Девочка Маша
+2019-01-12 18:49:01 - [pool-20-thread-2] сутками сидит в позе лотоса
+2019-01-12 18:49:01 - [pool-20-thread-4] потому что молодец
+2019-01-12 18:49:01 - all 4 threads finish their work:
+2019-01-12 18:49:01 - Девочка Маша сутками сидит в позе лотоса с бутылкой водки в кармане пальто потому что молодец 
+----------------------------------------------
+2019-01-12 18:49:01 - [pool-21-thread-3] в фойе театра оперетты
+2019-01-12 18:49:01 - [pool-21-thread-1] Дворник с метлой
+2019-01-12 18:49:01 - [pool-21-thread-2] сдает бутылки
+2019-01-12 18:49:01 - [pool-21-thread-4] потому что может
+2019-01-12 18:49:01 - all 4 threads finish their work:
+2019-01-12 18:49:01 - Дворник с метлой сдает бутылки в фойе театра оперетты потому что может 
+----------------------------------------------
+2019-01-12 18:49:04 - [pool-22-thread-3] в обсерватории академии наук
+2019-01-12 18:49:04 - [pool-22-thread-1] Сосед-дебошир Гоша
+2019-01-12 18:49:04 - [pool-22-thread-4] для красоты
+2019-01-12 18:49:04 - [pool-22-thread-2] сдает бутылки
+2019-01-12 18:49:04 - all 4 threads finish their work:
+2019-01-12 18:49:04 - Сосед-дебошир Гоша сдает бутылки в обсерватории академии наук для красоты 
+----------------------------------------------
+2019-01-12 18:49:05 - [pool-23-thread-3] на развалинах часовни
+2019-01-12 18:49:05 - [pool-23-thread-1] Бьюти-блогерша-губы-уточкой
+2019-01-12 18:49:05 - [pool-23-thread-2] сдает бутылки
+2019-01-12 18:49:05 - [pool-23-thread-4] потому что это жизнь
+2019-01-12 18:49:05 - all 4 threads finish their work:
+2019-01-12 18:49:05 - Бьюти-блогерша-губы-уточкой сдает бутылки на развалинах часовни потому что это жизнь 
+----------------------------------------------
+2019-01-12 18:49:05 - [pool-24-thread-3] на станции техобслуживания
+2019-01-12 18:49:05 - [pool-24-thread-1] МарьИванна
+2019-01-12 18:49:05 - [pool-24-thread-2] третирует соседей
+2019-01-12 18:49:05 - [pool-24-thread-4] потому что это так увлекательно
+2019-01-12 18:49:05 - all 4 threads finish their work:
+2019-01-12 18:49:05 - МарьИванна третирует соседей на станции техобслуживания потому что это так увлекательно 
+----------------------------------------------
+2019-01-12 18:49:35 - [pool-25-thread-3] на Бродвее
+2019-01-12 18:49:35 - [pool-25-thread-1] Кот Эдуард
+2019-01-12 18:49:35 - [pool-25-thread-4] чтобы достигнуть дзена
+2019-01-12 18:49:35 - [pool-25-thread-2] поднимает штангу
+2019-01-12 18:49:35 - all 4 threads finish their work:
+2019-01-12 18:49:35 - Кот Эдуард поднимает штангу на Бродвее чтобы достигнуть дзена 
+----------------------------------------------
+2019-01-12 18:49:39 - [pool-26-thread-3] с бутылкой водки в кармане пальто
+2019-01-12 18:49:39 - [pool-26-thread-1] Дворник с метлой
+2019-01-12 18:49:39 - [pool-26-thread-4] потому что жизнь - борьба
+2019-01-12 18:49:39 - [pool-26-thread-2] готовит ужин на 100 человек
+2019-01-12 18:49:39 - all 4 threads finish their work:
+2019-01-12 18:49:39 - Дворник с метлой готовит ужин на 100 человек с бутылкой водки в кармане пальто потому что жизнь - борьба 
+----------------------------------------------
+2019-01-12 18:49:42 - [pool-27-thread-3] у синего-синего моря
+2019-01-12 18:49:42 - [pool-27-thread-1] Загадочный мужчина в кепке
+2019-01-12 18:49:42 - [pool-27-thread-2] выбрасывает мусор
+2019-01-12 18:49:42 - [pool-27-thread-4] для того, чтоб быть счастливым
+2019-01-12 18:49:42 - all 4 threads finish their work:
+2019-01-12 18:49:42 - Загадочный мужчина в кепке выбрасывает мусор у синего-синего моря для того, чтоб быть счастливым 
+----------------------------------------------
+2019-01-12 18:49:45 - [pool-28-thread-3] с бутылкой водки в кармане пальто
+2019-01-12 18:49:45 - [pool-28-thread-1] МарьИванна
+2019-01-12 18:49:45 - [pool-28-thread-2] стрижется налысо
+2019-01-12 18:49:45 - [pool-28-thread-4] потому что об этом мечталось
+2019-01-12 18:49:45 - all 4 threads finish their work:
+2019-01-12 18:49:45 - МарьИванна стрижется налысо с бутылкой водки в кармане пальто потому что об этом мечталось 
+----------------------------------------------
+2019-01-12 18:49:48 - [pool-29-thread-3] на территории завода Укрпромбытсбытгазвнас
+2019-01-12 18:49:48 - [pool-29-thread-1] Загадочный мужчина в кепке
+2019-01-12 18:49:48 - [pool-29-thread-2] пьет вино
+2019-01-12 18:49:48 - [pool-29-thread-4] на радость маме
+2019-01-12 18:49:48 - all 4 threads finish their work:
+2019-01-12 18:49:48 - Загадочный мужчина в кепке пьет вино на территории завода Укрпромбытсбытгазвнас на радость маме 
+----------------------------------------------
+2019-01-12 18:49:50 - [pool-30-thread-3] на краю вселенной
+2019-01-12 18:49:50 - [pool-30-thread-1] МарьИванна
+2019-01-12 18:49:50 - [pool-30-thread-4] потому что жизнь - борьба
+2019-01-12 18:49:50 - [pool-30-thread-2] сочиняет стихи
+2019-01-12 18:49:50 - all 4 threads finish their work:
+2019-01-12 18:49:50 - МарьИванна сочиняет стихи на краю вселенной потому что жизнь - борьба 
+----------------------------------------------
+2019-01-12 18:49:53 - [pool-31-thread-3] на диване с рюмкой чая
+2019-01-12 18:49:53 - [pool-31-thread-1] МарьИванна
+2019-01-12 18:49:53 - [pool-31-thread-4] потому что так надо
+2019-01-12 18:49:53 - [pool-31-thread-2] сдает бутылки
+2019-01-12 18:49:53 - all 4 threads finish their work:
+2019-01-12 18:49:53 - МарьИванна сдает бутылки на диване с рюмкой чая потому что так надо 
+----------------------------------------------
+2019-01-12 18:49:55 - [pool-32-thread-3] на заседании больших боссов
+2019-01-12 18:49:55 - [pool-32-thread-1] Снегурочка после Новогоднего утренника
+2019-01-12 18:49:55 - [pool-32-thread-4] чтобы не думать о прошлом
+2019-01-12 18:49:55 - [pool-32-thread-2] грызет семечки
+2019-01-12 18:49:55 - all 4 threads finish their work:
+2019-01-12 18:49:55 - Снегурочка после Новогоднего утренника грызет семечки на заседании больших боссов чтобы не думать о прошлом 
+----------------------------------------------
+2019-01-12 18:49:58 - [pool-33-thread-3] в приемной своего шефа
+2019-01-12 18:49:58 - [pool-33-thread-1] Дворник с метлой
+2019-01-12 18:49:58 - [pool-33-thread-2] поднимает штангу
+2019-01-12 18:49:58 - [pool-33-thread-4] потому что так надо
+2019-01-12 18:49:58 - all 4 threads finish their work:
+2019-01-12 18:49:58 - Дворник с метлой поднимает штангу в приемной своего шефа потому что так надо 
+----------------------------------------------
+2019-01-12 18:50:00 - [pool-34-thread-3] на территории завода Укрпромбытсбытгазвнас
+2019-01-12 18:50:00 - [pool-34-thread-1] Сантехник Василий
+2019-01-12 18:50:00 - [pool-34-thread-2] медитирует
+2019-01-12 18:50:00 - [pool-34-thread-4] чтобы победить свою лень
+2019-01-12 18:50:00 - all 4 threads finish their work:
+2019-01-12 18:50:00 - Сантехник Василий медитирует на территории завода Укрпромбытсбытгазвнас чтобы победить свою лень 
+----------------------------------------------
+2019-01-12 18:50:04 - [pool-35-thread-3] в приемной своего шефа
+2019-01-12 18:50:04 - [pool-35-thread-1] Сосед-дебошир Гоша
+2019-01-12 18:50:04 - [pool-35-thread-4] чтобы достигнуть дзена
+2019-01-12 18:50:04 - [pool-35-thread-2] ест торт перед сном
+2019-01-12 18:50:04 - all 4 threads finish their work:
+2019-01-12 18:50:04 - Сосед-дебошир Гоша ест торт перед сном в приемной своего шефа чтобы достигнуть дзена 
+----------------------------------------------
+2019-01-12 18:50:07 - [pool-36-thread-3] у барной стойки в ресторане 'Арагви'
+2019-01-12 18:50:07 - [pool-36-thread-1] Дама в норковом манто
+2019-01-12 18:50:07 - [pool-36-thread-2] таинственно смотрит вдаль
+2019-01-12 18:50:07 - [pool-36-thread-4] чтобы взглянуть на ситуацию с другой стороны
+2019-01-12 18:50:07 - all 4 threads finish their work:
+2019-01-12 18:50:07 - Дама в норковом манто таинственно смотрит вдаль у барной стойки в ресторане 'Арагви' чтобы взглянуть на ситуацию с другой стороны 
+----------------------------------------------
+2019-01-12 18:50:12 - [pool-37-thread-3] на развалинах часовни
+2019-01-12 18:50:12 - [pool-37-thread-1] Загадочный мужчина в кепке
+2019-01-12 18:50:12 - [pool-37-thread-2] отжимается 100 раз
+2019-01-12 18:50:12 - [pool-37-thread-4] потому что хочется
+2019-01-12 18:50:12 - all 4 threads finish their work:
+2019-01-12 18:50:12 - Загадочный мужчина в кепке отжимается 100 раз на развалинах часовни потому что хочется 
+----------------------------------------------
+2019-01-12 18:50:15 - [pool-38-thread-3] в собственном пентхаузе
+2019-01-12 18:50:15 - [pool-38-thread-1] Бьюти-блогерша-губы-уточкой
+2019-01-12 18:50:15 - [pool-38-thread-4] потому что очень кушать хочется
+2019-01-12 18:50:15 - [pool-38-thread-2] рожает пятого ребенка
+2019-01-12 18:50:15 - all 4 threads finish their work:
+2019-01-12 18:50:15 - Бьюти-блогерша-губы-уточкой рожает пятого ребенка в собственном пентхаузе потому что очень кушать хочется 
+----------------------------------------------
+2019-01-12 18:50:36 - Close all resources and exit 
+----------------------------------------------
+2019-01-12 19:39:17 - Start application, run initSources...
+2019-01-12 19:39:19 - All sources were filled out with data from /resources text files
+----------------------------------------------
+2019-01-12 19:59:10 - Start application, run initSources...
+2019-01-12 19:59:11 - All sources were filled out with data from /resources text files
+----------------------------------------------
+2019-01-12 20:00:52 - Start application, run initSources...
+2019-01-12 20:00:52 - All sources were filled out with data from /resources text files
+----------------------------------------------
+2019-01-12 20:02:27 - Start application, run initSources...
+2019-01-12 20:02:27 - All sources were filled out with data from /resources text files
+----------------------------------------------
+2019-01-12 20:04:17 - Start application, run initSources...
+2019-01-12 20:04:18 - All sources were filled out with data from /resources text files
+----------------------------------------------
+2019-01-12 20:06:21 - All sources were filled out with data from /resources text files
+----------------------------------------------
+2019-01-12 20:19:46 - [pool-2-thread-3] на космической станции 'Апполон'
+2019-01-12 20:19:47 - [pool-2-thread-1] Депутат Иван Петрович Видпочивайло
+2019-01-12 20:19:47 - [pool-2-thread-2] разглядывает витрины
+2019-01-12 20:19:47 - [pool-2-thread-4] потому что это так увлекательно
+2019-01-12 20:19:47 - all 4 threads finish their work:
+2019-01-12 20:19:47 - Депутат Иван Петрович Видпочивайло разглядывает витрины на космической станции 'Апполон' потому что это так увлекательно 
+----------------------------------------------
+2019-01-12 20:19:48 - [pool-3-thread-3] в магазине сантехники
+2019-01-12 20:19:48 - [pool-3-thread-1] Любитель пива Николай
+2019-01-12 20:19:48 - [pool-3-thread-4] на радость маме
+2019-01-12 20:19:48 - [pool-3-thread-2] выбрасывает мусор
+2019-01-12 20:19:48 - all 4 threads finish their work:
+2019-01-12 20:19:48 - Любитель пива Николай выбрасывает мусор в магазине сантехники на радость маме 
+----------------------------------------------
+2019-01-12 20:19:48 - [pool-4-thread-3] на даче у мангала
+2019-01-12 20:19:48 - [pool-4-thread-1] Дама в норковом манто
+2019-01-12 20:19:48 - [pool-4-thread-4] потому что может
+2019-01-12 20:19:48 - [pool-4-thread-2] сочиняет стихи
+2019-01-12 20:19:48 - all 4 threads finish their work:
+2019-01-12 20:19:48 - Дама в норковом манто сочиняет стихи на даче у мангала потому что может 
+----------------------------------------------
+2019-01-12 20:19:49 - [pool-5-thread-1] Снегурочка после Новогоднего утренника
+2019-01-12 20:19:49 - [pool-5-thread-3] в пункте приема стеклотары
+2019-01-12 20:19:49 - [pool-5-thread-2] нервно курит
+2019-01-12 20:19:49 - [pool-5-thread-4] чтоб продвинуться по карьерной лестнице
+2019-01-12 20:19:49 - all 4 threads finish their work:
+2019-01-12 20:19:49 - Снегурочка после Новогоднего утренника нервно курит в пункте приема стеклотары чтоб продвинуться по карьерной лестнице 
+----------------------------------------------
+2019-01-12 20:19:50 - [pool-6-thread-3] на даче у мангала
+2019-01-12 20:19:50 - [pool-6-thread-1] МарьИванна
+2019-01-12 20:19:50 - [pool-6-thread-4] потому что так надо
+2019-01-12 20:19:50 - [pool-6-thread-2] стрижется налысо
+2019-01-12 20:19:50 - all 4 threads finish their work:
+2019-01-12 20:19:50 - МарьИванна стрижется налысо на даче у мангала потому что так надо 
+----------------------------------------------
+2019-01-12 20:24:04 - [pool-2-thread-3] в фойе театра оперетты
+2019-01-12 20:24:04 - [pool-2-thread-4] потому что так надо
+2019-01-12 20:24:04 - [pool-2-thread-2] громко и фальшиво поет
+2019-01-12 20:24:04 - [pool-2-thread-1] Сосед-дебошир Гоша
+2019-01-12 20:24:04 - all 4 threads finish their work:
+2019-01-12 20:24:04 - Сосед-дебошир Гоша громко и фальшиво поет в фойе театра оперетты потому что так надо 
+----------------------------------------------
+2019-01-12 20:24:05 - [pool-3-thread-3] в фойе театра оперетты
+2019-01-12 20:24:05 - [pool-3-thread-1] Дворник с метлой
+2019-01-12 20:24:05 - [pool-3-thread-2] читает умную толстую книгу
+2019-01-12 20:24:05 - [pool-3-thread-4] чтобы достигнуть дзена
+2019-01-12 20:24:05 - all 4 threads finish their work:
+2019-01-12 20:24:05 - Дворник с метлой читает умную толстую книгу в фойе театра оперетты чтобы достигнуть дзена 
+----------------------------------------------
+2019-01-12 20:24:06 - [pool-4-thread-3] на межгалактической станции
+2019-01-12 20:24:06 - [pool-4-thread-1] Кандидат в президенты от партии любителей пива
+2019-01-12 20:24:06 - [pool-4-thread-2] не спит по ночам
+2019-01-12 20:24:06 - [pool-4-thread-4] чтобы получить повышение
+2019-01-12 20:24:06 - all 4 threads finish their work:
+2019-01-12 20:24:06 - Кандидат в президенты от партии любителей пива не спит по ночам на межгалактической станции чтобы получить повышение 
+----------------------------------------------
+2019-01-12 21:09:16 - [pool-2-thread-3] у синего-синего моря
+2019-01-12 21:09:16 - [pool-2-thread-1] Загадочный мужчина в кепке
+2019-01-12 21:09:16 - [pool-2-thread-2] стучит молотком по батарее
+2019-01-12 21:09:16 - [pool-2-thread-4] для красоты
+2019-01-12 21:09:16 - all 4 threads finish their work:
+2019-01-12 21:09:16 - Загадочный мужчина в кепке стучит молотком по батарее у синего-синего моря для красоты 
+----------------------------------------------
+2019-01-12 21:09:17 - [pool-3-thread-3] на развалинах часовни
+2019-01-12 21:09:17 - [pool-3-thread-1] Девочка Маша
+2019-01-12 21:09:17 - [pool-3-thread-2] слоняется без дела
+2019-01-12 21:09:17 - [pool-3-thread-4] потому что так надо
+2019-01-12 21:09:17 - all 4 threads finish their work:
+2019-01-12 21:09:17 - Девочка Маша слоняется без дела на развалинах часовни потому что так надо 
+----------------------------------------------
+2019-01-12 21:09:18 - [pool-4-thread-3] на территории завода Укрпромбытсбытгазвнас
+2019-01-12 21:09:18 - [pool-4-thread-1] Дама в норковом манто
+2019-01-12 21:09:18 - [pool-4-thread-2] сдает бутылки
+2019-01-12 21:09:18 - [pool-4-thread-4] потому что любит чистоту и порядок
+2019-01-12 21:09:18 - all 4 threads finish their work:
+2019-01-12 21:09:18 - Дама в норковом манто сдает бутылки на территории завода Укрпромбытсбытгазвнас потому что любит чистоту и порядок 
+----------------------------------------------
+2019-01-12 21:09:20 - [pool-5-thread-3] на горе Фудзияма
+2019-01-12 21:09:20 - [pool-5-thread-1] Кот Эдуард
+2019-01-12 21:09:20 - [pool-5-thread-4] чтобы потом плюнуть на все и улететь в Париж
+2019-01-12 21:09:20 - [pool-5-thread-2] красит волосы в безумный цвет
+2019-01-12 21:09:20 - all 4 threads finish their work:
+2019-01-12 21:09:20 - Кот Эдуард красит волосы в безумный цвет на горе Фудзияма чтобы потом плюнуть на все и улететь в Париж 
+----------------------------------------------
+2019-01-12 21:09:21 - [pool-6-thread-3] на пляже Рио-де-Жанейро
+2019-01-12 21:09:21 - [pool-6-thread-1] Кандидат в президенты от партии любителей пива
+2019-01-12 21:09:21 - [pool-6-thread-2] задумчиво сидит
+2019-01-12 21:09:21 - [pool-6-thread-4] потому что любит чистоту и порядок
+2019-01-12 21:09:21 - all 4 threads finish their work:
+2019-01-12 21:09:21 - Кандидат в президенты от партии любителей пива задумчиво сидит на пляже Рио-де-Жанейро потому что любит чистоту и порядок 
+----------------------------------------------
+2019-01-12 21:09:23 - [pool-7-thread-3] на диване с рюмкой чая
+2019-01-12 21:09:23 - [pool-7-thread-1] Бьюти-блогерша-губы-уточкой
+2019-01-12 21:09:23 - [pool-7-thread-4] чтобы получить удовольствие
+2019-01-12 21:09:23 - [pool-7-thread-2] слоняется без дела
+2019-01-12 21:09:23 - all 4 threads finish their work:
+2019-01-12 21:09:23 - Бьюти-блогерша-губы-уточкой слоняется без дела на диване с рюмкой чая чтобы получить удовольствие 
+----------------------------------------------
+2019-01-12 21:09:26 - [pool-8-thread-3] на Елисейских полях
+2019-01-12 21:09:26 - [pool-8-thread-1] Программист Сергей
+2019-01-12 21:09:26 - [pool-8-thread-2] торгует апельсинами
+2019-01-12 21:09:26 - [pool-8-thread-4] потому что так надо
+2019-01-12 21:09:26 - all 4 threads finish their work:
+2019-01-12 21:09:26 - Программист Сергей торгует апельсинами на Елисейских полях потому что так надо 
+----------------------------------------------
+2019-01-12 21:10:42 - [pool-2-thread-1] Снегурочка после Новогоднего утренника
+2019-01-12 21:10:42 - [pool-2-thread-4] для красоты
+2019-01-12 21:10:42 - [pool-2-thread-2] съедает тазик оливье
+2019-01-12 21:10:42 - [pool-2-thread-3] в обсерватории академии наук
+2019-01-12 21:10:42 - all 4 threads finish their work:
+2019-01-12 21:10:42 - Снегурочка после Новогоднего утренника съедает тазик оливье в обсерватории академии наук для красоты 
+----------------------------------------------
+2019-01-12 21:10:44 - [pool-3-thread-3] на пляже Рио-де-Жанейро
+2019-01-12 21:10:44 - [pool-3-thread-1] Сантехник Василий
+2019-01-12 21:10:44 - [pool-3-thread-4] для красоты
+2019-01-12 21:10:44 - [pool-3-thread-2] отжимается 100 раз
+2019-01-12 21:10:44 - all 4 threads finish their work:
+2019-01-12 21:10:44 - Сантехник Василий отжимается 100 раз на пляже Рио-де-Жанейро для красоты 
+----------------------------------------------
+2019-01-12 21:10:44 - [pool-4-thread-3] на заседании больших боссов
+2019-01-12 21:10:44 - [pool-4-thread-1] Депутат Иван Петрович Видпочивайло
+2019-01-12 21:10:44 - [pool-4-thread-2] не спит по ночам
+2019-01-12 21:10:44 - [pool-4-thread-4] чтобы получить удовольствие
+2019-01-12 21:10:44 - all 4 threads finish their work:
+2019-01-12 21:10:44 - Депутат Иван Петрович Видпочивайло не спит по ночам на заседании больших боссов чтобы получить удовольствие 
+----------------------------------------------
+2019-01-12 21:10:45 - [pool-5-thread-3] в собственном пентхаузе
+2019-01-12 21:10:45 - [pool-5-thread-1] Уфолог-любитель Кирилл
+2019-01-12 21:10:45 - [pool-5-thread-2] жарит отбивные
+2019-01-12 21:10:45 - [pool-5-thread-4] чтобы забыться
+2019-01-12 21:10:45 - all 4 threads finish their work:
+2019-01-12 21:10:45 - Уфолог-любитель Кирилл жарит отбивные в собственном пентхаузе чтобы забыться 
+----------------------------------------------
+2019-01-12 21:10:46 - [pool-6-thread-3] в фойе театра оперетты
+2019-01-12 21:10:46 - [pool-6-thread-1] Бьюти-блогерша-губы-уточкой
+2019-01-12 21:10:46 - [pool-6-thread-2] красит волосы в безумный цвет
+2019-01-12 21:10:46 - [pool-6-thread-4] чтобы взглянуть на ситуацию с другой стороны
+2019-01-12 21:10:46 - all 4 threads finish their work:
+2019-01-12 21:10:46 - Бьюти-блогерша-губы-уточкой красит волосы в безумный цвет в фойе театра оперетты чтобы взглянуть на ситуацию с другой стороны 
+----------------------------------------------
+2019-01-12 21:10:48 - [pool-7-thread-3] в пункте приема стеклотары
+2019-01-12 21:10:48 - [pool-7-thread-1] Дворник с метлой
+2019-01-12 21:10:48 - [pool-7-thread-2] не спит по ночам
+2019-01-12 21:10:48 - [pool-7-thread-4] назло соседу
+2019-01-12 21:10:48 - all 4 threads finish their work:
+2019-01-12 21:10:48 - Дворник с метлой не спит по ночам в пункте приема стеклотары назло соседу 
+----------------------------------------------
+2019-01-12 21:10:53 - [pool-8-thread-3] в магазине сантехники
+2019-01-12 21:10:53 - [pool-8-thread-1] Снегурочка после Новогоднего утренника
+2019-01-12 21:10:53 - [pool-8-thread-4] потому что это жизнь
+2019-01-12 21:10:53 - [pool-8-thread-2] жарит отбивные
+2019-01-12 21:10:53 - all 4 threads finish their work:
+2019-01-12 21:10:53 - Снегурочка после Новогоднего утренника жарит отбивные в магазине сантехники потому что это жизнь 
+----------------------------------------------
+2019-01-12 21:10:54 - [pool-9-thread-1] Снегурочка после Новогоднего утренника
+2019-01-12 21:10:54 - [pool-9-thread-3] на космической станции 'Апполон'
+2019-01-12 21:10:54 - [pool-9-thread-2] торгует апельсинами
+2019-01-12 21:10:54 - [pool-9-thread-4] потому что жизнь - борьба
+2019-01-12 21:10:54 - all 4 threads finish their work:
+2019-01-12 21:10:54 - Снегурочка после Новогоднего утренника торгует апельсинами на космической станции 'Апполон' потому что жизнь - борьба 
+----------------------------------------------
+2019-01-12 21:10:54 - [pool-10-thread-3] в пункте приема стеклотары
+2019-01-12 21:10:54 - [pool-10-thread-1] Кандидат в президенты от партии любителей пива
+2019-01-12 21:10:54 - [pool-10-thread-2] красит волосы в безумный цвет
+2019-01-12 21:10:54 - [pool-10-thread-4] потому что любит чистоту и порядок
+2019-01-12 21:10:54 - all 4 threads finish their work:
+2019-01-12 21:10:54 - Кандидат в президенты от партии любителей пива красит волосы в безумный цвет в пункте приема стеклотары потому что любит чистоту и порядок 
+----------------------------------------------
+2019-01-12 21:11:18 - [pool-11-thread-3] на развалинах часовни
+2019-01-12 21:11:18 - [pool-11-thread-1] Снегурочка после Новогоднего утренника
+2019-01-12 21:11:18 - [pool-11-thread-4] для красоты
+2019-01-12 21:11:18 - [pool-11-thread-2] вглядывается в горизонт
+2019-01-12 21:11:18 - all 4 threads finish their work:
+2019-01-12 21:11:18 - Снегурочка после Новогоднего утренника вглядывается в горизонт на развалинах часовни для красоты 
+----------------------------------------------
+2019-01-12 21:11:19 - [pool-12-thread-3] на межгалактической станции
+2019-01-12 21:11:19 - [pool-12-thread-1] Любитель пива Николай
+2019-01-12 21:11:19 - [pool-12-thread-2] говорит загадками
+2019-01-12 21:11:19 - [pool-12-thread-4] потому что любит чистоту и порядок
+2019-01-12 21:11:19 - all 4 threads finish their work:
+2019-01-12 21:11:19 - Любитель пива Николай говорит загадками на межгалактической станции потому что любит чистоту и порядок 
+----------------------------------------------
+2019-01-12 21:11:29 - [pool-13-thread-3] в магазине сантехники
+2019-01-12 21:11:29 - [pool-13-thread-1] Флегматичный олень Бенедикт
+2019-01-12 21:11:29 - [pool-13-thread-2] стрижется налысо
+2019-01-12 21:11:29 - [pool-13-thread-4] потому что жизнь - борьба
+2019-01-12 21:11:29 - all 4 threads finish their work:
+2019-01-12 21:11:29 - Флегматичный олень Бенедикт стрижется налысо в магазине сантехники потому что жизнь - борьба 
+----------------------------------------------
+2019-01-12 21:11:48 - [pool-14-thread-3] в приемной своего шефа
+2019-01-12 21:11:48 - [pool-14-thread-1] Слон из зоопарка
+2019-01-12 21:11:48 - [pool-14-thread-4] чтоб продвинуться по карьерной лестнице
+2019-01-12 21:11:48 - [pool-14-thread-2] стрижется налысо
+2019-01-12 21:11:48 - all 4 threads finish their work:
+2019-01-12 21:11:48 - Слон из зоопарка стрижется налысо в приемной своего шефа чтоб продвинуться по карьерной лестнице 
+----------------------------------------------
+2019-01-12 21:11:51 - [pool-15-thread-3] у синего-синего моря
+2019-01-12 21:11:51 - [pool-15-thread-1] Снегурочка после Новогоднего утренника
+2019-01-12 21:11:51 - [pool-15-thread-2] рожает пятого ребенка
+2019-01-12 21:11:51 - [pool-15-thread-4] потому что любит чистоту и порядок
+2019-01-12 21:11:51 - all 4 threads finish their work:
+2019-01-12 21:11:51 - Снегурочка после Новогоднего утренника рожает пятого ребенка у синего-синего моря потому что любит чистоту и порядок 
+----------------------------------------------
+2019-01-12 21:11:54 - [pool-16-thread-3] в магазине сантехники
+2019-01-12 21:11:54 - [pool-16-thread-1] Бьюти-блогерша-губы-уточкой
+2019-01-12 21:11:54 - [pool-16-thread-2] нервно курит
+2019-01-12 21:11:54 - [pool-16-thread-4] потому что так говорил Заратустра
+2019-01-12 21:11:54 - all 4 threads finish their work:
+2019-01-12 21:11:54 - Бьюти-блогерша-губы-уточкой нервно курит в магазине сантехники потому что так говорил Заратустра 
+----------------------------------------------
+2019-01-12 21:11:54 - [pool-17-thread-3] у барной стойки в ресторане 'Арагви'
+2019-01-12 21:11:54 - [pool-17-thread-1] Директор зоопарка
+2019-01-12 21:11:54 - [pool-17-thread-4] потому что это жизнь
+2019-01-12 21:11:54 - [pool-17-thread-2] грызет семечки
+2019-01-12 21:11:54 - all 4 threads finish their work:
+2019-01-12 21:11:54 - Директор зоопарка грызет семечки у барной стойки в ресторане 'Арагви' потому что это жизнь 
+----------------------------------------------
+2019-01-12 21:11:54 - [pool-18-thread-3] на Бродвее
+2019-01-12 21:11:54 - [pool-18-thread-1] Шумный сосед сверху
+2019-01-12 21:11:54 - [pool-18-thread-2] вглядывается в горизонт
+2019-01-12 21:11:54 - [pool-18-thread-4] потому что очень кушать хочется
+2019-01-12 21:11:54 - all 4 threads finish their work:
+2019-01-12 21:11:54 - Шумный сосед сверху вглядывается в горизонт на Бродвее потому что очень кушать хочется 
+----------------------------------------------
+2019-01-12 21:11:55 - [pool-19-thread-3] на даче у мангала
+2019-01-12 21:11:55 - [pool-19-thread-1] Слон из зоопарка
+2019-01-12 21:11:55 - [pool-19-thread-4] на радость маме
+2019-01-12 21:11:55 - [pool-19-thread-2] отжимается 100 раз
+2019-01-12 21:11:55 - all 4 threads finish their work:
+2019-01-12 21:11:55 - Слон из зоопарка отжимается 100 раз на даче у мангала на радость маме 
+----------------------------------------------
+2019-01-12 21:11:55 - [pool-20-thread-3] на заседании больших боссов
+2019-01-12 21:11:55 - [pool-20-thread-1] Дама в норковом манто
+2019-01-12 21:11:55 - [pool-20-thread-2] сдает бутылки
+2019-01-12 21:11:55 - [pool-20-thread-4] потому что любит чистоту и порядок
+2019-01-12 21:11:55 - all 4 threads finish their work:
+2019-01-12 21:11:55 - Дама в норковом манто сдает бутылки на заседании больших боссов потому что любит чистоту и порядок 
+----------------------------------------------
+2019-01-12 21:11:55 - [pool-21-thread-3] на краю вселенной
+2019-01-12 21:11:55 - [pool-21-thread-1] Флегматичный олень Бенедикт
+2019-01-12 21:11:55 - [pool-21-thread-4] , а почему бы и нет
+2019-01-12 21:11:55 - [pool-21-thread-2] красит волосы в безумный цвет
+2019-01-12 21:11:55 - all 4 threads finish their work:
+2019-01-12 21:11:55 - Флегматичный олень Бенедикт красит волосы в безумный цвет на краю вселенной , а почему бы и нет 
+----------------------------------------------
+2019-01-12 21:11:55 - [pool-22-thread-3] на заседании больших боссов
+2019-01-12 21:11:55 - [pool-22-thread-1] Дама в норковом манто
+2019-01-12 21:11:55 - [pool-22-thread-4] чтобы потом плюнуть на все и улететь в Париж
+2019-01-12 21:11:55 - [pool-22-thread-2] наблюдает за падающими звездами
+2019-01-12 21:11:55 - all 4 threads finish their work:
+2019-01-12 21:11:55 - Дама в норковом манто наблюдает за падающими звездами на заседании больших боссов чтобы потом плюнуть на все и улететь в Париж 
+----------------------------------------------
+2019-01-12 21:11:55 - [pool-23-thread-3] на даче у мангала
+2019-01-12 21:11:55 - [pool-23-thread-1] Директор зоопарка
+2019-01-12 21:11:55 - [pool-23-thread-4] для того, чтоб быть счастливым
+2019-01-12 21:11:55 - [pool-23-thread-2] отжимается 100 раз
+2019-01-12 21:11:55 - all 4 threads finish their work:
+2019-01-12 21:11:55 - Директор зоопарка отжимается 100 раз на даче у мангала для того, чтоб быть счастливым 
+----------------------------------------------
+2019-01-12 21:11:56 - [pool-24-thread-3] на полярной станции 'Академик Вернадский'
+2019-01-12 21:11:56 - [pool-24-thread-1] Девочка Маша
+2019-01-12 21:11:56 - [pool-24-thread-4] на радость маме
+2019-01-12 21:11:56 - [pool-24-thread-2] съедает тазик оливье
+2019-01-12 21:11:56 - all 4 threads finish their work:
+2019-01-12 21:11:56 - Девочка Маша съедает тазик оливье на полярной станции 'Академик Вернадский' на радость маме 
+----------------------------------------------
+2019-01-12 21:11:56 - [pool-25-thread-3] на межгалактической станции
+2019-01-12 21:11:56 - [pool-25-thread-1] Слон из зоопарка
+2019-01-12 21:11:56 - [pool-25-thread-2] наблюдает за падающими звездами
+2019-01-12 21:11:56 - [pool-25-thread-4] чтобы похудеть
+2019-01-12 21:11:56 - all 4 threads finish their work:
+2019-01-12 21:11:56 - Слон из зоопарка наблюдает за падающими звездами на межгалактической станции чтобы похудеть 
+----------------------------------------------
+2019-01-12 21:11:56 - [pool-26-thread-3] на заседании больших боссов
+2019-01-12 21:11:56 - [pool-26-thread-1] Сосед-дебошир Гоша
+2019-01-12 21:11:56 - [pool-26-thread-4] чтобы получить повышение
+2019-01-12 21:11:56 - [pool-26-thread-2] разглядывает витрины
+2019-01-12 21:11:56 - all 4 threads finish their work:
+2019-01-12 21:11:56 - Сосед-дебошир Гоша разглядывает витрины на заседании больших боссов чтобы получить повышение 
+----------------------------------------------
+2019-01-12 21:11:56 - [pool-27-thread-3] на космической станции 'Апполон'
+2019-01-12 21:11:56 - [pool-27-thread-1] Диктор телевидения Евгений
+2019-01-12 21:11:56 - [pool-27-thread-4] потому что может
+2019-01-12 21:11:56 - [pool-27-thread-2] пьет вино
+2019-01-12 21:11:56 - all 4 threads finish their work:
+2019-01-12 21:11:56 - Диктор телевидения Евгений пьет вино на космической станции 'Апполон' потому что может 
+----------------------------------------------
+2019-01-12 21:11:56 - [pool-28-thread-3] на 205 этаже небескреба в Дубаи
+2019-01-12 21:11:56 - [pool-28-thread-1] Депутат Иван Петрович Видпочивайло
+2019-01-12 21:11:56 - [pool-28-thread-2] выбрасывает мусор
+2019-01-12 21:11:56 - [pool-28-thread-4] чтобы получить повышение
+2019-01-12 21:11:56 - all 4 threads finish their work:
+2019-01-12 21:11:56 - Депутат Иван Петрович Видпочивайло выбрасывает мусор на 205 этаже небескреба в Дубаи чтобы получить повышение 
+----------------------------------------------
+2019-01-12 21:11:56 - [pool-29-thread-3] под деревом по имени липа
+2019-01-12 21:11:56 - [pool-29-thread-1] МарьИванна
+2019-01-12 21:11:56 - [pool-29-thread-2] сажает картошку и помидоры
+2019-01-12 21:11:56 - [pool-29-thread-4] потому что это жизнь
+2019-01-12 21:11:56 - all 4 threads finish their work:
+2019-01-12 21:11:56 - МарьИванна сажает картошку и помидоры под деревом по имени липа потому что это жизнь 
+----------------------------------------------
+2019-01-12 21:11:57 - [pool-30-thread-3] в пункте приема стеклотары
+2019-01-12 21:11:57 - [pool-30-thread-1] Директор зоопарка
+2019-01-12 21:11:57 - [pool-30-thread-4] чтобы получить удовольствие
+2019-01-12 21:11:57 - [pool-30-thread-2] много думает
+2019-01-12 21:11:57 - all 4 threads finish their work:
+2019-01-12 21:11:57 - Директор зоопарка много думает в пункте приема стеклотары чтобы получить удовольствие 
+----------------------------------------------
+2019-01-12 21:11:57 - [pool-31-thread-3] с бутылкой водки в кармане пальто
+2019-01-12 21:11:57 - [pool-31-thread-1] Диктор телевидения Евгений
+2019-01-12 21:11:57 - [pool-31-thread-4] чтоб продвинуться по карьерной лестнице
+2019-01-12 21:11:57 - [pool-31-thread-2] громко и фальшиво поет
+2019-01-12 21:11:57 - all 4 threads finish their work:
+2019-01-12 21:11:57 - Диктор телевидения Евгений громко и фальшиво поет с бутылкой водки в кармане пальто чтоб продвинуться по карьерной лестнице 
+----------------------------------------------
+2019-01-12 21:11:57 - [pool-32-thread-3] на Бродвее
+2019-01-12 21:11:57 - [pool-32-thread-1] Дама в норковом манто
+2019-01-12 21:11:57 - [pool-32-thread-4] потому что хочется
+2019-01-12 21:11:57 - [pool-32-thread-2] покупает 20 кг мандарин
+2019-01-12 21:11:57 - all 4 threads finish their work:
+2019-01-12 21:11:57 - Дама в норковом манто покупает 20 кг мандарин на Бродвее потому что хочется 
+----------------------------------------------
+2019-01-12 21:11:57 - [pool-33-thread-3] на космической станции 'Апполон'
+2019-01-12 21:11:57 - [pool-33-thread-1] Депутат Иван Петрович Видпочивайло
+2019-01-12 21:11:57 - [pool-33-thread-2] таинственно смотрит вдаль
+2019-01-12 21:11:57 - [pool-33-thread-4] потому что очень кушать хочется
+2019-01-12 21:11:57 - all 4 threads finish their work:
+2019-01-12 21:11:57 - Депутат Иван Петрович Видпочивайло таинственно смотрит вдаль на космической станции 'Апполон' потому что очень кушать хочется 
+----------------------------------------------
+2019-01-12 21:11:58 - [pool-34-thread-3] на заседании больших боссов
+2019-01-12 21:11:58 - [pool-34-thread-1] Сосед-дебошир Гоша
+2019-01-12 21:11:58 - [pool-34-thread-2] сочиняет стихи
+2019-01-12 21:11:58 - [pool-34-thread-4] потому что очень кушать хочется
+2019-01-12 21:11:58 - all 4 threads finish their work:
+2019-01-12 21:11:58 - Сосед-дебошир Гоша сочиняет стихи на заседании больших боссов потому что очень кушать хочется 
+----------------------------------------------
+2019-01-12 21:12:38 - Phrase 'бегемот' was added
+
+2019-01-12 21:12:54 - Phrase 'скачет' was added
+
+2019-01-12 21:12:57 - [pool-2-thread-3] с бутылкой водки в кармане пальто
+2019-01-12 21:12:57 - [pool-2-thread-1] Депутат Иван Петрович Видпочивайло
+2019-01-12 21:12:57 - [pool-2-thread-2] третирует соседей
+2019-01-12 21:12:57 - [pool-2-thread-4] чтобы получить повышение
+2019-01-12 21:12:57 - all 4 threads finish their work:
+2019-01-12 21:12:57 - Депутат Иван Петрович Видпочивайло третирует соседей с бутылкой водки в кармане пальто чтобы получить повышение 
+----------------------------------------------
+2019-01-12 21:13:21 - [pool-3-thread-3] в пункте приема стеклотары
+2019-01-12 21:13:21 - [pool-3-thread-1] Сантехник Василий
+2019-01-12 21:13:21 - [pool-3-thread-4] назло соседу
+2019-01-12 21:13:21 - [pool-3-thread-2] скачет
+2019-01-12 21:13:21 - all 4 threads finish their work:
+2019-01-12 21:13:21 - Сантехник Василий скачет в пункте приема стеклотары назло соседу 
+----------------------------------------------
+2019-01-12 21:13:30 - [pool-4-thread-3] на демонстрации феминисток
+2019-01-12 21:13:30 - [pool-4-thread-1] Снегурочка после Новогоднего утренника
+2019-01-12 21:13:30 - [pool-4-thread-2] таинственно смотрит вдаль
+2019-01-12 21:13:30 - [pool-4-thread-4] чтобы победить свою лень
+2019-01-12 21:13:30 - all 4 threads finish their work:
+2019-01-12 21:13:30 - Снегурочка после Новогоднего утренника таинственно смотрит вдаль на демонстрации феминисток чтобы победить свою лень 
+----------------------------------------------
+2019-01-12 21:13:38 - [pool-5-thread-3] на космической станции 'Апполон'
+2019-01-12 21:13:38 - [pool-5-thread-1] Любитель пива Николай
+2019-01-12 21:13:38 - [pool-5-thread-4] чтоб продвинуться по карьерной лестнице
+2019-01-12 21:13:38 - [pool-5-thread-2] поднимает штангу
+2019-01-12 21:13:38 - all 4 threads finish their work:
+2019-01-12 21:13:38 - Любитель пива Николай поднимает штангу на космической станции 'Апполон' чтоб продвинуться по карьерной лестнице 
+----------------------------------------------
+2019-01-12 21:13:46 - [pool-6-thread-3] на диване с рюмкой чая
+2019-01-12 21:13:46 - [pool-6-thread-1] Уфолог-любитель Кирилл
+2019-01-12 21:13:46 - [pool-6-thread-2] сочиняет стихи
+2019-01-12 21:13:46 - [pool-6-thread-4] для красоты
+2019-01-12 21:13:46 - all 4 threads finish their work:
+2019-01-12 21:13:46 - Уфолог-любитель Кирилл сочиняет стихи на диване с рюмкой чая для красоты 
+----------------------------------------------
+2019-01-12 21:22:20 - Start application, run initSources...
+2019-01-12 21:22:20 - All sources were filled out with data from /resources text files
+----------------------------------------------
+2019-01-12 21:22:24 - [pool-2-thread-3] на диване с рюмкой чая
+2019-01-12 21:22:24 - [pool-2-thread-2] сдает бутылки
+2019-01-12 21:22:24 - [pool-2-thread-4] чтобы потом плюнуть на все и улететь в Париж
+2019-01-12 21:22:24 - [pool-2-thread-1] Кот Эдуард
+2019-01-12 21:22:24 - all 4 threads finish their work:
+2019-01-12 21:22:24 - Кот Эдуард сдает бутылки на диване с рюмкой чая чтобы потом плюнуть на все и улететь в Париж 
+----------------------------------------------
+2019-01-12 21:22:28 - [pool-3-thread-3] на космической станции 'Апполон'
+2019-01-12 21:22:28 - [pool-3-thread-1] Шумный сосед сверху
+2019-01-12 21:22:28 - [pool-3-thread-2] ест ложками красную икру
+2019-01-12 21:22:28 - [pool-3-thread-4] , а почему бы и нет
+2019-01-12 21:22:28 - all 4 threads finish their work:
+2019-01-12 21:22:28 - Шумный сосед сверху ест ложками красную икру на космической станции 'Апполон' , а почему бы и нет 
+----------------------------------------------
+2019-01-12 21:22:35 - [pool-4-thread-3] на горе Фудзияма
+2019-01-12 21:22:35 - [pool-4-thread-1] Девочка Маша
+2019-01-12 21:22:35 - [pool-4-thread-2] отжимается 100 раз
+2019-01-12 21:22:35 - [pool-4-thread-4] чтоб продвинуться по карьерной лестнице
+2019-01-12 21:22:35 - all 4 threads finish their work:
+2019-01-12 21:22:35 - Девочка Маша отжимается 100 раз на горе Фудзияма чтоб продвинуться по карьерной лестнице 
+----------------------------------------------
+2019-01-12 21:22:38 - [pool-5-thread-3] в фойе театра оперетты
+2019-01-12 21:22:38 - [pool-5-thread-1] Сосед-дебошир Гоша
+2019-01-12 21:22:38 - [pool-5-thread-2] сутками сидит в позе лотоса
+2019-01-12 21:22:38 - [pool-5-thread-4] чтобы достигнуть дзена
+2019-01-12 21:22:38 - all 4 threads finish their work:
+2019-01-12 21:22:38 - Сосед-дебошир Гоша сутками сидит в позе лотоса в фойе театра оперетты чтобы достигнуть дзена 
+----------------------------------------------
+2019-01-12 21:22:42 - [pool-6-thread-3] в магазине сантехники
+2019-01-12 21:22:42 - [pool-6-thread-1] Сантехник Василий
+2019-01-12 21:22:42 - [pool-6-thread-4] потому что может себе это позволить
+2019-01-12 21:22:42 - [pool-6-thread-2] крадется в темноте
+2019-01-12 21:22:42 - all 4 threads finish their work:
+2019-01-12 21:22:42 - Сантехник Василий крадется в темноте в магазине сантехники потому что может себе это позволить 
+----------------------------------------------
+2019-01-12 21:22:48 - [pool-7-thread-3] на пляже Рио-де-Жанейро
+2019-01-12 21:22:48 - [pool-7-thread-1] Кот Эдуард
+2019-01-12 21:22:48 - [pool-7-thread-2] слоняется без дела
+2019-01-12 21:22:48 - [pool-7-thread-4] чтобы потом плюнуть на все и улететь в Париж
+2019-01-12 21:22:48 - all 4 threads finish their work:
+2019-01-12 21:22:48 - Кот Эдуард слоняется без дела на пляже Рио-де-Жанейро чтобы потом плюнуть на все и улететь в Париж 
+----------------------------------------------
+2019-01-12 21:22:50 - [pool-8-thread-3] с бутылкой водки в кармане пальто
+2019-01-12 21:22:50 - [pool-8-thread-1] Программист Сергей
+2019-01-12 21:22:50 - [pool-8-thread-4] потому что молодец
+2019-01-12 21:22:50 - [pool-8-thread-2] нервно курит
+2019-01-12 21:22:50 - all 4 threads finish their work:
+2019-01-12 21:22:50 - Программист Сергей нервно курит с бутылкой водки в кармане пальто потому что молодец 
+----------------------------------------------
+2019-01-12 21:22:53 - [pool-9-thread-3] на полярной станции 'Академик Вернадский'
+2019-01-12 21:22:53 - [pool-9-thread-1] Диктор телевидения Евгений
+2019-01-12 21:22:53 - [pool-9-thread-4] , а почему бы и нет
+2019-01-12 21:22:53 - [pool-9-thread-2] таинственно смотрит вдаль
+2019-01-12 21:22:53 - all 4 threads finish their work:
+2019-01-12 21:22:53 - Диктор телевидения Евгений таинственно смотрит вдаль на полярной станции 'Академик Вернадский' , а почему бы и нет 
+----------------------------------------------
+2019-01-12 21:22:53 - [pool-10-thread-3] на даче у мангала
+2019-01-12 21:22:53 - [pool-10-thread-1] МарьИванна
+2019-01-12 21:22:53 - [pool-10-thread-2] грызет семечки
+2019-01-12 21:22:53 - [pool-10-thread-4] на радость маме
+2019-01-12 21:22:53 - all 4 threads finish their work:
+2019-01-12 21:22:53 - МарьИванна грызет семечки на даче у мангала на радость маме 
+----------------------------------------------
+2019-01-12 21:22:55 - [pool-11-thread-3] на горе Фудзияма
+2019-01-12 21:22:55 - [pool-11-thread-1] Диктор телевидения Евгений
+2019-01-12 21:22:55 - [pool-11-thread-2] красит губы в алый цвет
+2019-01-12 21:22:55 - [pool-11-thread-4] чтобы получить повышение
+2019-01-12 21:22:55 - all 4 threads finish their work:
+2019-01-12 21:22:55 - Диктор телевидения Евгений красит губы в алый цвет на горе Фудзияма чтобы получить повышение 
+----------------------------------------------
+2019-01-12 21:22:56 - [pool-12-thread-3] на Бродвее
+2019-01-12 21:22:56 - [pool-12-thread-1] Кандидат в президенты от партии любителей пива
+2019-01-12 21:22:56 - [pool-12-thread-2] не спит по ночам
+2019-01-12 21:22:56 - [pool-12-thread-4] потому что это красиво
+2019-01-12 21:22:56 - all 4 threads finish their work:
+2019-01-12 21:22:56 - Кандидат в президенты от партии любителей пива не спит по ночам на Бродвее потому что это красиво 
+----------------------------------------------
+2019-01-12 21:23:01 - [pool-13-thread-3] в фойе театра оперетты
+2019-01-12 21:23:01 - [pool-13-thread-1] Диктор телевидения Евгений
+2019-01-12 21:23:01 - [pool-13-thread-4] потому что молодец
+2019-01-12 21:23:01 - [pool-13-thread-2] много думает
+2019-01-12 21:23:01 - all 4 threads finish their work:
+2019-01-12 21:23:01 - Диктор телевидения Евгений много думает в фойе театра оперетты потому что молодец 
+----------------------------------------------
+2019-01-12 21:23:02 - [pool-14-thread-3] с бутылкой водки в кармане пальто
+2019-01-12 21:23:02 - [pool-14-thread-1] Дама в норковом манто
+2019-01-12 21:23:02 - [pool-14-thread-4] чтоб продвинуться по карьерной лестнице
+2019-01-12 21:23:02 - [pool-14-thread-2] торгует апельсинами
+2019-01-12 21:23:02 - all 4 threads finish their work:
+2019-01-12 21:23:02 - Дама в норковом манто торгует апельсинами с бутылкой водки в кармане пальто чтоб продвинуться по карьерной лестнице 
+----------------------------------------------
+2019-01-12 21:23:05 - [pool-15-thread-3] на межгалактической станции
+2019-01-12 21:23:05 - [pool-15-thread-1] Девочка Маша
+2019-01-12 21:23:05 - [pool-15-thread-4] чтобы достигнуть дзена
+2019-01-12 21:23:05 - [pool-15-thread-2] громко и фальшиво поет
+2019-01-12 21:23:05 - all 4 threads finish their work:
+2019-01-12 21:23:05 - Девочка Маша громко и фальшиво поет на межгалактической станции чтобы достигнуть дзена 
+----------------------------------------------
+2019-01-12 21:23:06 - [pool-16-thread-3] на даче у мангала
+2019-01-12 21:23:06 - [pool-16-thread-1] Снегурочка после Новогоднего утренника
+2019-01-12 21:23:06 - [pool-16-thread-2] стучит молотком по батарее
+2019-01-12 21:23:06 - [pool-16-thread-4] чтобы взглянуть на ситуацию с другой стороны
+2019-01-12 21:23:06 - all 4 threads finish their work:
+2019-01-12 21:23:06 - Снегурочка после Новогоднего утренника стучит молотком по батарее на даче у мангала чтобы взглянуть на ситуацию с другой стороны 
+----------------------------------------------
+2019-01-12 21:23:08 - [pool-17-thread-3] на заседании больших боссов
+2019-01-12 21:23:08 - [pool-17-thread-1] Депутат Иван Петрович Видпочивайло
+2019-01-12 21:23:08 - [pool-17-thread-4] потому что это жизнь
+2019-01-12 21:23:08 - [pool-17-thread-2] сутками сидит в позе лотоса
+2019-01-12 21:23:08 - all 4 threads finish their work:
+2019-01-12 21:23:08 - Депутат Иван Петрович Видпочивайло сутками сидит в позе лотоса на заседании больших боссов потому что это жизнь 
+----------------------------------------------
+2019-01-12 21:23:08 - [pool-18-thread-3] на межгалактической станции
+2019-01-12 21:23:08 - [pool-18-thread-1] Кот Эдуард
+2019-01-12 21:23:08 - [pool-18-thread-4] назло соседу
+2019-01-12 21:23:08 - [pool-18-thread-2] слоняется без дела
+2019-01-12 21:23:08 - all 4 threads finish their work:
+2019-01-12 21:23:08 - Кот Эдуард слоняется без дела на межгалактической станции назло соседу 
+----------------------------------------------
+2019-01-12 21:23:09 - [pool-19-thread-3] на краю вселенной
+2019-01-12 21:23:09 - [pool-19-thread-1] Кот Эдуард
+2019-01-12 21:23:09 - [pool-19-thread-2] готовит ужин на 100 человек
+2019-01-12 21:23:09 - [pool-19-thread-4] назло соседу
+2019-01-12 21:23:09 - all 4 threads finish their work:
+2019-01-12 21:23:09 - Кот Эдуард готовит ужин на 100 человек на краю вселенной назло соседу 
+----------------------------------------------
+2019-01-12 21:23:09 - [pool-20-thread-3] на демонстрации феминисток
+2019-01-12 21:23:09 - [pool-20-thread-1] Кот Эдуард
+2019-01-12 21:23:09 - [pool-20-thread-2] поднимает штангу
+2019-01-12 21:23:09 - [pool-20-thread-4] чтобы достигнуть дзена
+2019-01-12 21:23:09 - all 4 threads finish their work:
+2019-01-12 21:23:09 - Кот Эдуард поднимает штангу на демонстрации феминисток чтобы достигнуть дзена 
+----------------------------------------------
+2019-01-12 21:23:09 - [pool-21-thread-3] на развалинах часовни
+2019-01-12 21:23:09 - [pool-21-thread-1] Сосед-дебошир Гоша
+2019-01-12 21:23:09 - [pool-21-thread-2] ест ложками красную икру
+2019-01-12 21:23:09 - [pool-21-thread-4] потому что об этом мечталось
+2019-01-12 21:23:09 - all 4 threads finish their work:
+2019-01-12 21:23:09 - Сосед-дебошир Гоша ест ложками красную икру на развалинах часовни потому что об этом мечталось 
+----------------------------------------------
+2019-01-12 21:23:15 - [pool-22-thread-3] у синего-синего моря
+2019-01-12 21:23:15 - [pool-22-thread-1] Сосед-дебошир Гоша
+2019-01-12 21:23:15 - [pool-22-thread-2] поднимает штангу
+2019-01-12 21:23:15 - [pool-22-thread-4] чтобы забыться
+2019-01-12 21:23:15 - all 4 threads finish their work:
+2019-01-12 21:23:15 - Сосед-дебошир Гоша поднимает штангу у синего-синего моря чтобы забыться 
+----------------------------------------------
+2019-01-12 21:23:16 - [pool-23-thread-3] на краю вселенной
+2019-01-12 21:23:16 - [pool-23-thread-1] Загадочный мужчина в кепке
+2019-01-12 21:23:16 - [pool-23-thread-2] нервно курит
+2019-01-12 21:23:16 - [pool-23-thread-4] потому что очень кушать хочется
+2019-01-12 21:23:16 - all 4 threads finish their work:
+2019-01-12 21:23:16 - Загадочный мужчина в кепке нервно курит на краю вселенной потому что очень кушать хочется 
+----------------------------------------------
+2019-01-12 21:23:29 - [pool-24-thread-3] на Бродвее
+2019-01-12 21:23:29 - [pool-24-thread-1] Девочка Маша
+2019-01-12 21:23:29 - [pool-24-thread-4] потому что об этом мечталось
+2019-01-12 21:23:29 - [pool-24-thread-2] выбрасывает мусор
+2019-01-12 21:23:29 - all 4 threads finish their work:
+2019-01-12 21:23:29 - Девочка Маша выбрасывает мусор на Бродвее потому что об этом мечталось 
+----------------------------------------------
+2019-01-12 21:23:31 - [pool-25-thread-3] на заседании больших боссов
+2019-01-12 21:23:31 - [pool-25-thread-1] Кандидат в президенты от партии любителей пива
+2019-01-12 21:23:31 - [pool-25-thread-2] сажает картошку и помидоры
+2019-01-12 21:23:31 - [pool-25-thread-4] потому что это так увлекательно
+2019-01-12 21:23:31 - all 4 threads finish their work:
+2019-01-12 21:23:31 - Кандидат в президенты от партии любителей пива сажает картошку и помидоры на заседании больших боссов потому что это так увлекательно 
+----------------------------------------------
+2019-01-12 21:23:56 - [pool-26-thread-3] в фойе театра оперетты
+2019-01-12 21:23:56 - [pool-26-thread-1] Дворник с метлой
+2019-01-12 21:23:56 - [pool-26-thread-2] сутками сидит в позе лотоса
+2019-01-12 21:23:56 - [pool-26-thread-4] потому что об этом мечталось
+2019-01-12 21:23:56 - all 4 threads finish their work:
+2019-01-12 21:23:56 - Дворник с метлой сутками сидит в позе лотоса в фойе театра оперетты потому что об этом мечталось 
+----------------------------------------------
+2019-01-12 21:23:59 - [pool-27-thread-3] на Бродвее
+2019-01-12 21:23:59 - [pool-27-thread-1] Любитель пива Николай
+2019-01-12 21:23:59 - [pool-27-thread-2] таинственно смотрит вдаль
+2019-01-12 21:23:59 - [pool-27-thread-4] потому что это красиво
+2019-01-12 21:23:59 - all 4 threads finish their work:
+2019-01-12 21:23:59 - Любитель пива Николай таинственно смотрит вдаль на Бродвее потому что это красиво 
+----------------------------------------------
+2019-01-12 21:24:00 - [pool-28-thread-3] у барной стойки в ресторане 'Арагви'
+2019-01-12 21:24:00 - [pool-28-thread-1] Сантехник Василий
+2019-01-12 21:24:00 - [pool-28-thread-2] медитирует
+2019-01-12 21:24:00 - [pool-28-thread-4] для красоты
+2019-01-12 21:24:00 - all 4 threads finish their work:
+2019-01-12 21:24:00 - Сантехник Василий медитирует у барной стойки в ресторане 'Арагви' для красоты 
+----------------------------------------------
+2019-01-12 21:24:02 - [pool-29-thread-3] на демонстрации феминисток
+2019-01-12 21:24:02 - [pool-29-thread-1] Уфолог-любитель Кирилл
+2019-01-12 21:24:02 - [pool-29-thread-4] потому что это так увлекательно
+2019-01-12 21:24:02 - [pool-29-thread-2] торгует апельсинами
+2019-01-12 21:24:02 - all 4 threads finish their work:
+2019-01-12 21:24:02 - Уфолог-любитель Кирилл торгует апельсинами на демонстрации феминисток потому что это так увлекательно 
+----------------------------------------------
+2019-01-12 21:24:08 - [pool-30-thread-3] на даче у мангала
+2019-01-12 21:24:08 - [pool-30-thread-1] МарьИванна
+2019-01-12 21:24:08 - [pool-30-thread-2] ест торт перед сном
+2019-01-12 21:24:08 - [pool-30-thread-4] чтобы найти смысл жизни
+2019-01-12 21:24:08 - all 4 threads finish their work:
+2019-01-12 21:24:08 - МарьИванна ест торт перед сном на даче у мангала чтобы найти смысл жизни 
+----------------------------------------------
+2019-01-12 21:24:08 - [pool-31-thread-3] под деревом по имени липа
+2019-01-12 21:24:08 - [pool-31-thread-1] Сосед-дебошир Гоша
+2019-01-12 21:24:08 - [pool-31-thread-2] торгует апельсинами
+2019-01-12 21:24:08 - [pool-31-thread-4] , а почему бы и нет
+2019-01-12 21:24:08 - all 4 threads finish their work:
+2019-01-12 21:24:08 - Сосед-дебошир Гоша торгует апельсинами под деревом по имени липа , а почему бы и нет 
+----------------------------------------------
+2019-01-12 21:24:10 - [pool-32-thread-3] в приемной своего шефа
+2019-01-12 21:24:10 - [pool-32-thread-1] Флегматичный олень Бенедикт
+2019-01-12 21:24:10 - [pool-32-thread-2] заряжает двухстволку
+2019-01-12 21:24:10 - [pool-32-thread-4] потому что это так увлекательно
+2019-01-12 21:24:10 - all 4 threads finish their work:
+2019-01-12 21:24:10 - Флегматичный олень Бенедикт заряжает двухстволку в приемной своего шефа потому что это так увлекательно 
+----------------------------------------------
+2019-01-12 21:24:14 - [pool-33-thread-3] под деревом по имени липа
+2019-01-12 21:24:14 - [pool-33-thread-1] Загадочный мужчина в кепке
+2019-01-12 21:24:14 - [pool-33-thread-2] красит волосы в безумный цвет
+2019-01-12 21:24:14 - [pool-33-thread-4] потому что так надо
+2019-01-12 21:24:14 - all 4 threads finish their work:
+2019-01-12 21:24:14 - Загадочный мужчина в кепке красит волосы в безумный цвет под деревом по имени липа потому что так надо 
+----------------------------------------------
+2019-01-12 21:24:20 - [pool-34-thread-3] на краю вселенной
+2019-01-12 21:24:20 - [pool-34-thread-1] Кот Эдуард
+2019-01-12 21:24:20 - [pool-34-thread-4] чтобы найти смысл жизни
+2019-01-12 21:24:20 - [pool-34-thread-2] выбрасывает мусор
+2019-01-12 21:24:20 - all 4 threads finish their work:
+2019-01-12 21:24:20 - Кот Эдуард выбрасывает мусор на краю вселенной чтобы найти смысл жизни 
+----------------------------------------------
+2019-01-12 21:24:22 - [pool-35-thread-3] на 205 этаже небескреба в Дубаи
+2019-01-12 21:24:22 - [pool-35-thread-1] Сосед-дебошир Гоша
+2019-01-12 21:24:22 - [pool-35-thread-2] заряжает двухстволку
+2019-01-12 21:24:22 - [pool-35-thread-4] потому что так надо
+2019-01-12 21:24:22 - all 4 threads finish their work:
+2019-01-12 21:24:22 - Сосед-дебошир Гоша заряжает двухстволку на 205 этаже небескреба в Дубаи потому что так надо 
+----------------------------------------------
+2019-01-12 21:24:24 - [pool-36-thread-3] на пляже Рио-де-Жанейро
+2019-01-12 21:24:24 - [pool-36-thread-1] Директор зоопарка
+2019-01-12 21:24:24 - [pool-36-thread-2] сочиняет стихи
+2019-01-12 21:24:24 - [pool-36-thread-4] на радость маме
+2019-01-12 21:24:24 - all 4 threads finish their work:
+2019-01-12 21:24:24 - Директор зоопарка сочиняет стихи на пляже Рио-де-Жанейро на радость маме 
+----------------------------------------------
+2019-01-12 21:24:27 - [pool-37-thread-3] под деревом по имени липа
+2019-01-12 21:24:27 - [pool-37-thread-1] Уфолог-любитель Кирилл
+2019-01-12 21:24:27 - [pool-37-thread-2] медитирует
+2019-01-12 21:24:27 - [pool-37-thread-4] потому что жизнь - борьба
+2019-01-12 21:24:27 - all 4 threads finish their work:
+2019-01-12 21:24:27 - Уфолог-любитель Кирилл медитирует под деревом по имени липа потому что жизнь - борьба 
+----------------------------------------------
+2019-01-12 21:24:30 - [pool-38-thread-3] на развалинах часовни
+2019-01-12 21:24:30 - [pool-38-thread-1] Программист Сергей
+2019-01-12 21:24:30 - [pool-38-thread-2] задумчиво сидит
+2019-01-12 21:24:30 - [pool-38-thread-4] чтобы получить удовольствие
+2019-01-12 21:24:30 - all 4 threads finish their work:
+2019-01-12 21:24:30 - Программист Сергей задумчиво сидит на развалинах часовни чтобы получить удовольствие 
+----------------------------------------------
+2019-01-12 21:24:32 - [pool-39-thread-3] у барной стойки в ресторане 'Арагви'
+2019-01-12 21:24:32 - [pool-39-thread-1] Любитель пива Николай
+2019-01-12 21:24:32 - [pool-39-thread-4] потому что жизнь - борьба
+2019-01-12 21:24:32 - [pool-39-thread-2] много думает
+2019-01-12 21:24:32 - all 4 threads finish their work:
+2019-01-12 21:24:32 - Любитель пива Николай много думает у барной стойки в ресторане 'Арагви' потому что жизнь - борьба 
+----------------------------------------------
+2019-01-12 21:24:33 - [pool-40-thread-3] у синего-синего моря
+2019-01-12 21:24:33 - [pool-40-thread-1] Диктор телевидения Евгений
+2019-01-12 21:24:33 - [pool-40-thread-4] потому что молодец
+2019-01-12 21:24:33 - [pool-40-thread-2] торгует апельсинами
+2019-01-12 21:24:33 - all 4 threads finish their work:
+2019-01-12 21:24:33 - Диктор телевидения Евгений торгует апельсинами у синего-синего моря потому что молодец 
+----------------------------------------------
+2019-01-12 21:24:36 - [pool-41-thread-3] у синего-синего моря
+2019-01-12 21:24:36 - [pool-41-thread-1] Дворник с метлой
+2019-01-12 21:24:36 - [pool-41-thread-2] вглядывается в горизонт
+2019-01-12 21:24:36 - [pool-41-thread-4] потому что очень кушать хочется
+2019-01-12 21:24:36 - all 4 threads finish their work:
+2019-01-12 21:24:36 - Дворник с метлой вглядывается в горизонт у синего-синего моря потому что очень кушать хочется 
+----------------------------------------------
+2019-01-12 21:24:38 - [pool-42-thread-3] на развалинах часовни
+2019-01-12 21:24:38 - [pool-42-thread-1] Директор зоопарка
+2019-01-12 21:24:38 - [pool-42-thread-4] чтобы найти смысл жизни
+2019-01-12 21:24:38 - [pool-42-thread-2] отжимается 100 раз
+2019-01-12 21:24:38 - all 4 threads finish their work:
+2019-01-12 21:24:38 - Директор зоопарка отжимается 100 раз на развалинах часовни чтобы найти смысл жизни 
+----------------------------------------------
+2019-01-12 21:24:40 - [pool-43-thread-3] на диване с рюмкой чая
+2019-01-12 21:24:40 - [pool-43-thread-1] Любитель пива Николай
+2019-01-12 21:24:40 - [pool-43-thread-2] готовит ужин на 100 человек
+2019-01-12 21:24:40 - [pool-43-thread-4] потому что всю жизнь хотелось это сделать
+2019-01-12 21:24:40 - all 4 threads finish their work:
+2019-01-12 21:24:40 - Любитель пива Николай готовит ужин на 100 человек на диване с рюмкой чая потому что всю жизнь хотелось это сделать 
+----------------------------------------------
+2019-01-12 21:24:43 - [pool-44-thread-3] в фойе театра оперетты
+2019-01-12 21:24:43 - [pool-44-thread-1] Сантехник Василий
+2019-01-12 21:24:43 - [pool-44-thread-4] потому что хочется
+2019-01-12 21:24:43 - [pool-44-thread-2] стрижется налысо
+2019-01-12 21:24:43 - all 4 threads finish their work:
+2019-01-12 21:24:43 - Сантехник Василий стрижется налысо в фойе театра оперетты потому что хочется 
+----------------------------------------------
+2019-01-12 21:24:46 - [pool-45-thread-3] на Бродвее
+2019-01-12 21:24:46 - [pool-45-thread-1] Бьюти-блогерша-губы-уточкой
+2019-01-12 21:24:46 - [pool-45-thread-2] красит губы в алый цвет
+2019-01-12 21:24:46 - [pool-45-thread-4] чтобы не думать о прошлом
+2019-01-12 21:24:46 - all 4 threads finish their work:
+2019-01-12 21:24:46 - Бьюти-блогерша-губы-уточкой красит губы в алый цвет на Бродвее чтобы не думать о прошлом 
+----------------------------------------------
+2019-01-12 21:24:51 - [pool-46-thread-3] под деревом по имени липа
+2019-01-12 21:24:51 - [pool-46-thread-1] Кот Эдуард
+2019-01-12 21:24:51 - [pool-46-thread-2] таинственно смотрит вдаль
+2019-01-12 21:24:51 - [pool-46-thread-4] потому что всю жизнь хотелось это сделать
+2019-01-12 21:24:51 - all 4 threads finish their work:
+2019-01-12 21:24:51 - Кот Эдуард таинственно смотрит вдаль под деревом по имени липа потому что всю жизнь хотелось это сделать 
+----------------------------------------------
+2019-01-12 21:24:55 - [pool-47-thread-3] на развалинах часовни
+2019-01-12 21:24:55 - [pool-47-thread-1] Уфолог-любитель Кирилл
+2019-01-12 21:24:55 - [pool-47-thread-2] сутками сидит в позе лотоса
+2019-01-12 21:24:55 - [pool-47-thread-4] чтобы потом плюнуть на все и улететь в Париж
+2019-01-12 21:24:55 - all 4 threads finish their work:
+2019-01-12 21:24:55 - Уфолог-любитель Кирилл сутками сидит в позе лотоса на развалинах часовни чтобы потом плюнуть на все и улететь в Париж 
+----------------------------------------------
+2019-01-12 21:24:59 - [pool-48-thread-1] Сантехник Василий
+2019-01-12 21:24:59 - [pool-48-thread-3] в фойе театра оперетты
+2019-01-12 21:24:59 - [pool-48-thread-2] стучит молотком по батарее
+2019-01-12 21:24:59 - [pool-48-thread-4] для того, чтоб быть счастливым
+2019-01-12 21:24:59 - all 4 threads finish their work:
+2019-01-12 21:24:59 - Сантехник Василий стучит молотком по батарее в фойе театра оперетты для того, чтоб быть счастливым 
+----------------------------------------------
+2019-01-12 21:25:03 - [pool-49-thread-3] под деревом по имени липа
+2019-01-12 21:25:03 - [pool-49-thread-1] Снегурочка после Новогоднего утренника
+2019-01-12 21:25:03 - [pool-49-thread-4] потому что это жизнь
+2019-01-12 21:25:03 - [pool-49-thread-2] задумчиво сидит
+2019-01-12 21:25:03 - all 4 threads finish their work:
+2019-01-12 21:25:03 - Снегурочка после Новогоднего утренника задумчиво сидит под деревом по имени липа потому что это жизнь 
+----------------------------------------------
+2019-01-12 21:29:15 - [pool-50-thread-3] на полярной станции 'Академик Вернадский'
+2019-01-12 21:29:15 - [pool-50-thread-1] Слон из зоопарка
+2019-01-12 21:29:15 - [pool-50-thread-2] нервно курит
+2019-01-12 21:29:15 - [pool-50-thread-4] чтобы похудеть
+2019-01-12 21:29:15 - all 4 threads finish their work:
+2019-01-12 21:29:15 - Слон из зоопарка нервно курит на полярной станции 'Академик Вернадский' чтобы похудеть 
+----------------------------------------------
+2019-01-12 21:29:16 - [pool-51-thread-1] Шумный сосед сверху
+2019-01-12 21:29:16 - [pool-51-thread-3] в обсерватории академии наук
+2019-01-12 21:29:16 - [pool-51-thread-4] потому что так надо
+2019-01-12 21:29:16 - [pool-51-thread-2] сутками сидит в позе лотоса
+2019-01-12 21:29:16 - all 4 threads finish their work:
+2019-01-12 21:29:16 - Шумный сосед сверху сутками сидит в позе лотоса в обсерватории академии наук потому что так надо 
+----------------------------------------------
+2019-01-12 21:29:49 - [pool-52-thread-3] на диване с рюмкой чая
+2019-01-12 21:29:49 - [pool-52-thread-1] Девочка Маша
+2019-01-12 21:29:49 - [pool-52-thread-2] сутками сидит в позе лотоса
+2019-01-12 21:29:49 - [pool-52-thread-4] на радость маме
+2019-01-12 21:29:49 - all 4 threads finish their work:
+2019-01-12 21:29:49 - Девочка Маша сутками сидит в позе лотоса на диване с рюмкой чая на радость маме 
+----------------------------------------------
+2019-01-12 21:29:50 - [pool-53-thread-3] в приемной своего шефа
+2019-01-12 21:29:50 - [pool-53-thread-1] Диктор телевидения Евгений
+2019-01-12 21:29:50 - [pool-53-thread-4] потому что это так увлекательно
+2019-01-12 21:29:50 - [pool-53-thread-2] наблюдает за падающими звездами
+2019-01-12 21:29:50 - all 4 threads finish their work:
+2019-01-12 21:29:50 - Диктор телевидения Евгений наблюдает за падающими звездами в приемной своего шефа потому что это так увлекательно 
+----------------------------------------------
+2019-01-12 21:29:53 - [pool-54-thread-3] на станции техобслуживания
+2019-01-12 21:29:53 - [pool-54-thread-1] Кандидат в президенты от партии любителей пива
+2019-01-12 21:29:53 - [pool-54-thread-4] для того, чтоб быть счастливым
+2019-01-12 21:29:53 - [pool-54-thread-2] красит волосы в безумный цвет
+2019-01-12 21:29:53 - all 4 threads finish their work:
+2019-01-12 21:29:53 - Кандидат в президенты от партии любителей пива красит волосы в безумный цвет на станции техобслуживания для того, чтоб быть счастливым 
+----------------------------------------------
+2019-01-12 21:29:56 - [pool-55-thread-3] на горе Фудзияма
+2019-01-12 21:29:56 - [pool-55-thread-1] Директор зоопарка
+2019-01-12 21:29:56 - [pool-55-thread-2] торгует апельсинами
+2019-01-12 21:29:56 - [pool-55-thread-4] чтобы не думать о прошлом
+2019-01-12 21:29:56 - all 4 threads finish their work:
+2019-01-12 21:29:56 - Директор зоопарка торгует апельсинами на горе Фудзияма чтобы не думать о прошлом 
+----------------------------------------------
+2019-01-12 21:31:23 - [pool-56-thread-3] под деревом по имени липа
+2019-01-12 21:31:23 - [pool-56-thread-4] потому что может
+2019-01-12 21:31:23 - [pool-56-thread-2] вглядывается в горизонт
+2019-01-12 21:31:23 - [pool-56-thread-1] Депутат Иван Петрович Видпочивайло
+2019-01-12 21:31:23 - all 4 threads finish their work:
+2019-01-12 21:31:23 - Депутат Иван Петрович Видпочивайло вглядывается в горизонт под деревом по имени липа потому что может 
+----------------------------------------------
+2019-01-12 21:31:58 - Close all resources and exit 
+----------------------------------------------
+2019-01-12 21:38:00 - Start application, run initSources...
+2019-01-12 21:38:01 - All sources were filled out with data from /resources text files
+----------------------------------------------
