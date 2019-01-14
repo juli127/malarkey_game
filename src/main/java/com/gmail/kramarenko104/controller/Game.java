@@ -27,7 +27,7 @@ public class Game {
     private List<RunnableWord> wordsList;
 
     public Game() {
-        logger.debug("Start application, run initSources...");
+        logger.debug("Start application...");
 
         musician = new Musician(true, MUSIC_FILE);
         new Thread(musician).start();
@@ -37,29 +37,32 @@ public class Game {
         // 'WHO'
         // first resource for sentence' words: local file 'nouns.txt'
         who = new Who(WHO_FILE_PATH);
-        Path resourceFxml = Paths.get(".").toAbsolutePath().normalize();
-
         wordsList.add(who);
-        //logger.debug("'who' source was created from file 'nouns.txt'");
+        logger.debug("'who' source was created from file 'nouns.txt'");
 
         // 'WHAT DOES'
         // next resource for sentence' words: local MySQL database, table 'whatDoes'
         whatDoes = new WhatDoes(VERB_FILE_PATH);
         wordsList.add(whatDoes);
-        //logger.debug("'what' source was created from MySQL database, table 'actions'");
+        logger.debug("'what' source was created from MySQL database, table 'actions'");
 
         // 'WHERE'
         // next resource for sentence' words: local strings' list
         where = new Where(WHERE_FILE_PATH);
         wordsList.add(where);
-        //logger.debug("'where' source was created from local strings' list");
+        logger.debug("'where' source was created from local strings' list");
 
         // 'WHY'
         // next resource for sentence' words: local MySQL database, table 'reasons'
         why = new Why(WHY_FILE_PATH);
         wordsList.add(why);
-        //logger.debug("'why' source was created from MySQL database, table 'reasons'");
+        logger.debug("'why' source was created from MySQL database, table 'reasons'");
 
+        fillWorkSourcesWithData();
+    }
+
+    public void fillWorkSourcesWithData() {
+        logger.debug("Init all sources...");
         for (RunnableWord word : wordsList) {
             word.fillWithValues();
         }
@@ -67,6 +70,7 @@ public class Game {
     }
 
     public String createSentence() {
+        StringBuilder sentence = new StringBuilder();
         CountDownLatch startLatch = new CountDownLatch(4);
         ExecutorService pool = Executors.newCachedThreadPool();
 
@@ -86,12 +90,10 @@ public class Game {
         logger.debug("all 4 threads finish their work:");
 
         // collect results from all threads
-        StringBuilder sentence = new StringBuilder();
         for (RunnableWord word : wordsList) {
             sentence.append(word.getWord()).append(" ");
         }
         logger.debug(sentence + splitLine);
-
         return sentence.toString();
     }
 

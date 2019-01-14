@@ -2,12 +2,14 @@ package com.gmail.kramarenko104.model;
 
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
+import org.apache.log4j.Logger;
 
 public class Musician implements Runnable {
 
     private boolean isPlaying;
     private boolean toPlay;
     private MediaPlayer player;
+    private static Logger logger = Logger.getLogger(Musician.class);
 
     public Musician(boolean toPlay, String musicFileName) {
         this.toPlay = toPlay;
@@ -30,10 +32,12 @@ public class Musician implements Runnable {
                 if (isPlaying && !toPlay) {
                     player.stop();
                     isPlaying = false;
+                    logger.debug("Stop music playing...");
                 }
                 if (!isPlaying && toPlay) {
                     player.play();
                     isPlaying = true;
+                    logger.debug("Start music playing...");
                 }
                 try {
                     wait();
