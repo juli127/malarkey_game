@@ -3,7 +3,6 @@ package com.gmail.kramarenko104.dao;
 import java.io.*;
 import java.nio.file.Path;
 import java.sql.*;
-import java.util.concurrent.ThreadLocalRandom;
 import org.apache.log4j.Logger;
 
 public class DBWorker implements Closeable, SourceWorker {

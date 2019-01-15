@@ -58,14 +58,8 @@ public class Game {
         wordsList.add(why);
         logger.debug("'why' source was created from MySQL database, table 'reasons'");
 
-        fillWorkSourcesWithData();
-    }
-
-    public void fillWorkSourcesWithData() {
-        logger.debug("Init all sources...");
-        for (RunnableWord word : wordsList) {
-            word.fillWithValues();
-        }
+        logger.debug("Init all sources with data...");
+        wordsList.stream().forEach(e -> e.fillWithValues());
         logger.debug("All sources were filled out with data from /resources text files" + splitLine);
     }
 
@@ -75,10 +69,11 @@ public class Game {
         ExecutorService pool = Executors.newCachedThreadPool();
 
         // run threads for word's parallel creation
-        for (RunnableWord word : wordsList) {
-            word.setCountDownLatch(startLatch);
-            pool.execute(word);
-        }
+        wordsList.stream().forEach(
+                e -> {
+                    e.setCountDownLatch(startLatch);
+                    pool.execute(e);
+                });
 
         // wait until all threads finish their work
         try {
@@ -90,9 +85,7 @@ public class Game {
         logger.debug("all 4 threads finish their work:");
 
         // collect results from all threads
-        for (RunnableWord word : wordsList) {
-            sentence.append(word.getWord()).append(" ");
-        }
+        wordsList.stream().forEach(e -> sentence.append(e.getWord()).append(" "));
         logger.debug(sentence + splitLine);
         return sentence.toString();
     }
@@ -118,9 +111,7 @@ public class Game {
     }
 
     public void exit() {
-        for (RunnableWord word : wordsList) {
-            word.close();
-        }
+        wordsList.stream().forEach(e -> e.close());
         logger.debug("Close all resources and exit " + splitLine);
         System.exit(0);
     }
