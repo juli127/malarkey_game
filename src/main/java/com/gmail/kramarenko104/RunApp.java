@@ -44,11 +44,11 @@ public class RunApp extends Application {
         }
         Scene scene = new Scene(gamePane);
         primaryStage.setScene(scene);
+        initScreenElements();
         primaryStage.show();
-        showGameFields();
     }
 
-    private void showGameFields() {
+    private void initScreenElements() {
         // text fields
         for (Node node : gamePane.getChildren()) {
             if (node.getId() != null) {
