@@ -113,8 +113,12 @@ public class DBWorker implements Closeable, SourceWorker {
     @Override
     public void close() {
         try {
-            st.close();
-            conn.close();
+            if (conn !=null){
+                conn.close();
+            }
+            if (st != null) {
+                st.close();
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
